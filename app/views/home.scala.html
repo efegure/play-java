@@ -1,0 +1,13 @@
+@(userList: List[User])
+
+<h2>authentication complete</h2>
+
+
+
+ <h1>@userList.size() users(s)</h1>
+<ul>
+@for(user <- userList) {
+  <li>@user.name  </li>
+  <li>@user.getAdminStatus()  </li>
+} 
+</ul>

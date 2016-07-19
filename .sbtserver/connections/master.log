@@ -1,0 +1,37 @@
+New log file opened at Tue Jul 19 09:55:04 EEST 2016 by 1752@BUMBLEBEE
+Taking next connection to: 58512
+New client attempting to connect on port: 58513-58512
+  Address = /192.168.2.240:58512
+This client on port 58513 has uuid d1cff121-c797-417f-bf03-2636ca533eb9 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-d1cff121-c797-417f-bf03-2636ca533eb9
+Taking next connection to: 58512
+New client attempting to connect on port: 58514-58512
+  Address = /192.168.2.240:58512
+Handshake exception on socket: 58514
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 58512
+New client attempting to connect on port: 58515-58512
+  Address = /192.168.2.240:58512
+This client on port 58515 has uuid 1f157618-221d-45dc-b899-0313d1d23130 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-d1cff121-c797-417f-bf03-2636ca533eb9, activator-1f157618-221d-45dc-b899-0313d1d23130
+Taking next connection to: 58512
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 1752@BUMBLEBEE logs at Tue Jul 19 09:58:04 EEST 2016, goodbye.

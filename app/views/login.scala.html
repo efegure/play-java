@@ -1,0 +1,19 @@
+@(loginForm : Form[HomeController.Login])
+@import helper._
+
+ 
+    @form(routes.HomeController.authenticate) {
+        
+        @inputText(loginForm("email")) 
+        @inputPassword(loginForm("password"))  
+        
+        <input type="submit" value="Confirm">
+        
+    }
+    @if(flash.contains("success")) {
+    <p class="success">
+        @flash.get("success")
+    </p>
+}
+
+<a href="@routes.HomeController.main()">sign up</a>
