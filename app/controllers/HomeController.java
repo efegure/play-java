@@ -38,24 +38,37 @@ public class HomeController extends Controller {
 		if (userForm.hasErrors()) {
 			return badRequest(views.html.main.render(userForm));
 		} else {
-			User.create(userForm.get());
-			flash("success", "You've have succesfully created an account");
-			return ok(views.html.login.render(formFactory.form(Login.class)));
+		    if(User.find.byId(userForm.get().email)==null){
+		    	User.create(userForm.get());
+		    	flash("success", "You've have succesfully created an account");
+		    	return ok(views.html.login.render(formFactory.form(Login.class)));
+		    }
+		    else{
+		        flash("failure", "Account already exists");
+		        return badRequest(views.html.main.render(userForm));
+		    }
 		}
 	}
+	
+	@Security.Authenticated(Secured.class)
     public   Result home() {
     return ok(
-        home.render(User.find.all())
+        home.render(User.find.all(),User.find.byId(request().username()))
     );
     }
    
     
-    @Security.Authenticated(Secured.class)
 	public  Result main() {
 		return ok(main.render(formFactory.form(User.class))
 		);
 	}
-
+    public  Result logout() {
+    session().clear();
+    flash("success", "You've been logged out");
+    return redirect(
+        routes.HomeController.login()
+    );
+}
 	
 	public  Result login() {
     return ok(
@@ -67,8 +80,10 @@ public class HomeController extends Controller {
     if (loginForm.hasErrors()) {
         return badRequest(login.render(loginForm));
     } else {
-        return ok(
-            views.html.home.render(User.find.all())
+        session().clear();
+        session("email", loginForm.get().email);
+        return redirect(
+            routes.HomeController.home()
         );
     }
 }

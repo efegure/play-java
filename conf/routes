@@ -2,17 +2,18 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-POST    /                           controllers.HomeController.authenticate
-POST    /                 			controllers.HomeController.newUser
-
-GET     /                           controllers.HomeController.main
-GET     /                           controllers.HomeController.login
 
 
-GET   /                            controllers.HomeController.home
+GET     /                                   controllers.HomeController.login
 
+POST    /                                   controllers.HomeController.authenticate
 
+GET     /register                           controllers.HomeController.main
 
+POST    /register                 			controllers.HomeController.newUser
 
+GET     /home                               controllers.HomeController.home
+
+GET     /logout                             controllers.HomeController.logout
 
 

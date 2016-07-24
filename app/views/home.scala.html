@@ -1,13 +1,19 @@
-@(userList: List[User])
+@(userList: List[User],mainuser : User)
 
-<h2>authentication complete</h2>
+<h2>Welcome @mainuser.name!</h2>
 
 
+<dt>Email: <span>(@mainuser.email)</span></dt>
 
+@if(mainuser.getAdminStatus()) {
+  
+  
  <h1>@userList.size() users(s)</h1>
 <ul>
 @for(user <- userList) {
-  <li>@user.name  </li>
-  <li>@user.getAdminStatus()  </li>
+  <li>Name : @user.name - Admin Status : @user.getAdminStatus()</li>
 } 
 </ul>
+}
+
+<a href="@routes.HomeController.logout()">Logout</a>
