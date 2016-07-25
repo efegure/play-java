@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/play-java -Dhttp.port=${PORT} -DapplyEvolutions.default=true -Dplay.crypto.secret=${APPLICATION_SECRET} -Ddb.default.driver=org.postgresql.Driver -Ddb.default.url=${DATABASE_URL}
+web: target/universal/stage/bin/play-java -Dhttp.port=${PORT} -Dplay.evolutions.db.default.autoApply=true -Dplay.crypto.secret=${APPLICATION_SECRET} -Ddb.default.driver=org.postgresql.Driver -Ddb.default.url=${DATABASE_URL}
