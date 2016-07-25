@@ -1,10 +1,13 @@
-New log file opened at Mon Jul 25 20:14:33 EEST 2016 by 8524@BUMBLEBEE
-Taking next connection to: 64940
-New client attempting to connect on port: 64941-64940
-  Address = /192.168.2.240:64940
-This client on port 64941 has uuid 5b485d25-2ae9-4178-b386-8935f17bfe41 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-5b485d25-2ae9-4178-b386-8935f17bfe41
-Taking next connection to: 64940
+New log file opened at Mon Jul 25 20:25:18 EEST 2016 by 5928@BUMBLEBEE
+Taking next connection to: 65362
+New client attempting to connect on port: 65363-65362
+  Address = /192.168.2.240:65362
+This client on port 65363 has uuid 43350bb3-559c-477e-9244-35b8a3a530de configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-43350bb3-559c-477e-9244-35b8a3a530de
+Taking next connection to: 65362
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 64940
+Taking next connection to: 65362
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 65362
