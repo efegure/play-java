@@ -1,13 +1,13 @@
-New log file opened at Mon Jul 25 15:28:30 EEST 2016 by 3408@BUMBLEBEE
-Taking next connection to: 64690
-New client attempting to connect on port: 64691-64690
-  Address = /192.168.2.240:64690
-This client on port 64691 has uuid af224a78-1c00-49c6-96e6-f7e1d63fb40e configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-af224a78-1c00-49c6-96e6-f7e1d63fb40e
-Taking next connection to: 64690
-New client attempting to connect on port: 64692-64690
-  Address = /192.168.2.240:64690
-Handshake exception on socket: 64692
+New log file opened at Mon Jul 25 15:53:19 EEST 2016 by 2660@BUMBLEBEE
+Taking next connection to: 49276
+New client attempting to connect on port: 49277-49276
+  Address = /192.168.2.240:49276
+This client on port 49277 has uuid d2474a05-d97d-49e8-b0c9-8f28b8b6bb87 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-d2474a05-d97d-49e8-b0c9-8f28b8b6bb87
+Taking next connection to: 49276
+New client attempting to connect on port: 49490-49276
+  Address = /192.168.2.240:49276
+Handshake exception on socket: 49490
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -23,75 +23,12 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 64690
-New client attempting to connect on port: 64693-64690
-  Address = /192.168.2.240:64690
-This client on port 64693 has uuid afa6cc41-51fd-4ac6-a15d-10a0e17add4f configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-af224a78-1c00-49c6-96e6-f7e1d63fb40e, activator-afa6cc41-51fd-4ac6-a15d-10a0e17add4f
-Taking next connection to: 64690
+Taking next connection to: 49276
+New client attempting to connect on port: 49491-49276
+  Address = /192.168.2.240:49276
+This client on port 49491 has uuid 94f5ce82-ab03-4b27-9df7-58a2c62eea45 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-d2474a05-d97d-49e8-b0c9-8f28b8b6bb87, play-fork-run-94f5ce82-ab03-4b27-9df7-58a2c62eea45
+Taking next connection to: 49276
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 64690
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 64690
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 64690
-New client attempting to connect on port: 65084-64690
-  Address = /192.168.2.240:64690
-Handshake exception on socket: 65084
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.net.SocketException: Software caused connection abort: recv failed
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
-	at java.net.SocketInputStream.read(SocketInputStream.java:170)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
-	at java.io.DataInputStream.readInt(DataInputStream.java:387)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 64690
-New client attempting to connect on port: 65085-64690
-  Address = /192.168.2.240:64690
-This client on port 65085 has uuid d8b37973-9a31-4215-a024-686ab0fadcaa configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-afa6cc41-51fd-4ac6-a15d-10a0e17add4f, play-fork-run-d8b37973-9a31-4215-a024-686ab0fadcaa
-Taking next connection to: 64690
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 64690
-New client attempting to connect on port: 65254-64690
-  Address = /192.168.2.240:64690
-Handshake exception on socket: 65254
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.net.SocketException: Software caused connection abort: recv failed
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
-	at java.net.SocketInputStream.read(SocketInputStream.java:170)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
-	at java.io.DataInputStream.readInt(DataInputStream.java:387)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 64690
-New client attempting to connect on port: 65255-64690
-  Address = /192.168.2.240:64690
-This client on port 65255 has uuid 5eb3f51c-68e6-4a7c-aa71-321eec8dc1c0 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-afa6cc41-51fd-4ac6-a15d-10a0e17add4f, play-fork-run-5eb3f51c-68e6-4a7c-aa71-321eec8dc1c0
-Taking next connection to: 64690
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 64690
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 64690
+Taking next connection to: 49276
