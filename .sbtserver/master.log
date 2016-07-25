@@ -1,5 +1,5 @@
-New log file opened at Mon Jul 25 16:24:22 EEST 2016 by 9468@BUMBLEBEE
-jvm 9468@BUMBLEBEE
+New log file opened at Mon Jul 25 16:37:25 EEST 2016 by 228@BUMBLEBEE
+jvm 228@BUMBLEBEE
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.91-b15
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\EFE\play-java\project, returning: (play-java-build)
 Loading project definition from C:\Users\EFE\play-java\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@fb618dd, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@3c1a4669, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -78,8 +78,8 @@ Set current project to play-java (in build file:/C:/Users/EFE/play-java/)
 > server-handle-next-server-request
 > {file:/C:/Users/EFE/play-java/}myProject/compile:discoveredMainClasses
 Evaluating tasks: myProject/compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@26f6ef59, check cycles: false
-Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469452991223) to lastModified(1469452992055)
+Running task... Cancel: sbt.server.ServerTaskCancellation@420aa9b8, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469453763029) to lastModified(1469453828675)
 
 Initial source changes: 
 	removed:Set()
@@ -98,29 +98,29 @@ All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\Ho
 
 Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
 Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@f8573c directly...
-Java compilation took 0.994559796 s
-Java analysis took 0.047422261 s
-Java compile + analysis took 1.053440349 s
+Attempting to call com.sun.tools.javac.api.JavacTool@3ed1f150 directly...
+Java compilation took 0.691045749 s
+Java analysis took 0.039116397 s
+Java compile + analysis took 0.743592335 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed 25.Tem.2016 16:24:37
+Total time: 2 s, completed 25.Tem.2016 16:37:32
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/EFE/play-java/}myProject/compile:mainClass
 Evaluating tasks: myProject/compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@4e06aa04, check cycles: false
-Total time: 0 s, completed 25.Tem.2016 16:24:37
+Running task... Cancel: sbt.server.ServerTaskCancellation@249cd1dd, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 16:37:32
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/EFE/play-java/}myProject/compile:discoveredMainClasses
 Evaluating tasks: myProject/compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@6a47552d, check cycles: false
-Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469452992055) to lastModified(1469453076806)
+Running task... Cancel: sbt.server.ServerTaskCancellation@20977db2, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469453828675) to lastModified(1469453851832)
 
 Initial source changes: 
 	removed:Set()
@@ -139,152 +139,47 @@ All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\Ho
 
 Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
 Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@2cd94436 directly...
-Java compilation took 0.305581312 s
-Java analysis took 0.010880073 s
-Java compile + analysis took 0.325525825 s
+Attempting to call com.sun.tools.javac.api.JavacTool@437cd275 directly...
+Java compilation took 0.177524041 s
+Java analysis took 0.019062798 s
+Java compile + analysis took 0.205217616 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed 25.Tem.2016 16:24:38
+Total time: 1 s, completed 25.Tem.2016 16:37:33
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/EFE/play-java/}myProject/compile:mainClass
 Evaluating tasks: myProject/compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@5fba673, check cycles: false
-Total time: 0 s, completed 25.Tem.2016 16:24:38
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: myProject/compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@583e6c2e, check cycles: false
-Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469453076806) to lastModified(1469453077848)
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@3ce30ef5 directly...
-Java compilation took 0.191122878 s
-Java analysis took 0.064329791 s
-Java compile + analysis took 0.265169947 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed 25.Tem.2016 16:25:36
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: myProject/compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@106f9e00, check cycles: false
-Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469453077848) to lastModified(1469453136299)
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@76bf9d12 directly...
-Java compilation took 0.174326441 s
-Java analysis took 0.041725406 s
-Java compile + analysis took 0.224899456 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 0 s, completed 25.Tem.2016 16:25:50
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: myProject/compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@4033d3b8, check cycles: false
-Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469453136299) to lastModified(1469453150801)
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@1b4ca922 directly...
-Java compilation took 0.133542648 s
-Java analysis took 0.00937597 s
-Java compile + analysis took 0.150228661 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 0 s, completed 25.Tem.2016 16:25:52
+Running task... Cancel: sbt.server.ServerTaskCancellation@7170d2f9, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 16:37:33
 > server-post-command-cleanup
 > server-handle-next-server-request
 > backgroundRun
 Evaluating tasks: myProject/compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@745ca6b9, check cycles: false
-Total time: 0 s, completed 25.Tem.2016 16:25:55
+Running task... Cancel: sbt.server.ServerTaskCancellation@103e7765, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 16:37:54
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/EFE/play-java/}myProject/*:playForkConfig
 Evaluating tasks: myProject/*:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@56c1417, check cycles: false
-Total time: 0 s, completed 25.Tem.2016 16:25:58
+Running task... Cancel: sbt.server.ServerTaskCancellation@4512f707, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 16:37:56
 > server-post-command-cleanup
 > server-handle-next-server-request
 > myProject/playForkNotifyStart http://localhost:9000
 Evaluating tasks: myProject/*:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@602d20cd, check cycles: false
-Total time: 0 s, completed 25.Tem.2016 16:25:59
+Running task... Cancel: sbt.server.ServerTaskCancellation@fe6fc4b, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 16:37:57
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
 Evaluating tasks: myProject/*:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@6f7490c7, check cycles: false
-Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469453150801) to lastModified(1469453152359)
+Running task... Cancel: sbt.server.ServerTaskCancellation@2881bb96, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469453851832) to lastModified(1469453852937)
 
 Initial source changes: 
 	removed:Set()
@@ -303,10 +198,10 @@ All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\Ho
 
 Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
 Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@48ab0197 directly...
-Java compilation took 0.241868221 s
-Java analysis took 0.029173252 s
-Java compile + analysis took 0.279316551 s
+Attempting to call com.sun.tools.javac.api.JavacTool@22cc87ca directly...
+Java compilation took 0.380766748 s
+Java analysis took 0.012879745 s
+Java compile + analysis took 0.454332973 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
@@ -321,12 +216,191 @@ Copy resource mappings:
 	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
 	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
 Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
-Total time: 1 s, completed 25.Tem.2016 16:26:01
+Total time: 2 s, completed 25.Tem.2016 16:38:00
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@6b5c5e45, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469453852937) to lastModified(1469453879651)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@551aec41 directly...
+Java compilation took 0.217147049 s
+Java analysis took 0.015916394 s
+Java compile + analysis took 0.258435779 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 25.Tem.2016 16:38:03
 > server-post-command-cleanup
 > server-handle-next-server-request
 > jobStop 1
 Evaluating tasks: myProject/*:jobStop
-Running task... Cancel: sbt.server.ServerTaskCancellation@7b0fc4b3, check cycles: false
-Total time: 0 s, completed 25.Tem.2016 16:26:08
+Running task... Cancel: sbt.server.ServerTaskCancellation@12c5c417, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 16:38:19
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@6b52b393, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 16:38:48
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@50a45aed, check cycles: false
+Total time: 1 s, completed 25.Tem.2016 16:38:50
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@77ce5daf, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 16:38:51
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@41ef6e36, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469453879651) to lastModified(1469453883270)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@5c2f3c17 directly...
+Java compilation took 0.293007407 s
+Java analysis took 0.01273017 s
+Java compile + analysis took 0.314070881 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 25.Tem.2016 16:38:55
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@2dbc7d95, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469453883270) to lastModified(1469453935526)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@3b8250c3 directly...
+Java compilation took 0.144897207 s
+Java analysis took 0.022274787 s
+Java compile + analysis took 0.178457958 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 25.Tem.2016 16:38:59
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@fdfd33a, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469453935526) to lastModified(1469453939274)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@227311bb directly...
+Java compilation took 0.125590809 s
+Java analysis took 0.009506805 s
+Java compile + analysis took 0.143211741 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 25.Tem.2016 16:40:33
 > server-post-command-cleanup
 > server-handle-next-server-request
