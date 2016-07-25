@@ -1,5 +1,5 @@
-New log file opened at Mon Jul 25 22:26:19 EEST 2016 by 8156@BUMBLEBEE
-jvm 8156@BUMBLEBEE
+New log file opened at Mon Jul 25 22:26:30 EEST 2016 by 10184@BUMBLEBEE
+jvm 10184@BUMBLEBEE
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.91-b15
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\EFE\play-java\project, returning: (play-java-build)
 Loading project definition from C:\Users\EFE\play-java\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@511f1fee, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@1ac51c7, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -76,10 +76,1074 @@ Set current project to play-java (in build file:/C:/Users/EFE/play-java/)
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/compile:discoveredMainClasses
+Evaluating tasks: myProject/compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@539fce0a, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469467530404) to lastModified(1469467534404)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@387e296a directly...
+Java compilation took 0.748683868 s
+Java analysis took 0.04087414 s
+Java compile + analysis took 0.804080053 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 2 s, completed 25.Tem.2016 22:26:36
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/compile:mainClass
+Evaluating tasks: myProject/compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@10c8206a, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:26:36
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/compile:discoveredMainClasses
+Evaluating tasks: myProject/compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@154563b7, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469467534404) to lastModified(1469474796383)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@396860f3 directly...
+Java compilation took 0.192054452 s
+Java analysis took 0.035007969 s
+Java compile + analysis took 0.237160159 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 25.Tem.2016 22:26:37
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/compile:mainClass
+Evaluating tasks: myProject/compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@6f827be8, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:26:37
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@6e142200, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:26:56
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@64358af5, check cycles: false
+Total time: 1 s, completed 25.Tem.2016 22:26:59
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@7028f35f, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:27:00
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5563af6b, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469474796383) to lastModified(1469474797674)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@13f79462 directly...
+Java compilation took 0.373367027 s
+Java analysis took 0.015498457 s
+Java compile + analysis took 0.404423169 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
+Total time: 2 s, completed 25.Tem.2016 22:27:02
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@64312e08, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469474797674) to lastModified(1469474822184)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7ed5a8 directly...
+Java compilation took 0.194180273 s
+Java analysis took 0.013097915 s
+Java compile + analysis took 0.218817457 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 25.Tem.2016 22:27:07
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 1
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@6c06610c, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:27:30
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3bfecb92, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469474822184) to lastModified(1469474826958)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@70fe6f40 directly...
+Java compilation took 0.201839658 s
+Java analysis took 0.010717784 s
+Java compile + analysis took 0.22387854 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 25.Tem.2016 22:28:47
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7602657f, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469474826958) to lastModified(1469474927349)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@6bd35dfe directly...
+Java compilation took 0.132182764 s
+Java analysis took 0.008584935 s
+Java compile + analysis took 0.147817745 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 347: Expecting close brace } or a comma, got ':' (if you intended ':' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+java.lang.RuntimeException: play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 347: Expecting close brace } or a comma, got ':' (if you intended ':' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+	at play.api.Configuration$.configError(Configuration.scala:154)
+	at play.api.Configuration$.load(Configuration.scala:101)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: com.typesafe.config.ConfigException$Parse: application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 347: Expecting close brace } or a comma, got ':' (if you intended ':' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:201)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:197)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:475)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:247)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:405)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parse(ConfigDocumentParser.java:595)
+	at com.typesafe.config.impl.ConfigDocumentParser.parse(ConfigDocumentParser.java:14)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:260)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:248)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:307)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:747)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:710)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parse(Parseable.java:152)
+	at com.typesafe.config.impl.SimpleIncluder.fromBasename(SimpleIncluder.java:185)
+	at com.typesafe.config.impl.ConfigImpl.parseResourcesAnySyntax(ConfigImpl.java:132)
+	at com.typesafe.config.ConfigFactory.parseResourcesAnySyntax(ConfigFactory.java:1024)
+	at com.typesafe.config.ConfigFactory.parseApplicationConfig(ConfigFactory.java:238)
+	at com.typesafe.config.ConfigFactory.defaultApplication(ConfigFactory.java:519)
+	at play.api.Configuration$$anonfun$3.apply(Configuration.scala:73)
+	at play.api.Configuration$$anonfun$3.apply(Configuration.scala:69)
+	at scala.Option.getOrElse(Option.scala:121)
+	at play.api.Configuration$.load(Configuration.scala:69)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Read from stdout: (myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 347: Expecting close brace } or a comma, got ':' (if you intended ':' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+(myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 347: Expecting close brace } or a comma, got ':' (if you intended ':' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+Total time: 0 s, completed 25.Tem.2016 22:32:10
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@6ce3bd23, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469474826958) to lastModified(1469475130533)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController$Login.class)
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@33d0cd96 directly...
+Java compilation took 0.139454327 s
+Java analysis took 0.010428005 s
+Java compile + analysis took 0.158279881 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 347: Expecting close brace } or a comma, got ':' (if you intended ':' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+java.lang.RuntimeException: play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 347: Expecting close brace } or a comma, got ':' (if you intended ':' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+	at play.api.Configuration$.configError(Configuration.scala:154)
+	at play.api.Configuration$.load(Configuration.scala:101)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: com.typesafe.config.ConfigException$Parse: application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 347: Expecting close brace } or a comma, got ':' (if you intended ':' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:201)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:197)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:475)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:247)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:405)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parse(ConfigDocumentParser.java:595)
+	at com.typesafe.config.impl.ConfigDocumentParser.parse(ConfigDocumentParser.java:14)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:260)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:248)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:307)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:747)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:710)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parse(Parseable.java:152)
+	at com.typesafe.config.impl.SimpleIncluder.fromBasename(SimpleIncluder.java:185)
+	at com.typesafe.config.impl.ConfigImpl.parseResourcesAnySyntax(ConfigImpl.java:132)
+	at com.typesafe.config.ConfigFactory.parseResourcesAnySyntax(ConfigFactory.java:1024)
+	at com.typesafe.config.ConfigFactory.parseApplicationConfig(ConfigFactory.java:238)
+	at com.typesafe.config.ConfigFactory.defaultApplication(ConfigFactory.java:519)
+	at play.api.Configuration$$anonfun$3.apply(Configuration.scala:73)
+	at play.api.Configuration$$anonfun$3.apply(Configuration.scala:69)
+	at scala.Option.getOrElse(Option.scala:121)
+	at play.api.Configuration$.load(Configuration.scala:69)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Read from stdout: (myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 347: Expecting close brace } or a comma, got ':' (if you intended ':' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+(myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 347: Expecting close brace } or a comma, got ':' (if you intended ':' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+Total time: 1 s, completed 25.Tem.2016 22:32:44
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@57d5b223, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469474826958) to lastModified(1469475164289)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController$Login.class)
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@59d61e21 directly...
+Java compilation took 0.153505565 s
+Java analysis took 0.008613711 s
+Java compile + analysis took 0.170248128 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 347: Expecting close brace } or a comma, got ':' (if you intended ':' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+java.lang.RuntimeException: play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 347: Expecting close brace } or a comma, got ':' (if you intended ':' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+	at play.api.Configuration$.configError(Configuration.scala:154)
+	at play.api.Configuration$.load(Configuration.scala:101)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: com.typesafe.config.ConfigException$Parse: application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 347: Expecting close brace } or a comma, got ':' (if you intended ':' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:201)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:197)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:475)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:247)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:405)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parse(ConfigDocumentParser.java:595)
+	at com.typesafe.config.impl.ConfigDocumentParser.parse(ConfigDocumentParser.java:14)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:260)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:248)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:307)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:747)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:710)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parse(Parseable.java:152)
+	at com.typesafe.config.impl.SimpleIncluder.fromBasename(SimpleIncluder.java:185)
+	at com.typesafe.config.impl.ConfigImpl.parseResourcesAnySyntax(ConfigImpl.java:132)
+	at com.typesafe.config.ConfigFactory.parseResourcesAnySyntax(ConfigFactory.java:1024)
+	at com.typesafe.config.ConfigFactory.parseApplicationConfig(ConfigFactory.java:238)
+	at com.typesafe.config.ConfigFactory.defaultApplication(ConfigFactory.java:519)
+	at play.api.Configuration$$anonfun$3.apply(Configuration.scala:73)
+	at play.api.Configuration$$anonfun$3.apply(Configuration.scala:69)
+	at scala.Option.getOrElse(Option.scala:121)
+	at play.api.Configuration$.load(Configuration.scala:69)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Read from stdout: (myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 347: Expecting close brace } or a comma, got ':' (if you intended ':' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+(myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 347: Expecting close brace } or a comma, got ':' (if you intended ':' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+Total time: 0 s, completed 25.Tem.2016 22:33:27
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@192d61d5, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469474826958) to lastModified(1469475207612)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController$Login.class)
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@709f2c59 directly...
+Java compilation took 0.140601728 s
+Java analysis took 0.010079334 s
+Java compile + analysis took 0.163466445 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 354: Expecting a value but got wrong token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+java.lang.RuntimeException: play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 354: Expecting a value but got wrong token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+	at play.api.Configuration$.configError(Configuration.scala:154)
+	at play.api.Configuration$.load(Configuration.scala:101)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: com.typesafe.config.ConfigException$Parse: application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 354: Expecting a value but got wrong token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:201)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:197)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:251)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:422)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:247)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:405)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parse(ConfigDocumentParser.java:595)
+	at com.typesafe.config.impl.ConfigDocumentParser.parse(ConfigDocumentParser.java:14)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:260)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:248)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:307)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:747)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:710)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parse(Parseable.java:152)
+	at com.typesafe.config.impl.SimpleIncluder.fromBasename(SimpleIncluder.java:185)
+	at com.typesafe.config.impl.ConfigImpl.parseResourcesAnySyntax(ConfigImpl.java:132)
+	at com.typesafe.config.ConfigFactory.parseResourcesAnySyntax(ConfigFactory.java:1024)
+	at com.typesafe.config.ConfigFactory.parseApplicationConfig(ConfigFactory.java:238)
+	at com.typesafe.config.ConfigFactory.defaultApplication(ConfigFactory.java:519)
+	at play.api.Configuration$$anonfun$3.apply(Configuration.scala:73)
+	at play.api.Configuration$$anonfun$3.apply(Configuration.scala:69)
+	at scala.Option.getOrElse(Option.scala:121)
+	at play.api.Configuration$.load(Configuration.scala:69)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Read from stdout: (myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 354: Expecting a value but got wrong token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+(myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 354: Expecting a value but got wrong token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+Total time: 0 s, completed 25.Tem.2016 22:33:59
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@5010d2b9, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469474826958) to lastModified(1469475239588)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController$Login.class)
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7dc38f9e directly...
+Java compilation took 0.112698683 s
+Java analysis took 0.008914867 s
+Java compile + analysis took 0.128349057 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 0 s, completed 25.Tem.2016 22:34:41
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@7e41b9c0, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:34:47
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@5561f607, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:34:49
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@644f7144, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:34:50
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@62e293dd, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469475239588) to lastModified(1469475281679)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@6fb22714 directly...
+Java compilation took 0.139428561 s
+Java analysis took 0.010620745 s
+Java compile + analysis took 0.158718898 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 25.Tem.2016 22:34:53
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5c0c416d, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469475281679) to lastModified(1469475292277)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@56b2720d directly...
+Java compilation took 0.137600214 s
+Java analysis took 0.01442099 s
+Java compile + analysis took 0.159529006 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 25.Tem.2016 22:36:54
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 2
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@29e72276, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:37:39
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 2
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@4da56208, check cycles: false
+Exception in thread "sbt-bg-threads-2" java.lang.Error: java.lang.InterruptedException: sleep interrupted
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at play.sbt.forkrun.PlayForkProcess$.timedWaitFor(PlayForkProcess.scala:80)
+	at play.sbt.forkrun.PlayForkProcess$.play$sbt$forkrun$PlayForkProcess$$stop$1(PlayForkProcess.scala:54)
+	at play.sbt.forkrun.PlayForkProcess$.run(PlayForkProcess.scala:70)
+	at play.sbt.forkrun.PlayForkProcess$.apply(PlayForkProcess.scala:35)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:108)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:107)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	... 2 more
+Total time: 0 s, completed 25.Tem.2016 22:37:45
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@1f2bfd67, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:37:46
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@353b456d, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:37:48
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@7a410c84, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:37:49
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@349ddde1, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469475292277) to lastModified(1469475414178)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@811463a directly...
+Java compilation took 0.373139152 s
+Java analysis took 0.011346195 s
+Java compile + analysis took 0.39342163 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 2 s, completed 25.Tem.2016 22:37:53
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 3
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@2e41062e, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:41:32
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@6adf777d, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:41:33
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@50b6e1a6, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:41:36
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@78bf88f5, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:41:37
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 4
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@1bd194a1, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:41:41
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 4
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@1734c08f, check cycles: false
+Exception in thread "sbt-bg-threads-4" java.lang.Error: java.lang.InterruptedException: sleep interrupted
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at play.sbt.forkrun.PlayForkProcess$.timedWaitFor(PlayForkProcess.scala:80)
+	at play.sbt.forkrun.PlayForkProcess$.play$sbt$forkrun$PlayForkProcess$$stop$1(PlayForkProcess.scala:54)
+	at play.sbt.forkrun.PlayForkProcess$.run(PlayForkProcess.scala:70)
+	at play.sbt.forkrun.PlayForkProcess$.apply(PlayForkProcess.scala:35)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:108)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:107)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	... 2 more
+Total time: 0 s, completed 25.Tem.2016 22:41:42
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@1af216a9, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:41:43
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@5513f72c, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:41:45
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@f3b80f, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 22:41:46
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@659e3689, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469475414178) to lastModified(1469475473103)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@3feb2d45 directly...
+Java compilation took 0.332717415 s
+Java analysis took 0.010020107 s
+Java compile + analysis took 0.352195472 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 25.Tem.2016 22:41:53
+> server-post-command-cleanup
+> server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
 Closing listening server socket
 Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 8156@BUMBLEBEE logs at Mon Jul 25 22:26:23 EEST 2016, goodbye.
+Closing the 10184@BUMBLEBEE logs at Mon Jul 25 22:53:45 EEST 2016, goodbye.

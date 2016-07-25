@@ -12,9 +12,10 @@ lazy val nonEnhancedProject = (project in file("non-enhanced"))
 libraryDependencies ++= Seq(
   javaJdbc,
   cache,
-  javaWs
+  javaWs,
+  "postgresql" % "postgresql" % "9.1-901-1.jdbc4"
 )
-libraryDependencies += "postgresql" % "postgresql" % "9.1-901-1.jdbc4"
+
 fork in run := true
 
 fork in run := true
