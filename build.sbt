@@ -13,6 +13,8 @@ libraryDependencies ++= Seq(
   cache,
   javaWs
 )
-
+herokuAppName in Compile := "sleepy-spire-51334"
 libraryDependencies += "postgresql" % "postgresql" % "9.1-901-1.jdbc4"
+fork in run := true
+
 fork in run := true

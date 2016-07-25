@@ -1,43 +1,16 @@
-New log file opened at Mon Jul 25 11:31:22 EEST 2016 by 9504@BUMBLEBEE
-Taking next connection to: 52804
-New client attempting to connect on port: 52805-52804
-  Address = /192.168.2.240:52804
-This client on port 52805 has uuid 71ef6090-1071-4417-9f17-dccbdd624ab0 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-71ef6090-1071-4417-9f17-dccbdd624ab0
-Taking next connection to: 52804
-New client attempting to connect on port: 52806-52804
-  Address = /192.168.2.240:52804
-Handshake exception on socket: 52806
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.net.SocketException: Software caused connection abort: recv failed
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
-	at java.net.SocketInputStream.read(SocketInputStream.java:170)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
-	at java.io.DataInputStream.readInt(DataInputStream.java:387)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 52804
-New client attempting to connect on port: 52807-52804
-  Address = /192.168.2.240:52804
-This client on port 52807 has uuid f71e7bea-b302-4e3b-a843-98941a54adea configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-71ef6090-1071-4417-9f17-dccbdd624ab0, activator-f71e7bea-b302-4e3b-a843-98941a54adea
-Taking next connection to: 52804
+New log file opened at Mon Jul 25 12:30:31 EEST 2016 by 6312@BUMBLEBEE
+Taking next connection to: 55850
+New client attempting to connect on port: 55851-55850
+  Address = /192.168.2.240:55850
+This client on port 55851 has uuid b3bd0c91-0cc5-4ac8-8487-a83693355507 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-b3bd0c91-0cc5-4ac8-8487-a83693355507
+Taking next connection to: 55850
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 52804
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 52804
+Taking next connection to: 55850
 Checking to see if clients are empty...
 No non-daemon clients connected after 3 min. Shutting down.
 Server socket thread exiting.
 0 clients open, will close them...
 All client sockets have been closed.
-Closing the 9504@BUMBLEBEE logs at Mon Jul 25 11:40:22 EEST 2016, goodbye.
+Closing the 6312@BUMBLEBEE logs at Mon Jul 25 12:36:32 EEST 2016, goodbye.
