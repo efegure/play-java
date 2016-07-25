@@ -1,5 +1,5 @@
-New log file opened at Mon Jul 25 16:47:31 EEST 2016 by 11096@BUMBLEBEE
-jvm 11096@BUMBLEBEE
+New log file opened at Mon Jul 25 20:14:33 EEST 2016 by 8524@BUMBLEBEE
+jvm 8524@BUMBLEBEE
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.91-b15
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\EFE\play-java\project, returning: (play-java-build)
 Loading project definition from C:\Users\EFE\play-java\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@7185527f, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@1ac51c7, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -78,90 +78,49 @@ Set current project to play-java (in build file:/C:/Users/EFE/play-java/)
 > server-handle-next-server-request
 > {file:/C:/Users/EFE/play-java/}myProject/compile:discoveredMainClasses
 Evaluating tasks: myProject/compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@2ff708bd, check cycles: false
-Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469453939274) to lastModified(1469454033602)
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@ebcf088 directly...
-Java compilation took 0.792823201 s
-Java analysis took 0.04007541 s
-Java compile + analysis took 0.846343522 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed 25.Tem.2016 16:47:37
+Running task... Cancel: sbt.server.ServerTaskCancellation@366b74b5, check cycles: false
+C:\Users\EFE\play-java\conf\routes:19: Compilation error[Controller method call expected]
+GET     /favicon.ico                            404
+                                                ^
+Read from stdout: (myProject/compile:playRoutes) @70om4d0ki: Compilation error in C:\Users\EFE\play-java\conf\routes:19
+(myProject/compile:playRoutes) @70om4d0ki: Compilation error in C:\Users\EFE\play-java\conf\routes:19
+Total time: 1 s, completed 25.Tem.2016 20:14:38
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/EFE/play-java/}myProject/compile:mainClass
 Evaluating tasks: myProject/compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@42945995, check cycles: false
-Total time: 0 s, completed 25.Tem.2016 16:47:37
+Running task... Cancel: sbt.server.ServerTaskCancellation@3744712, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 20:14:38
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/EFE/play-java/}myProject/compile:discoveredMainClasses
 Evaluating tasks: myProject/compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@22b0e254, check cycles: false
-Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469454033602) to lastModified(1469454457229)
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@428e0e8c directly...
-Java compilation took 0.258256089 s
-Java analysis took 0.023631994 s
-Java compile + analysis took 0.289744892 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed 25.Tem.2016 16:47:38
+Running task... Cancel: sbt.server.ServerTaskCancellation@1b9cee85, check cycles: false
+C:\Users\EFE\play-java\conf\routes:19: Compilation error[Controller method call expected]
+GET     /favicon.ico                            404
+                                                ^
+Read from stdout: (myProject/compile:playRoutes) @70om4d29b: Compilation error in C:\Users\EFE\play-java\conf\routes:19
+(myProject/compile:playRoutes) @70om4d29b: Compilation error in C:\Users\EFE\play-java\conf\routes:19
+Total time: 1 s, completed 25.Tem.2016 20:14:39
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/EFE/play-java/}myProject/compile:mainClass
 Evaluating tasks: myProject/compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@37075f2, check cycles: false
-Total time: 0 s, completed 25.Tem.2016 16:47:38
+Running task... Cancel: sbt.server.ServerTaskCancellation@1a4d09a5, check cycles: false
+Total time: 0 s, completed 25.Tem.2016 20:14:39
 > server-post-command-cleanup
 > server-handle-next-server-request
-Done executing sbt server engine, result Right(Exit(0))
-Closing listening server socket
-Waiting for socket thread
-Waiting for request processor thread
-Waiting for command engine result
-Returning control to sbt launcher with result Exit(0)
-Closing the 11096@BUMBLEBEE logs at Mon Jul 25 16:56:31 EEST 2016, goodbye.
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1c065ee9, check cycles: false
+C:\Users\EFE\play-java\conf\routes:19: Compilation error[Controller method call expected]
+GET     /favicon.ico                            404
+                                                ^
+Read from stdout: (myProject/compile:playRoutes) @70om4da2n: Compilation error in C:\Users\EFE\play-java\conf\routes:19
+(myProject/compile:playRoutes) @70om4da2n: Compilation error in C:\Users\EFE\play-java\conf\routes:19
+Total time: 1 s, completed 25.Tem.2016 20:14:44
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
