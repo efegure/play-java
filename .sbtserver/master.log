@@ -228,3 +228,10 @@ All newly invalidated sources after taking into account (previously) recompiled 
 Total time: 1 s, completed 25.Tem.2016 20:25:34
 > server-post-command-cleanup
 > server-handle-next-server-request
+Done executing sbt server engine, result Right(Exit(0))
+Closing listening server socket
+Waiting for socket thread
+Waiting for request processor thread
+Waiting for command engine result
+Returning control to sbt launcher with result Exit(0)
+Closing the 5928@BUMBLEBEE logs at Mon Jul 25 20:37:18 EEST 2016, goodbye.
