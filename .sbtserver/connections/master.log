@@ -1,40 +1,7 @@
-New log file opened at Mon Jul 25 22:53:57 EEST 2016 by 548@BUMBLEBEE
-Taking next connection to: 57449
-New client attempting to connect on port: 57450-57449
-  Address = /192.168.2.240:57449
-This client on port 57450 has uuid d20e21c8-faf9-4220-8551-5e8e2fa16ed1 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-d20e21c8-faf9-4220-8551-5e8e2fa16ed1
-Taking next connection to: 57449
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57449
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57449
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57449
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57449
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57449
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57449
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57449
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57449
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57449
-Checking to see if clients are empty...
-No non-daemon clients connected after 3 min. Shutting down.
-Server socket thread exiting.
-0 clients open, will close them...
-All client sockets have been closed.
-Closing the 548@BUMBLEBEE logs at Mon Jul 25 23:23:57 EEST 2016, goodbye.
+New log file opened at Mon Jul 25 23:53:28 EEST 2016 by 9040@BUMBLEBEE
+Taking next connection to: 60408
+New client attempting to connect on port: 60409-60408
+  Address = /192.168.2.240:60408
+This client on port 60409 has uuid 3ef962d9-c8ad-4b4b-951a-dd4bd788b463 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-3ef962d9-c8ad-4b4b-951a-dd4bd788b463
+Taking next connection to: 60408
