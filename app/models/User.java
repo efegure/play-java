@@ -8,7 +8,7 @@ import com.avaje.ebean.*;
 import play.data.validation.Constraints.*;
 
 @Entity
-@Table(name = "cmusers")
+@Table(name = "cm_users")
 public class User extends Model {
 
     @Id @Email @Required

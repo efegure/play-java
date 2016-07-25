@@ -3,16 +3,16 @@
 
 # --- !Ups
 
-create table cmusers (
+create table cm_users (
   email                         varchar(255) not null,
   name                          varchar(255),
   password                      varchar(255),
   is_admin                      boolean,
-  constraint pk_cmusers primary key (email)
+  constraint pk_cm_users primary key (email)
 );
 
 
 # --- !Downs
 
-drop table if exists cmusers;
+drop table if exists cm_users;
 
