@@ -158,3 +158,10 @@ Running task... Cancel: sbt.server.ServerTaskCancellation@37075f2, check cycles:
 Total time: 0 s, completed 25.Tem.2016 16:47:38
 > server-post-command-cleanup
 > server-handle-next-server-request
+Done executing sbt server engine, result Right(Exit(0))
+Closing listening server socket
+Waiting for socket thread
+Waiting for request processor thread
+Waiting for command engine result
+Returning control to sbt launcher with result Exit(0)
+Closing the 11096@BUMBLEBEE logs at Mon Jul 25 16:56:31 EEST 2016, goodbye.
