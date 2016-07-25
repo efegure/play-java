@@ -1,16 +1,16 @@
-New log file opened at Mon Jul 25 12:30:31 EEST 2016 by 6312@BUMBLEBEE
-Taking next connection to: 55850
-New client attempting to connect on port: 55851-55850
-  Address = /192.168.2.240:55850
-This client on port 55851 has uuid b3bd0c91-0cc5-4ac8-8487-a83693355507 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-b3bd0c91-0cc5-4ac8-8487-a83693355507
-Taking next connection to: 55850
+New log file opened at Mon Jul 25 14:14:00 EEST 2016 by 10688@BUMBLEBEE
+Taking next connection to: 61139
+New client attempting to connect on port: 61140-61139
+  Address = /192.168.2.240:61139
+This client on port 61140 has uuid 015ca43c-b8a2-4f4d-9c5c-d8760adcb32d configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-015ca43c-b8a2-4f4d-9c5c-d8760adcb32d
+Taking next connection to: 61139
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55850
+Taking next connection to: 61139
 Checking to see if clients are empty...
-No non-daemon clients connected after 3 min. Shutting down.
-Server socket thread exiting.
-0 clients open, will close them...
-All client sockets have been closed.
-Closing the 6312@BUMBLEBEE logs at Mon Jul 25 12:36:32 EEST 2016, goodbye.
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 61139
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 61139
