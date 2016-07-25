@@ -143,3 +143,6 @@ New client attempting to connect on port: 64962-62244
 This client on port 64962 has uuid 60cb938d-f42e-42d7-a5da-96108b569252 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
 Connected Clients: activator-09f374ff-d76a-4d8a-98fa-e88c334ff0b6, play-fork-run-60cb938d-f42e-42d7-a5da-96108b569252
 Taking next connection to: 62244
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 62244
