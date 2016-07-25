@@ -2433,3 +2433,200 @@ All newly invalidated sources after taking into account (previously) recompiled 
 Total time: 0 s, completed 26.Tem.2016 01:30:23
 > server-post-command-cleanup
 > server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@678f6422, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469485050107) to lastModified(1469485822931)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@46cd2aee directly...
+Java compilation took 0.150664331 s
+Java analysis took 0.017931793 s
+Java compile + analysis took 0.176722633 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 26.Tem.2016 01:42:01
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@241e5204, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469485822931) to lastModified(1469486521028)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7f9d621b directly...
+Java compilation took 0.150087452 s
+Java analysis took 0.011047716 s
+Java compile + analysis took 0.167662208 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 359: Could not resolve substitution to a value: ${APP_SECRET}]
+java.lang.RuntimeException: play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 359: Could not resolve substitution to a value: ${APP_SECRET}]
+	at play.api.Configuration$.configError(Configuration.scala:154)
+	at play.api.Configuration$.load(Configuration.scala:101)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: com.typesafe.config.ConfigException$UnresolvedSubstitution: application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 359: Could not resolve substitution to a value: ${APP_SECRET}
+	at com.typesafe.config.impl.ConfigReference.resolveSubstitutions(ConfigReference.java:108)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.ConfigDelayedMerge.resolveSubstitutions(ConfigDelayedMerge.java:132)
+	at com.typesafe.config.impl.ConfigDelayedMerge.resolveSubstitutions(ConfigDelayedMerge.java:59)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:379)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:312)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:398)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:379)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:312)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:398)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:379)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:312)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:398)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:231)
+	at com.typesafe.config.impl.SimpleConfig.resolveWith(SimpleConfig.java:74)
+	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:64)
+	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:59)
+	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:37)
+	at play.api.Configuration$.load(Configuration.scala:97)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Read from stdout: (myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 359: Could not resolve substitution to a value: ${APP_SECRET}]
+(myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 359: Could not resolve substitution to a value: ${APP_SECRET}]
+Total time: 1 s, completed 26.Tem.2016 01:42:11
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@50ca81a8, check cycles: false
+Invalidating C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class: stamp changed from lastModified(1469485822931) to lastModified(1469486530772)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController$Login.class)
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\controllers\HomeController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	binary dep: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@61d0343c directly...
+Java compilation took 0.098538694 s
+Java analysis took 0.00798664 s
+Java compile + analysis took 0.11482049 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 0 s, completed 26.Tem.2016 01:42:21
+> server-post-command-cleanup
+> server-handle-next-server-request
