@@ -13,7 +13,8 @@ libraryDependencies ++= Seq(
   javaJdbc,
   cache,
   javaWs,
-  "org.postgresql" % "postgresql" % "9.3-1102-jdbc4"
+  "org.postgresql" % "postgresql" % "9.3-1102-jdbc4",
+  "com.typesafe.play" %% "play-mailer" % "5.0.0"
 )
 
 fork in run := true
