@@ -14,6 +14,9 @@ import play.data.format.Formatters;
 import play.i18n.MessagesApi;
 import play.mvc.*;
 import views.html.*;
+import play.libs.mailer.Email;
+import play.libs.mailer.MailerClient;
+
 /**
  * This controller contains an action to handle HTTP requests to the
  * application's home page.
@@ -26,11 +29,28 @@ public class HomeController extends Controller {
 	 * be called when the application receives a <code>GET</code> request with a
 	 * path of <code>/</code>.
 	 */
+	@Inject
+	MailerClient mailerClient;
 
 	MessagesApi msgApi = new MessagesApi(null);
 	@Inject
 	FormFactory formFactory = new FormFactory(msgApi, new Formatters(msgApi),
 			new Validador());
+
+	public void sendEmail() {
+		String cid = "1234";
+		Email email = new Email();
+				email.setSubject("Account Verification");
+				email.setFrom("from@email.com");
+				email.addTo("to@email.com");
+				// adds attachment
+				
+				email.setBodyText("A text message");
+				email.setBodyHtml(
+						"<html><body><p>An <b>html</b> message with cid <img src=\"cid:"
+								+ cid + "\"></p></body></html>");
+		mailerClient.send(email);
+	}
 
 	public Result newUser() {
 		Form<User> userForm = formFactory.form(User.class).bindFromRequest();
@@ -47,6 +67,7 @@ public class HomeController extends Controller {
 					User.create(userForm.get());
 					flash("success",
 							"You've have succesfully created an account");
+					sendEmail();
 					return ok(views.html.login.render(formFactory
 							.form(Login.class)));
 				}
