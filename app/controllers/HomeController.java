@@ -37,18 +37,13 @@ public class HomeController extends Controller {
 	FormFactory formFactory = new FormFactory(msgApi, new Formatters(msgApi),
 			new Validador());
 
-	public void sendEmail() {
+	public void sendEmail(String emailadress) {
 		String cid = "1234";
 		Email email = new Email();
 				email.setSubject("Account Verification");
 				email.setFrom("from@email.com");
-				email.addTo("to@email.com");
-				// adds attachment
-				
-				email.setBodyText("A text message");
-				email.setBodyHtml(
-						"<html><body><p>An <b>html</b> message with cid <img src=\"cid:"
-								+ cid + "\"></p></body></html>");
+				email.addTo(emailadress);
+				email.setBodyText("Click to this link to verify your account:https://www.google.com.tr/");
 		mailerClient.send(email);
 	}
 
@@ -60,14 +55,12 @@ public class HomeController extends Controller {
 			if (User.find.byId(userForm.get().email) == null) {
 				String pass = userForm.get().password;
 				if (passwordChecker(pass)) {
-					// flash("failure",
-					// "Your password must contain atleast 6 characters!");
 					return badRequest(views.html.main.render(userForm));
 				} else {
 					User.create(userForm.get());
 					flash("success",
 							"You've have succesfully created an account");
-					sendEmail();
+					sendEmail(userForm.get().email);
 					return ok(views.html.login.render(formFactory
 							.form(Login.class)));
 				}
