@@ -71,11 +71,38 @@ public class HomeController extends Controller {
 			}
 		}
 	}
+	
 
+	public Result addUser(String id) {
+		Form<User> userForm = formFactory.form(User.class).bindFromRequest();
+		if (userForm.hasErrors()) {
+			return badRequest(views.html.home.render(User.find.all(),
+					User.find.byId(id),userForm));
+		} else {
+			if (User.find.byId(userForm.get().email) == null) {
+				String pass = userForm.get().password;
+				if (passwordChecker(pass)) {
+					return badRequest(views.html.home.render(User.find.all(),
+							User.find.byId(id),userForm));
+				} else {
+					User.create(userForm.get());
+					flash("success",
+							"You've have succesfully created an account");
+					// sendEmail(userForm.get().email);
+					return redirect(routes.HomeController.home());
+				}
+			} else {
+				flash("failure", "Account already exists");
+				return badRequest(views.html.home.render(User.find.all(),
+						User.find.byId(id),userForm));
+			}
+		}
+	}
 	@Security.Authenticated(Secured.class)
 	public Result home() {
+		Form<User> userForm = formFactory.form(User.class).bindFromRequest();
 		return ok(home.render(User.find.all(),
-				User.find.byId(request().username())));
+				User.find.byId(request().username()),userForm));
 	}
 	public  Result deleteUser(String id) {
 		  User.deleteUser(id);

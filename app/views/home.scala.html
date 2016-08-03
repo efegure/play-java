@@ -1,4 +1,4 @@
-@(userList: List[User],mainuser : User)
+@(userList: List[User],mainuser : User, userForm : Form[User])
 @import helper._
 <h2>Welcome @mainuser.name!</h2>
 
@@ -14,8 +14,26 @@
   <li>Name : @user.name - Admin Status : @user.getAdminStatus()-Password : @user.password</li>@if(mainuser.email!=user.email) {@form(routes.HomeController.deleteUser(user.email)) {
                     <input type="submit" value="Delete">
                 }}
+                
 } 
+<h2>Register a User:</h2>
 </ul>
+
+    @form(routes.HomeController.addUser(mainuser.email)) {
+        
+        @inputText(userForm("email")) 
+        @inputText(userForm("name"))
+        @inputPassword(userForm("password"))  
+        
+        <input type="submit" value="Create">
+        
+    }
+    
+     @if(flash.contains("failure")) {
+    <p class="failure">
+        @flash.get("failure")
+    </p>
+}
 }
 
 <a href="@routes.HomeController.logout()">Logout</a>
