@@ -47,6 +47,10 @@ public class User extends Model {
 		user.save();
 	}
 
+	public static void deleteUser(String id) {
+		  find.ref(id).delete();
+		}
+	
 	private void setAsAdmin() {
 		this.isAdmin = true;
 	}

@@ -1,5 +1,5 @@
 @(userList: List[User],mainuser : User)
-
+@import helper._
 <h2>Welcome @mainuser.name!</h2>
 
 
@@ -11,7 +11,9 @@
  <h1>@userList.size() users(s)</h1>
 <ul>
 @for(user <- userList) {
-  <li>Name : @user.name - Admin Status : @user.getAdminStatus()-Password : @user.password</li>
+  <li>Name : @user.name - Admin Status : @user.getAdminStatus()-Password : @user.password</li>@if(mainuser.email!=user.email) {@form(routes.HomeController.deleteUser(user.email)) {
+                    <input type="submit" value="Delete">
+                }}
 } 
 </ul>
 }

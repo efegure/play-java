@@ -17,3 +17,4 @@ GET     /home                               controllers.HomeController.home
 GET     /logout                             controllers.HomeController.logout
 
 
+POST    /home/:id/delete       				controllers.HomeController.deleteUser(id: String)

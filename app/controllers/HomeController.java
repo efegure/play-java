@@ -77,7 +77,10 @@ public class HomeController extends Controller {
 		return ok(home.render(User.find.all(),
 				User.find.byId(request().username())));
 	}
-
+	public  Result deleteUser(String id) {
+		  User.deleteUser(id);
+		  return redirect(routes.HomeController.home());
+		}
 	public Result main() {
 		return ok(main.render(formFactory.form(User.class)));
 	}
