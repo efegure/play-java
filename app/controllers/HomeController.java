@@ -16,6 +16,7 @@ import play.mvc.*;
 import views.html.*;
 import play.libs.mailer.Email;
 import play.libs.mailer.MailerClient;
+import utility.Password;
 
 /**
  * This controller contains an action to handle HTTP requests to the
@@ -40,10 +41,10 @@ public class HomeController extends Controller {
 	public void sendEmail(String emailadress) {
 		String cid = "1234";
 		Email email = new Email();
-				email.setSubject("Account Verification");
-				email.setFrom("from@email.com");
-				email.addTo(emailadress);
-				email.setBodyText("Click to this link to verify your account:https://www.google.com.tr/");
+		email.setSubject("Account Verification");
+		email.setFrom("from@email.com");
+		email.addTo(emailadress);
+		email.setBodyText("Click to this link to verify your account:https://www.google.com.tr/");
 		mailerClient.send(email);
 	}
 
@@ -60,7 +61,7 @@ public class HomeController extends Controller {
 					User.create(userForm.get());
 					flash("success",
 							"You've have succesfully created an account");
-					sendEmail(userForm.get().email);
+					// sendEmail(userForm.get().email);
 					return ok(views.html.login.render(formFactory
 							.form(Login.class)));
 				}

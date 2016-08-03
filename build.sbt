@@ -14,7 +14,8 @@ libraryDependencies ++= Seq(
   cache,
   javaWs,
   "org.postgresql" % "postgresql" % "9.3-1102-jdbc4",
-  "com.typesafe.play" %% "play-mailer" % "5.0.0"
+  "com.typesafe.play" %% "play-mailer" % "5.0.0",
+  "org.mindrot" % "jbcrypt" % "0.3m"
 )
 
 fork in run := true

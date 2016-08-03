@@ -1,5 +1,5 @@
-New log file opened at Sat Jul 30 20:45:48 EEST 2016 by 2468@efeg
-jvm 2468@efeg
+New log file opened at Wed Aug 03 19:05:18 EEST 2016 by 3068@efeg
+jvm 3068@efeg
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.91-b15
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\efe\git\play-java\project, returning: (play-java-build)
 Loading project definition from C:\Users\efe\git\play-java\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@3f1ec7e1, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@c709f38, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -78,7 +78,7 @@ Set current project to play-java (in build file:/C:/Users/efe/git/play-java/)
 > server-handle-next-server-request
 > {file:/C:/Users/efe/git/play-java/}myProject/compile:discoveredMainClasses
 Evaluating tasks: myProject/compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@6aad4e47, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@44b1c45f, check cycles: false
 Read from stdout: Updating {file:/C:/Users/efe/git/play-java/}myProject...
 Updating {file:/C:/Users/efe/git/play-java/}myProject...
 Other repositories:
@@ -93,7 +93,7 @@ resolving dependencies for configuration 'compile'
 == resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
 Read from stdout: Resolving org.scala-lang#scala-library;2.11.7 ...
 Resolving org.scala-lang#scala-library;2.11.7 ...
-sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1ef89137
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@63933dd1
 sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7
 	found org.scala-lang#scala-library;2.11.7 in sbt-chain
 	[2.11.7] org.scala-lang#scala-library;2.11.7
@@ -2086,28 +2086,8 @@ sbt-chain: module revision found in cache: org.postgresql#postgresql;9.3-1102-jd
 Read from stdout: Resolving com.typesafe.play#play-mailer_2.11;5.0.0 ...
 Resolving com.typesafe.play#play-mailer_2.11;5.0.0 ...
 sbt-chain: Checking cache for: dependency: com.typesafe.play#play-mailer_2.11;5.0.0 {compile=[default(compile)]}
-Read from stdout: Resolving com.typesafe.play#play-mailer_2.11;5.0.0 ...
-Resolving com.typesafe.play#play-mailer_2.11;5.0.0 ...
-sbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#play-mailer_2.11;5.0.0 {compile=[default(compile)]}
-		tried C:\Users\efe\.ivy2\local\com.typesafe.play\play-mailer_2.11\5.0.0\ivys\ivy.xml
-	local: no ivy file found for com.typesafe.play#play-mailer_2.11;5.0.0
-		tried C:\activator-dist-1.3.10\repository\com.typesafe.play\play-mailer_2.11\5.0.0\ivys\ivy.xml
-	activator-local: no ivy file found for com.typesafe.play#play-mailer_2.11;5.0.0
-		tried C:\Users\efe\.activator\repository\com.typesafe.play\play-mailer_2.11\5.0.0\ivys\ivy.xml
-	activator-launcher-local: no ivy file found for com.typesafe.play#play-mailer_2.11;5.0.0
-		tried https://repo1.maven.org/maven2/com/typesafe/play/play-mailer_2.11/5.0.0/play-mailer_2.11-5.0.0.pom
-	public: found md file for com.typesafe.play#play-mailer_2.11;5.0.0
-		=> https://repo1.maven.org/maven2/com/typesafe/play/play-mailer_2.11/5.0.0/play-mailer_2.11-5.0.0.pom (5.0.0)
-downloading https://repo1.maven.org/maven2/com/typesafe/play/play-mailer_2.11/5.0.0/play-mailer_2.11-5.0.0.pom ...
-	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-mailer_2.11/5.0.0/play-mailer_2.11-5.0.0.pom
-	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-mailer_2.11/5.0.0/play-mailer_2.11-5.0.0.pom.sha1
-sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-mailer_2.11/5.0.0/play-mailer_2.11-5.0.0.pom
-	[SUCCESSFUL ] com.typesafe.play#play-mailer_2.11;5.0.0!play-mailer_2.11.pom(pom.original) (975ms)
-		tried C:\Users\efe\.ivy2\local\com.typesafe.play\play-mailer_2.11\5.0.0\jars\play-mailer_2.11.jar
-		tried C:\activator-dist-1.3.10\repository\com.typesafe.play\play-mailer_2.11\5.0.0\jars\play-mailer_2.11.jar
-		tried C:\Users\efe\.activator\repository\com.typesafe.play\play-mailer_2.11\5.0.0\jars\play-mailer_2.11.jar
-		tried https://repo1.maven.org/maven2/com/typesafe/play/play-mailer_2.11/5.0.0/play-mailer_2.11-5.0.0.jar
-	found com.typesafe.play#play-mailer_2.11;5.0.0 in public
+sbt-chain: module revision found in cache: com.typesafe.play#play-mailer_2.11;5.0.0
+	found com.typesafe.play#play-mailer_2.11;5.0.0 in sbt-chain
 == resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-mailer_2.11;5.0.0 [compile->runtime]
 == resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-mailer_2.11;5.0.0 [compile->compile]
 == resolving dependencies com.typesafe.play#play-mailer_2.11;5.0.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
@@ -2116,171 +2096,15 @@ sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-mailer_2.11/5.
 Read from stdout: Resolving org.apache.commons#commons-email;1.4 ...
 Resolving org.apache.commons#commons-email;1.4 ...
 sbt-chain: Checking cache for: dependency: org.apache.commons#commons-email;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-Read from stdout: Resolving org.apache.commons#commons-email;1.4 ...
-Resolving org.apache.commons#commons-email;1.4 ...
-sbt-chain-delegate: Checking cache for: dependency: org.apache.commons#commons-email;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-		tried C:\Users\efe\.ivy2\local\org.apache.commons\commons-email\1.4\ivys\ivy.xml
-	local: no ivy file found for org.apache.commons#commons-email;1.4
-		tried C:\activator-dist-1.3.10\repository\org.apache.commons\commons-email\1.4\ivys\ivy.xml
-	activator-local: no ivy file found for org.apache.commons#commons-email;1.4
-		tried C:\Users\efe\.activator\repository\org.apache.commons\commons-email\1.4\ivys\ivy.xml
-	activator-launcher-local: no ivy file found for org.apache.commons#commons-email;1.4
-		tried https://repo1.maven.org/maven2/org/apache/commons/commons-email/1.4/commons-email-1.4.pom
-	public: found md file for org.apache.commons#commons-email;1.4
-		=> https://repo1.maven.org/maven2/org/apache/commons/commons-email/1.4/commons-email-1.4.pom (1.4)
-downloading https://repo1.maven.org/maven2/org/apache/commons/commons-email/1.4/commons-email-1.4.pom ...
-	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-email/1.4/commons-email-1.4.pom
-	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-email/1.4/commons-email-1.4.pom.sha1
-sha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-email/1.4/commons-email-1.4.pom
-	[SUCCESSFUL ] org.apache.commons#commons-email;1.4!commons-email.pom(pom.original) (974ms)
-Read from stdout: Resolving org.apache.commons#commons-parent;37 ...
-Resolving org.apache.commons#commons-parent;37 ...
-sbt-chain: Checking cache for: dependency: org.apache.commons#commons-parent;37 {}
-Read from stdout: Resolving org.apache.commons#commons-parent;37 ...
-Resolving org.apache.commons#commons-parent;37 ...
-sbt-chain-delegate: Checking cache for: dependency: org.apache.commons#commons-parent;37 {}
-		tried C:\Users\efe\.ivy2\local\org.apache.commons\commons-parent\37\ivys\ivy.xml
-	local: no ivy file found for org.apache.commons#commons-parent;37
-		tried C:\activator-dist-1.3.10\repository\org.apache.commons\commons-parent\37\ivys\ivy.xml
-	activator-local: no ivy file found for org.apache.commons#commons-parent;37
-		tried C:\Users\efe\.activator\repository\org.apache.commons\commons-parent\37\ivys\ivy.xml
-	activator-launcher-local: no ivy file found for org.apache.commons#commons-parent;37
-		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.pom
-	public: found md file for org.apache.commons#commons-parent;37
-		=> https://repo1.maven.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.pom (37)
-downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.pom ...
-	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.pom
-	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.pom.sha1
-sha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.pom
-	[SUCCESSFUL ] org.apache.commons#commons-parent;37!commons-parent.pom(pom.original) (1040ms)
-Read from stdout: Resolving org.apache#apache;16 ...
-Resolving org.apache#apache;16 ...
-sbt-chain: Checking cache for: dependency: org.apache#apache;16 {}
-Read from stdout: Resolving org.apache#apache;16 ...
-Resolving org.apache#apache;16 ...
-sbt-chain-delegate: Checking cache for: dependency: org.apache#apache;16 {}
-		tried C:\Users\efe\.ivy2\local\org.apache\apache\16\ivys\ivy.xml
-	local: no ivy file found for org.apache#apache;16
-		tried C:\activator-dist-1.3.10\repository\org.apache\apache\16\ivys\ivy.xml
-	activator-local: no ivy file found for org.apache#apache;16
-		tried C:\Users\efe\.activator\repository\org.apache\apache\16\ivys\ivy.xml
-	activator-launcher-local: no ivy file found for org.apache#apache;16
-		tried https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom
-	public: found md file for org.apache#apache;16
-		=> https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom (16)
-downloading https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom ...
-	public: downloading https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom
-	public: downloading https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom.sha1
-sha1 OK for https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom
-	[SUCCESSFUL ] org.apache#apache;16!apache.pom(pom.original) (1263ms)
-		tried C:\Users\efe\.ivy2\local\org.apache\apache\16\jars\apache.jar
-		tried C:\activator-dist-1.3.10\repository\org.apache\apache\16\jars\apache.jar
-		tried C:\Users\efe\.activator\repository\org.apache\apache\16\jars\apache.jar
-		tried https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.jar
-CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.jar
-		tried http://repo.typesafe.com/typesafe/releases/org/apache/apache/16/apache-16.jar
-CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/apache/apache/16/apache-16.jar
-		tried http://repo.typesafe.com/typesafe/ivy-releases/org.apache/apache/16/jars/apache.jar
-CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.apache/apache/16/jars/apache.jar
-		tried C:\Users\efe\.ivy2\local\org.apache.commons\commons-parent\37\jars\commons-parent.jar
-		tried C:\activator-dist-1.3.10\repository\org.apache.commons\commons-parent\37\jars\commons-parent.jar
-		tried C:\Users\efe\.activator\repository\org.apache.commons\commons-parent\37\jars\commons-parent.jar
-		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.jar
-CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/commons/commons-parent/37/commons-parent-37.jar
-		tried http://repo.typesafe.com/typesafe/releases/org/apache/commons/commons-parent/37/commons-parent-37.jar
-CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/apache/commons/commons-parent/37/commons-parent-37.jar
-		tried http://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-parent/37/jars/commons-parent.jar
-CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.apache.commons/commons-parent/37/jars/commons-parent.jar
-		tried C:\Users\efe\.ivy2\local\org.apache.commons\commons-email\1.4\jars\commons-email.jar
-		tried C:\activator-dist-1.3.10\repository\org.apache.commons\commons-email\1.4\jars\commons-email.jar
-		tried C:\Users\efe\.activator\repository\org.apache.commons\commons-email\1.4\jars\commons-email.jar
-		tried https://repo1.maven.org/maven2/org/apache/commons/commons-email/1.4/commons-email-1.4.jar
-	found org.apache.commons#commons-email;1.4 in public
+sbt-chain: module revision found in cache: org.apache.commons#commons-email;1.4
+	found org.apache.commons#commons-email;1.4 in sbt-chain
 == resolving dependencies com.typesafe.play#play-mailer_2.11;5.0.0->org.apache.commons#commons-email;1.4 [compile->compile(*)]
 == resolving dependencies org.apache.commons#commons-email;1.4->com.sun.mail#javax.mail;1.5.2 [compile->master(compile)]
 Read from stdout: Resolving com.sun.mail#javax.mail;1.5.2 ...
 Resolving com.sun.mail#javax.mail;1.5.2 ...
 sbt-chain: Checking cache for: dependency: com.sun.mail#javax.mail;1.5.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-Read from stdout: Resolving com.sun.mail#javax.mail;1.5.2 ...
-Resolving com.sun.mail#javax.mail;1.5.2 ...
-sbt-chain-delegate: Checking cache for: dependency: com.sun.mail#javax.mail;1.5.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-		tried C:\Users\efe\.ivy2\local\com.sun.mail\javax.mail\1.5.2\ivys\ivy.xml
-	local: no ivy file found for com.sun.mail#javax.mail;1.5.2
-		tried C:\activator-dist-1.3.10\repository\com.sun.mail\javax.mail\1.5.2\ivys\ivy.xml
-	activator-local: no ivy file found for com.sun.mail#javax.mail;1.5.2
-		tried C:\Users\efe\.activator\repository\com.sun.mail\javax.mail\1.5.2\ivys\ivy.xml
-	activator-launcher-local: no ivy file found for com.sun.mail#javax.mail;1.5.2
-		tried https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.pom
-	public: found md file for com.sun.mail#javax.mail;1.5.2
-		=> https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.pom (1.5.2)
-downloading https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.pom ...
-	public: downloading https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.pom
-	public: downloading https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.pom.sha1
-sha1 OK for https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.pom
-	[SUCCESSFUL ] com.sun.mail#javax.mail;1.5.2!javax.mail.pom(pom.original) (1290ms)
-Read from stdout: Resolving com.sun.mail#all;1.5.2 ...
-Resolving com.sun.mail#all;1.5.2 ...
-sbt-chain: Checking cache for: dependency: com.sun.mail#all;1.5.2 {}
-Read from stdout: Resolving com.sun.mail#all;1.5.2 ...
-Resolving com.sun.mail#all;1.5.2 ...
-sbt-chain-delegate: Checking cache for: dependency: com.sun.mail#all;1.5.2 {}
-		tried C:\Users\efe\.ivy2\local\com.sun.mail\all\1.5.2\ivys\ivy.xml
-	local: no ivy file found for com.sun.mail#all;1.5.2
-		tried C:\activator-dist-1.3.10\repository\com.sun.mail\all\1.5.2\ivys\ivy.xml
-	activator-local: no ivy file found for com.sun.mail#all;1.5.2
-		tried C:\Users\efe\.activator\repository\com.sun.mail\all\1.5.2\ivys\ivy.xml
-	activator-launcher-local: no ivy file found for com.sun.mail#all;1.5.2
-		tried https://repo1.maven.org/maven2/com/sun/mail/all/1.5.2/all-1.5.2.pom
-	public: found md file for com.sun.mail#all;1.5.2
-		=> https://repo1.maven.org/maven2/com/sun/mail/all/1.5.2/all-1.5.2.pom (1.5.2)
-downloading https://repo1.maven.org/maven2/com/sun/mail/all/1.5.2/all-1.5.2.pom ...
-	public: downloading https://repo1.maven.org/maven2/com/sun/mail/all/1.5.2/all-1.5.2.pom
-	public: downloading https://repo1.maven.org/maven2/com/sun/mail/all/1.5.2/all-1.5.2.pom.sha1
-sha1 OK for https://repo1.maven.org/maven2/com/sun/mail/all/1.5.2/all-1.5.2.pom
-	[SUCCESSFUL ] com.sun.mail#all;1.5.2!all.pom(pom.original) (1317ms)
-Read from stdout: Resolving net.java#jvnet-parent;1 ...
-Resolving net.java#jvnet-parent;1 ...
-sbt-chain: Checking cache for: dependency: net.java#jvnet-parent;1 {}
-Read from stdout: Resolving net.java#jvnet-parent;1 ...
-Resolving net.java#jvnet-parent;1 ...
-sbt-chain-delegate: Checking cache for: dependency: net.java#jvnet-parent;1 {}
-		tried C:\Users\efe\.ivy2\local\net.java\jvnet-parent\1\ivys\ivy.xml
-	local: no ivy file found for net.java#jvnet-parent;1
-		tried C:\activator-dist-1.3.10\repository\net.java\jvnet-parent\1\ivys\ivy.xml
-	activator-local: no ivy file found for net.java#jvnet-parent;1
-		tried C:\Users\efe\.activator\repository\net.java\jvnet-parent\1\ivys\ivy.xml
-	activator-launcher-local: no ivy file found for net.java#jvnet-parent;1
-		tried https://repo1.maven.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom
-	public: found md file for net.java#jvnet-parent;1
-		=> https://repo1.maven.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom (1)
-downloading https://repo1.maven.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom ...
-	public: downloading https://repo1.maven.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom
-	public: downloading https://repo1.maven.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom.sha1
-sha1 OK for https://repo1.maven.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom
-	[SUCCESSFUL ] net.java#jvnet-parent;1!jvnet-parent.pom(pom.original) (1177ms)
-		tried C:\Users\efe\.ivy2\local\net.java\jvnet-parent\1\jars\jvnet-parent.jar
-		tried C:\activator-dist-1.3.10\repository\net.java\jvnet-parent\1\jars\jvnet-parent.jar
-		tried C:\Users\efe\.activator\repository\net.java\jvnet-parent\1\jars\jvnet-parent.jar
-		tried https://repo1.maven.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.jar
-CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.jar
-		tried http://repo.typesafe.com/typesafe/releases/net/java/jvnet-parent/1/jvnet-parent-1.jar
-CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/net/java/jvnet-parent/1/jvnet-parent-1.jar
-		tried http://repo.typesafe.com/typesafe/ivy-releases/net.java/jvnet-parent/1/jars/jvnet-parent.jar
-CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/net.java/jvnet-parent/1/jars/jvnet-parent.jar
-		tried C:\Users\efe\.ivy2\local\com.sun.mail\all\1.5.2\jars\all.jar
-		tried C:\activator-dist-1.3.10\repository\com.sun.mail\all\1.5.2\jars\all.jar
-		tried C:\Users\efe\.activator\repository\com.sun.mail\all\1.5.2\jars\all.jar
-		tried https://repo1.maven.org/maven2/com/sun/mail/all/1.5.2/all-1.5.2.jar
-CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/sun/mail/all/1.5.2/all-1.5.2.jar
-		tried http://repo.typesafe.com/typesafe/releases/com/sun/mail/all/1.5.2/all-1.5.2.jar
-CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/com/sun/mail/all/1.5.2/all-1.5.2.jar
-		tried http://repo.typesafe.com/typesafe/ivy-releases/com.sun.mail/all/1.5.2/jars/all.jar
-CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/com.sun.mail/all/1.5.2/jars/all.jar
-		tried C:\Users\efe\.ivy2\local\com.sun.mail\javax.mail\1.5.2\jars\javax.mail.jar
-		tried C:\activator-dist-1.3.10\repository\com.sun.mail\javax.mail\1.5.2\jars\javax.mail.jar
-		tried C:\Users\efe\.activator\repository\com.sun.mail\javax.mail\1.5.2\jars\javax.mail.jar
-		tried https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.jar
-	found com.sun.mail#javax.mail;1.5.2 in public
+sbt-chain: module revision found in cache: com.sun.mail#javax.mail;1.5.2
+	found com.sun.mail#javax.mail;1.5.2 in sbt-chain
 == resolving dependencies org.apache.commons#commons-email;1.4->com.sun.mail#javax.mail;1.5.2 [compile->compile(*)]
 == resolving dependencies com.sun.mail#javax.mail;1.5.2->javax.activation#activation;1.1 [compile->master(compile)]
 == resolving dependencies com.sun.mail#javax.mail;1.5.2->javax.activation#activation;1.1 [compile->compile(*)]
@@ -2288,28 +2112,8 @@ CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/com.s
 Read from stdout: Resolving javax.activation#activation;1.1.1 ...
 Resolving javax.activation#activation;1.1.1 ...
 sbt-chain: Checking cache for: dependency: javax.activation#activation;1.1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-Read from stdout: Resolving javax.activation#activation;1.1.1 ...
-Resolving javax.activation#activation;1.1.1 ...
-sbt-chain-delegate: Checking cache for: dependency: javax.activation#activation;1.1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-		tried C:\Users\efe\.ivy2\local\javax.activation\activation\1.1.1\ivys\ivy.xml
-	local: no ivy file found for javax.activation#activation;1.1.1
-		tried C:\activator-dist-1.3.10\repository\javax.activation\activation\1.1.1\ivys\ivy.xml
-	activator-local: no ivy file found for javax.activation#activation;1.1.1
-		tried C:\Users\efe\.activator\repository\javax.activation\activation\1.1.1\ivys\ivy.xml
-	activator-launcher-local: no ivy file found for javax.activation#activation;1.1.1
-		tried https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.pom
-	public: found md file for javax.activation#activation;1.1.1
-		=> https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.pom (1.1.1)
-downloading https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.pom ...
-	public: downloading https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.pom
-	public: downloading https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.pom.sha1
-sha1 OK for https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.pom
-	[SUCCESSFUL ] javax.activation#activation;1.1.1!activation.pom(pom.original) (781ms)
-		tried C:\Users\efe\.ivy2\local\javax.activation\activation\1.1.1\jars\activation.jar
-		tried C:\activator-dist-1.3.10\repository\javax.activation\activation\1.1.1\jars\activation.jar
-		tried C:\Users\efe\.activator\repository\javax.activation\activation\1.1.1\jars\activation.jar
-		tried https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar
-	found javax.activation#activation;1.1.1 in public
+sbt-chain: module revision found in cache: javax.activation#activation;1.1.1
+	found javax.activation#activation;1.1.1 in sbt-chain
 == resolving dependencies org.apache.commons#commons-email;1.4->javax.activation#activation;1.1.1 [compile->compile(*)]
 == resolving dependencies com.typesafe.play#play-mailer_2.11;5.0.0->org.apache.commons#commons-email;1.4 [compile->runtime(*)]
 == resolving dependencies com.typesafe.play#play-mailer_2.11;5.0.0->org.apache.commons#commons-email;1.4 [compile->compile]
@@ -2325,6 +2129,35 @@ sha1 OK for https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/act
 == resolving dependencies com.typesafe.play#play-mailer_2.11;5.0.0->org.apache.commons#commons-email;1.4 [runtime->runtime(*)]
 == resolving dependencies com.typesafe.play#play-mailer_2.11;5.0.0->org.apache.commons#commons-email;1.4 [runtime->compile]
 == resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-mailer_2.11;5.0.0 [compile->master]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->default(compile)]
+Read from stdout: Resolving org.mindrot#jbcrypt;0.3m ...
+Resolving org.mindrot#jbcrypt;0.3m ...
+sbt-chain: Checking cache for: dependency: org.mindrot#jbcrypt;0.3m {compile=[default(compile)]}
+Read from stdout: Resolving org.mindrot#jbcrypt;0.3m ...
+Resolving org.mindrot#jbcrypt;0.3m ...
+sbt-chain-delegate: Checking cache for: dependency: org.mindrot#jbcrypt;0.3m {compile=[default(compile)]}
+		tried C:\Users\efe\.ivy2\local\org.mindrot\jbcrypt\0.3m\ivys\ivy.xml
+	local: no ivy file found for org.mindrot#jbcrypt;0.3m
+		tried C:\activator-dist-1.3.10\repository\org.mindrot\jbcrypt\0.3m\ivys\ivy.xml
+	activator-local: no ivy file found for org.mindrot#jbcrypt;0.3m
+		tried C:\Users\efe\.activator\repository\org.mindrot\jbcrypt\0.3m\ivys\ivy.xml
+	activator-launcher-local: no ivy file found for org.mindrot#jbcrypt;0.3m
+		tried https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.pom
+	public: found md file for org.mindrot#jbcrypt;0.3m
+		=> https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.pom (0.3m)
+downloading https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.pom ...
+	public: downloading https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.pom
+	public: downloading https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.pom.sha1
+sha1 OK for https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.pom
+	[SUCCESSFUL ] org.mindrot#jbcrypt;0.3m!jbcrypt.pom(pom.original) (401ms)
+		tried C:\Users\efe\.ivy2\local\org.mindrot\jbcrypt\0.3m\jars\jbcrypt.jar
+		tried C:\activator-dist-1.3.10\repository\org.mindrot\jbcrypt\0.3m\jars\jbcrypt.jar
+		tried C:\Users\efe\.activator\repository\org.mindrot\jbcrypt\0.3m\jars\jbcrypt.jar
+		tried https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.jar
+	found org.mindrot#jbcrypt;0.3m in public
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->runtime]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->compile]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->master]
 resolving dependencies for configuration 'runtime'
 == resolving dependencies for play-java#play-java_2.11;1.0-SNAPSHOT [runtime]
 == resolving dependencies for play-java#play-java_2.11;1.0-SNAPSHOT [compile]
@@ -3351,6 +3184,10 @@ dependency descriptor has been mediated: dependency: com.typesafe.akka#akka-stre
 == resolving dependencies org.apache.commons#commons-email;1.4->javax.activation#activation;1.1.1 [runtime->runtime(*)]
 == resolving dependencies org.apache.commons#commons-email;1.4->javax.activation#activation;1.1.1 [runtime->compile]
 == resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-mailer_2.11;5.0.0 [compile->master]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->default(compile)]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->runtime]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->compile]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->master]
 resolving dependencies for configuration 'test'
 == resolving dependencies for play-java#play-java_2.11;1.0-SNAPSHOT [test]
 == resolving dependencies for play-java#play-java_2.11;1.0-SNAPSHOT [runtime]
@@ -4378,6 +4215,10 @@ dependency descriptor has been mediated: dependency: com.typesafe.akka#akka-stre
 == resolving dependencies org.apache.commons#commons-email;1.4->javax.activation#activation;1.1.1 [runtime->runtime(*)]
 == resolving dependencies org.apache.commons#commons-email;1.4->javax.activation#activation;1.1.1 [runtime->compile]
 == resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-mailer_2.11;5.0.0 [compile->master]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->default(compile)]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->runtime]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->compile]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->master]
 == resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.5.4 [test->default(compile)]
 Read from stdout: Resolving com.typesafe.play#play-test_2.11;2.5.4 ...
 Resolving com.typesafe.play#play-test_2.11;2.5.4 ...
@@ -5970,6 +5811,10 @@ dependency descriptor has been mediated: dependency: com.typesafe.akka#akka-stre
 == resolving dependencies org.apache.commons#commons-email;1.4->javax.activation#activation;1.1.1 [runtime->runtime(*)]
 == resolving dependencies org.apache.commons#commons-email;1.4->javax.activation#activation;1.1.1 [runtime->compile]
 == resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-mailer_2.11;5.0.0 [compile->master]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->default(compile)]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->runtime]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->compile]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->master]
 == resolving dependencies for play-java#play-java_2.11;1.0-SNAPSHOT [optional]
 == resolving dependencies for play-java#play-java_2.11;1.0-SNAPSHOT [provided]
 resolving dependencies for configuration 'runtime-internal'
@@ -6999,6 +6844,10 @@ dependency descriptor has been mediated: dependency: com.typesafe.akka#akka-stre
 == resolving dependencies org.apache.commons#commons-email;1.4->javax.activation#activation;1.1.1 [runtime->runtime(*)]
 == resolving dependencies org.apache.commons#commons-email;1.4->javax.activation#activation;1.1.1 [runtime->compile]
 == resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-mailer_2.11;5.0.0 [compile->master]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->default(compile)]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->runtime]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->compile]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->master]
 == resolving dependencies for play-java#play-java_2.11;1.0-SNAPSHOT [optional]
 resolving dependencies for configuration 'test-internal'
 == resolving dependencies for play-java#play-java_2.11;1.0-SNAPSHOT [test-internal]
@@ -8028,6 +7877,10 @@ dependency descriptor has been mediated: dependency: com.typesafe.akka#akka-stre
 == resolving dependencies org.apache.commons#commons-email;1.4->javax.activation#activation;1.1.1 [runtime->runtime(*)]
 == resolving dependencies org.apache.commons#commons-email;1.4->javax.activation#activation;1.1.1 [runtime->compile]
 == resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-mailer_2.11;5.0.0 [compile->master]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->default(compile)]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->runtime]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->compile]
+== resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->master]
 == resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.5.4 [test->default(compile)]
 == resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.5.4 [test->runtime]
 == resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.5.4 [test->compile]
@@ -9579,14 +9432,15 @@ all callers are evicted for commons-logging#commons-logging;1.1.1: evicting too
 	[NOT REQUIRED] com.typesafe.play#play-cache_2.11;2.5.4!play-cache_2.11.jar
 	[NOT REQUIRED] com.typesafe.play#play-java-ws_2.11;2.5.4!play-java-ws_2.11.jar
 	[NOT REQUIRED] org.postgresql#postgresql;9.3-1102-jdbc4!postgresql.jar
-		tried https://repo1.maven.org/maven2/com/typesafe/play/play-mailer_2.11/5.0.0/play-mailer_2.11-5.0.0.jar
-Read from stdout: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-mailer_2.11/5.0.0/play-mailer_2.11-5.0.0.jar ...
-downloading https://repo1.maven.org/maven2/com/typesafe/play/play-mailer_2.11/5.0.0/play-mailer_2.11-5.0.0.jar ...
-	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-mailer_2.11/5.0.0/play-mailer_2.11-5.0.0.jar
-	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-mailer_2.11/5.0.0/play-mailer_2.11-5.0.0.jar.sha1
-sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-mailer_2.11/5.0.0/play-mailer_2.11-5.0.0.jar
-Read from stdout: 	[SUCCESSFUL ] com.typesafe.play#play-mailer_2.11;5.0.0!play-mailer_2.11.jar (3210ms)
-	[SUCCESSFUL ] com.typesafe.play#play-mailer_2.11;5.0.0!play-mailer_2.11.jar (3210ms)
+	[NOT REQUIRED] com.typesafe.play#play-mailer_2.11;5.0.0!play-mailer_2.11.jar
+		tried https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.jar
+Read from stdout: downloading https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.jar ...
+downloading https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.jar ...
+	public: downloading https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.jar
+	public: downloading https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.jar.sha1
+sha1 OK for https://repo1.maven.org/maven2/org/mindrot/jbcrypt/0.3m/jbcrypt-0.3m.jar
+Read from stdout: 	[SUCCESSFUL ] org.mindrot#jbcrypt;0.3m!jbcrypt.jar (618ms)
+	[SUCCESSFUL ] org.mindrot#jbcrypt;0.3m!jbcrypt.jar (618ms)
 	[NOT REQUIRED] org.apache.commons#commons-lang3;3.4!commons-lang3.jar
 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(bundle)
 	[NOT REQUIRED] com.typesafe.play#play-jdbc-evolutions_2.11;2.5.0!play-jdbc-evolutions_2.11.jar
@@ -9678,30 +9532,9 @@ Read from stdout: 	[SUCCESSFUL ] com.typesafe.play#play-mailer_2.11;5.0.0!play-m
 	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.0.1!httpcore.jar
 	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.0.1!httpclient.jar
 	[NOT REQUIRED] commons-logging#commons-logging;1.1.1!commons-logging.jar
-		tried https://repo1.maven.org/maven2/org/apache/commons/commons-email/1.4/commons-email-1.4.jar
-Read from stdout: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-email/1.4/commons-email-1.4.jar ...
-downloading https://repo1.maven.org/maven2/org/apache/commons/commons-email/1.4/commons-email-1.4.jar ...
-	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-email/1.4/commons-email-1.4.jar
-	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-email/1.4/commons-email-1.4.jar.sha1
-sha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-email/1.4/commons-email-1.4.jar
-Read from stdout: 	[SUCCESSFUL ] org.apache.commons#commons-email;1.4!commons-email.jar (966ms)
-	[SUCCESSFUL ] org.apache.commons#commons-email;1.4!commons-email.jar (966ms)
-		tried https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.jar
-Read from stdout: downloading https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.jar ...
-downloading https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.jar ...
-	public: downloading https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.jar
-	public: downloading https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.jar.sha1
-sha1 OK for https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.jar
-Read from stdout: 	[SUCCESSFUL ] com.sun.mail#javax.mail;1.5.2!javax.mail.jar (2724ms)
-	[SUCCESSFUL ] com.sun.mail#javax.mail;1.5.2!javax.mail.jar (2724ms)
-		tried https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar
-Read from stdout: downloading https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar ...
-downloading https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar ...
-	public: downloading https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar
-	public: downloading https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar.sha1
-sha1 OK for https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar
-Read from stdout: 	[SUCCESSFUL ] javax.activation#activation;1.1.1!activation.jar (1028ms)
-	[SUCCESSFUL ] javax.activation#activation;1.1.1!activation.jar (1028ms)
+	[NOT REQUIRED] org.apache.commons#commons-email;1.4!commons-email.jar
+	[NOT REQUIRED] com.sun.mail#javax.mail;1.5.2!javax.mail.jar
+	[NOT REQUIRED] javax.activation#activation;1.1.1!activation.jar
 	[NOT REQUIRED] com.typesafe.play#play-test_2.11;2.5.4!play-test_2.11.jar
 	[NOT REQUIRED] junit#junit;4.12!junit.jar
 	[NOT REQUIRED] com.novocode#junit-interface;0.11!junit-interface.jar
@@ -9783,7 +9616,7 @@ Read from stdout: 	[SUCCESSFUL ] javax.activation#activation;1.1.1!activation.ja
 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
 	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)
-:: resolution report :: resolve 35534ms :: artifacts dl 8210ms
+:: resolution report :: resolve 18651ms :: artifacts dl 939ms
 	report for play-java#play-java_2.11;1.0-SNAPSHOT compile produced in C:\Users\efe\git\play-java\target\resolution-cache\reports\play-java-play-java_2.11-compile.xml
 	report for play-java#play-java_2.11;1.0-SNAPSHOT runtime produced in C:\Users\efe\git\play-java\target\resolution-cache\reports\play-java-play-java_2.11-runtime.xml
 	report for play-java#play-java_2.11;1.0-SNAPSHOT test produced in C:\Users\efe\git\play-java\target\resolution-cache\reports\play-java-play-java_2.11-test.xml
@@ -9798,37 +9631,271 @@ Read from stdout: 	[SUCCESSFUL ] javax.activation#activation;1.1.1!activation.ja
 	report for play-java#play-java_2.11;1.0-SNAPSHOT pom produced in C:\Users\efe\git\play-java\target\resolution-cache\reports\play-java-play-java_2.11-pom.xml
 	report for play-java#play-java_2.11;1.0-SNAPSHOT scala-tool produced in C:\Users\efe\git\play-java\target\resolution-cache\reports\play-java-play-java_2.11-scala-tool.xml
 	report for play-java#play-java_2.11;1.0-SNAPSHOT fork-run produced in C:\Users\efe\git\play-java\target\resolution-cache\reports\play-java-play-java_2.11-fork-run.xml
-	resolve done (35534ms resolve - 8210ms download)
+	resolve done (18651ms resolve - 939ms download)
 Read from stdout: Done updating.
 Done updating.
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
 
-Total time: 49 s, completed Jul 30, 2016 8:46:49 PM
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@3f115f81 directly...
+Read from stdout: C:\Users\efe\git\play-java\app\utility\Password.java:20: cannot find symbol
+Read from stdout: symbol:   variable BCrypt
+Read from stdout: location: class utility.Password
+C:\Users\efe\git\play-java\app\utility\Password.java:20: cannot find symbol
+  symbol:   variable BCrypt
+  location: class utility.Password
+Read from stdout: BCrypt
+BCrypt
+Read from stdout: C:\Users\efe\git\play-java\app\utility\Password.java:21: cannot find symbol
+Read from stdout: symbol:   variable BCrypt
+Read from stdout: location: class utility.Password
+C:\Users\efe\git\play-java\app\utility\Password.java:21: cannot find symbol
+  symbol:   variable BCrypt
+  location: class utility.Password
+Read from stdout: BCrypt
+BCrypt
+Read from stdout: C:\Users\efe\git\play-java\app\utility\Password.java:40: cannot find symbol
+Read from stdout: symbol:   variable BCrypt
+Read from stdout: location: class utility.Password
+C:\Users\efe\git\play-java\app\utility\Password.java:40: cannot find symbol
+  symbol:   variable BCrypt
+  location: class utility.Password
+Read from stdout: BCrypt
+BCrypt
+Read from stdout: (myProject/compile:compileIncremental) javac returned nonzero exit code
+(myProject/compile:compileIncremental) javac returned nonzero exit code
+Total time: 24 s, completed Aug 3, 2016 7:05:56 PM
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/efe/git/play-java/}myProject/compile:mainClass
 Evaluating tasks: myProject/compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@7743ce93, check cycles: false
-Total time: 0 s, completed Jul 30, 2016 8:46:49 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@606f0e18, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:05:56 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/efe/git/play-java/}myProject/compile:discoveredMainClasses
 Evaluating tasks: myProject/compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@7ec93cca, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@1ca7d80, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@1965023a directly...
+Read from stdout: C:\Users\efe\git\play-java\app\utility\Password.java:20: cannot find symbol
+Read from stdout: symbol:   variable BCrypt
+Read from stdout: location: class utility.Password
+C:\Users\efe\git\play-java\app\utility\Password.java:20: cannot find symbol
+  symbol:   variable BCrypt
+  location: class utility.Password
+Read from stdout: BCrypt
+BCrypt
+Read from stdout: C:\Users\efe\git\play-java\app\utility\Password.java:21: cannot find symbol
+Read from stdout: symbol:   variable BCrypt
+Read from stdout: location: class utility.Password
+C:\Users\efe\git\play-java\app\utility\Password.java:21: cannot find symbol
+  symbol:   variable BCrypt
+  location: class utility.Password
+Read from stdout: BCrypt
+BCrypt
+Read from stdout: C:\Users\efe\git\play-java\app\utility\Password.java:40: cannot find symbol
+Read from stdout: symbol:   variable BCrypt
+Read from stdout: location: class utility.Password
+C:\Users\efe\git\play-java\app\utility\Password.java:40: cannot find symbol
+  symbol:   variable BCrypt
+  location: class utility.Password
+Read from stdout: BCrypt
+BCrypt
+Read from stdout: (myProject/compile:compileIncremental) javac returned nonzero exit code
+(myProject/compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed Aug 3, 2016 7:05:57 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/compile:mainClass
+Evaluating tasks: myProject/compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@5cc2466, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:05:58 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@785266db, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@46291f4b directly...
+Read from stdout: C:\Users\efe\git\play-java\app\utility\Password.java:20: cannot find symbol
+Read from stdout: symbol:   variable BCrypt
+Read from stdout: location: class utility.Password
+C:\Users\efe\git\play-java\app\utility\Password.java:20: cannot find symbol
+  symbol:   variable BCrypt
+  location: class utility.Password
+Read from stdout: BCrypt
+BCrypt
+Read from stdout: C:\Users\efe\git\play-java\app\utility\Password.java:21: cannot find symbol
+Read from stdout: symbol:   variable BCrypt
+Read from stdout: location: class utility.Password
+C:\Users\efe\git\play-java\app\utility\Password.java:21: cannot find symbol
+  symbol:   variable BCrypt
+  location: class utility.Password
+Read from stdout: BCrypt
+BCrypt
+Read from stdout: C:\Users\efe\git\play-java\app\utility\Password.java:40: cannot find symbol
+Read from stdout: symbol:   variable BCrypt
+Read from stdout: location: class utility.Password
+C:\Users\efe\git\play-java\app\utility\Password.java:40: cannot find symbol
+  symbol:   variable BCrypt
+  location: class utility.Password
+Read from stdout: BCrypt
+BCrypt
+Read from stdout: (myProject/compile:compileIncremental) javac returned nonzero exit code
+(myProject/compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed Aug 3, 2016 7:06:03 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@68c9a1b0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@5be2cbd8 directly...
+Read from stdout: C:\Users\efe\git\play-java\app\utility\Password.java:20: cannot find symbol
+Read from stdout: symbol:   variable BCrypt
+Read from stdout: location: class utility.Password
+C:\Users\efe\git\play-java\app\utility\Password.java:20: cannot find symbol
+  symbol:   variable BCrypt
+  location: class utility.Password
+Read from stdout: BCrypt
+BCrypt
+Read from stdout: C:\Users\efe\git\play-java\app\utility\Password.java:21: cannot find symbol
+Read from stdout: symbol:   variable BCrypt
+Read from stdout: location: class utility.Password
+C:\Users\efe\git\play-java\app\utility\Password.java:21: cannot find symbol
+  symbol:   variable BCrypt
+  location: class utility.Password
+Read from stdout: BCrypt
+BCrypt
+Read from stdout: C:\Users\efe\git\play-java\app\utility\Password.java:40: cannot find symbol
+Read from stdout: symbol:   variable BCrypt
+Read from stdout: location: class utility.Password
+C:\Users\efe\git\play-java\app\utility\Password.java:40: cannot find symbol
+  symbol:   variable BCrypt
+  location: class utility.Password
+Read from stdout: BCrypt
+BCrypt
+Read from stdout: (myProject/compile:compileIncremental) javac returned nonzero exit code
+(myProject/compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed Aug 3, 2016 7:07:01 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7a12eb13, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@76b505b8 directly...
+Java compilation took 0.521594535 s
+Java analysis took 0.269383313 s
+Java compile + analysis took 0.815224205 s
+Invalidating C:\Users\efe\git\play-java\app\utility\Password.java...
+Invalidating (transitively) by inheritance from C:\Users\efe\git\play-java\app\utility\Password.java...
+Initial set of included nodes: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+The C:\Users\efe\git\play-java\app\utility\Password.java source file has the following regular definitions changed:
+	workload, hashPassword, main, checkPassword.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\efe\git\play-java\app\utility\Password.java
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 2 s, completed Aug 3, 2016 7:07:52 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1d2de1ee, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -9845,12 +9912,1555 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed Jul 30, 2016 8:46:50 PM
+Total time: 1 s, completed Aug 3, 2016 7:08:14 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/C:/Users/efe/git/play-java/}myProject/compile:mainClass
-Evaluating tasks: myProject/compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@736b58a5, check cycles: false
-Total time: 0 s, completed Jul 30, 2016 8:46:50 PM
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@513ede3c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Aug 3, 2016 7:08:15 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2be3eba0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Aug 3, 2016 7:08:29 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@13403d78, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7d3ee28b directly...
+Java compilation took 0.169904729 s
+Java analysis took 0.0324385 s
+Java compile + analysis took 0.214215367 s
+Invalidating C:\Users\efe\git\play-java\app\utility\Password.java...
+Invalidating (transitively) by inheritance from C:\Users\efe\git\play-java\app\utility\Password.java...
+Initial set of included nodes: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+The C:\Users\efe\git\play-java\app\utility\Password.java source file has the following regular definitions changed:
+	main.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\efe\git\play-java\app\utility\Password.java
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed Aug 3, 2016 7:09:29 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@63010df, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7a950753 directly...
+Java compilation took 0.172439756 s
+Java analysis took 0.04183637 s
+Java compile + analysis took 0.228094181 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed Aug 3, 2016 7:12:02 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@40036b50, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\models\User.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@3b1ec522 directly...
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+Java compilation took 0.332079572 s
+Java analysis took 0.121315538 s
+Java compile + analysis took 0.467151996 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed Aug 3, 2016 7:13:07 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@6d347f61, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:14:59 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@172997c3, check cycles: false
+Total time: 1 s, completed Aug 3, 2016 7:15:05 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@2c4ae701, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:15:08 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@53928ff1, check cycles: false
+SLF4J: The following set of substitute loggers may have been accessed
+SLF4J: during the initialization phase. Logging calls during this
+SLF4J: phase were not honored. However, subsequent logging calls to these
+SLF4J: loggers will work as normally expected.
+SLF4J: See also http://www.slf4j.org/codes.html#substituteLogger
+SLF4J: org.webjars.CloseQuietly
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\target\scala-2.11\twirl\main\views\html\home.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\target\scala-2.11\twirl\main\views\html\home.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\target\scala-2.11\twirl\main\views\html\home.template.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 1248878e, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jdk1.8.0_91\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_91\jre\classes;C:\activator-dist-1.3.10\repository\org.scala-lang\scala-library\2.11.7\jars\scala-library.jar
+	-classpath
+	C:\Users\efe\git\play-java\target\scala-2.11\classes;C:\activator-dist-1.3.10\repository\com.typesafe.play\play-enhancer\1.1.0\jars\play-enhancer.jar;C:\activator-dist-1.3.10\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;C:\activator-dist-1.3.10\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\efe\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-ebean_2.11\jars\play-ebean_2.11-3.0.0.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.5.4.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.5.4.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.5.4.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.5.4.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.5.4.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.5.4.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.5.4.jar;C:\Users\efe\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\activator-dist-1.3.10\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\efe\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.7.jar;C:\Users\efe\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.7.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.5.4.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.5.4.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.5.4.jar;C:\activator-dist-1.3.10\repository\joda-time\joda-time\2.9.2\jars\joda-time.jar;C:\activator-dist-1.3.10\repository\org.joda\joda-convert\1.8.1\jars\joda-convert.jar;C:\activator-dist-1.3.10\repository\org.scala-lang\scala-reflect\2.11.7\jars\scala-reflect.jar;C:\activator-dist-1.3.10\repository\com.fasterxml.jackson.core\jackson-core\2.7.1\bundles\jackson-core.jar;C:\activator-dist-1.3.10\repository\com.fasterxml.jackson.core\jackson-annotations\2.7.1\bundles\jackson-annotations.jar;C:\activator-dist-1.3.10\repository\com.fasterxml.jackson.core\jackson-databind\2.7.1\bundles\jackson-databind.jar;C:\activator-dist-1.3.10\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.7.1\bundles\jackson-datatype-jdk8.jar;C:\activator-dist-1.3.10\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.7.1\bundles\jackson-datatype-jsr310.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.5.4.jar;C:\Users\efe\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.19.jar;C:\Users\efe\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.19.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-streams_2.11\jars\play-streams_2.11-2.5.4.jar;C:\activator-dist-1.3.10\repository\org.reactivestreams\reactive-streams\1.0.0\jars\reactive-streams.jar;C:\Users\efe\.ivy2\cache\com.typesafe.akka\akka-stream_2.11\jars\akka-stream_2.11-2.4.4.jar;C:\Users\efe\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.4.4.jar;C:\activator-dist-1.3.10\repository\org.scala-lang.modules\scala-java8-compat_2.11\0.7.0\bundles\scala-java8-compat_2.11.jar;C:\Users\efe\.ivy2\cache\com.typesafe\ssl-config-akka_2.11\bundles\ssl-config-akka_2.11-0.2.1.jar;C:\Users\efe\.ivy2\cache\com.typesafe\ssl-config-core_2.11\bundles\ssl-config-core_2.11-0.2.1.jar;C:\Users\efe\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\efe\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.4.4.jar;C:\activator-dist-1.3.10\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\efe\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\efe\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\efe\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\activator-dist-1.3.10\repository\com.google.inject\guice\4.0\jars\guice.jar;C:\activator-dist-1.3.10\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;C:\activator-dist-1.3.10\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;C:\activator-dist-1.3.10\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;C:\activator-dist-1.3.10\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;C:\activator-dist-1.3.10\repository\com.zaxxer\HikariCP\2.4.3\bundles\HikariCP.jar;C:\activator-dist-1.3.10\repository\com.googlecode.usc\jdbcdslog\1.0.6.2\jars\jdbcdslog.jar;C:\activator-dist-1.3.10\repository\com.h2database\h2\1.4.191\jars\h2.jar;C:\activator-dist-1.3.10\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.5.4.jar;C:\activator-dist-1.3.10\repository\org.yaml\snakeyaml\1.16\bundles\snakeyaml.jar;C:\activator-dist-1.3.10\repository\org.hibernate\hibernate-validator\5.2.4.Final\jars\hibernate-validator.jar;C:\activator-dist-1.3.10\repository\javax.validation\validation-api\1.1.0.Final\jars\validation-api.jar;C:\activator-dist-1.3.10\repository\org.jboss.logging\jboss-logging\3.2.1.Final\jars\jboss-logging.jar;C:\activator-dist-1.3.10\repository\com.fasterxml\classmate\1.1.0\bundles\classmate.jar;C:\activator-dist-1.3.10\repository\javax.el\javax.el-api\3.0.0\jars\javax.el-api.jar;C:\activator-dist-1.3.10\repository\org.springframework\spring-context\4.2.4.RELEASE\jars\spring-context.jar;C:\activator-dist-1.3.10\repository\org.springframework\spring-core\4.2.4.RELEASE\jars\spring-core.jar;C:\activator-dist-1.3.10\repository\org.springframework\spring-beans\4.2.4.RELEASE\jars\spring-beans.jar;C:\activator-dist-1.3.10\repository\org.reflections\reflections\0.9.10\jars\reflections.jar;C:\activator-dist-1.3.10\repository\com.google.guava\guava\19.0\bundles\guava.jar;C:\activator-dist-1.3.10\repository\net.jodah\typetools\0.4.4\bundles\typetools.jar;C:\activator-dist-1.3.10\repository\com.google.code.findbugs\jsr305\3.0.1\jars\jsr305.jar;C:\Users\efe\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.33.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-jdbc-evolutions_2.11\jars\play-jdbc-evolutions_2.11-2.5.0.jar;C:\Users\efe\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-6.18.1.jar;C:\Users\efe\.ivy2\cache\org.jetbrains\annotations\jars\annotations-13.0.jar;C:\Users\efe\.ivy2\cache\javax.persistence\persistence-api\jars\persistence-api-1.0.jar;C:\Users\efe\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-4.9.1.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.5.4.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.5.4.jar;C:\Users\efe\.ivy2\cache\com.typesafe.netty\netty-reactive-streams-http\jars\netty-reactive-streams-http-1.0.6.jar;C:\Users\efe\.ivy2\cache\com.typesafe.netty\netty-reactive-streams\jars\netty-reactive-streams-1.0.6.jar;C:\activator-dist-1.3.10\repository\io.netty\netty-handler\4.0.36.Final\jars\netty-handler.jar;C:\activator-dist-1.3.10\repository\io.netty\netty-buffer\4.0.36.Final\jars\netty-buffer.jar;C:\activator-dist-1.3.10\repository\io.netty\netty-common\4.0.36.Final\jars\netty-common.jar;C:\activator-dist-1.3.10\repository\io.netty\netty-transport\4.0.36.Final\jars\netty-transport.jar;C:\activator-dist-1.3.10\repository\io.netty\netty-codec\4.0.36.Final\jars\netty-codec.jar;C:\activator-dist-1.3.10\repository\io.netty\netty-codec-http\4.0.36.Final\jars\netty-codec-http.jar;C:\activator-dist-1.3.10\repository\io.netty\netty-transport-native-epoll\4.0.36.Final\jars\netty-transport-native-epoll-linux-x86_64.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-logback_2.11\jars\play-logback_2.11-2.5.4.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.5.4.jar;C:\activator-dist-1.3.10\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.5.4.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.5.4.jar;C:\Users\efe\.ivy2\cache\org.asynchttpclient\async-http-client\jars\async-http-client-2.0.2.jar;C:\Users\efe\.ivy2\cache\org.asynchttpclient\netty-resolver-dns\jars\netty-resolver-dns-2.0.2.jar;C:\Users\efe\.ivy2\cache\org.asynchttpclient\netty-resolver\jars\netty-resolver-2.0.2.jar;C:\activator-dist-1.3.10\repository\org.slf4j\slf4j-api\1.7.21\jars\slf4j-api.jar;C:\Users\efe\.ivy2\cache\org.asynchttpclient\netty-codec-dns\jars\netty-codec-dns-2.0.2.jar;C:\activator-dist-1.3.10\repository\org.javassist\javassist\3.20.0-GA\bundles\javassist.jar;C:\Users\efe\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\efe\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\activator-dist-1.3.10\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;C:\activator-dist-1.3.10\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\efe\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\efe\.ivy2\cache\org.postgresql\postgresql\jars\postgresql-9.3-1102-jdbc4.jar;C:\Users\efe\.ivy2\cache\com.typesafe.play\play-mailer_2.11\jars\play-mailer_2.11-5.0.0.jar;C:\Users\efe\.ivy2\cache\org.apache.commons\commons-email\jars\commons-email-1.4.jar;C:\Users\efe\.ivy2\cache\com.sun.mail\javax.mail\jars\javax.mail-1.5.2.jar;C:\Users\efe\.ivy2\cache\javax.activation\activation\jars\activation-1.1.1.jar;C:\Users\efe\.ivy2\cache\org.mindrot\jbcrypt\jars\jbcrypt-0.3m.jar
+Scala compilation took 18.289592922 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(C:\Users\efe\git\play-java\conf\application.conf,C:\Users\efe\git\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\efe\git\play-java\conf\evolutions,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\efe\git\play-java\conf\logback.xml,C:\Users\efe\git\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\efe\git\play-java\conf\routes,C:\Users\efe\git\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\efe\git\play-java\conf\evolutions\default,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default)
+Total time: 29 s, completed Aug 3, 2016 7:16:30 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@686177af, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\efe\git\play-java\conf\application.conf,C:\Users\efe\git\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\efe\git\play-java\conf\evolutions,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\efe\git\play-java\conf\logback.xml,C:\Users\efe\git\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\efe\git\play-java\conf\routes,C:\Users\efe\git\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\efe\git\play-java\conf\evolutions\default,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\efe\git\play-java\conf\evolutions\default\1.sql,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 2 s, completed Aug 3, 2016 7:16:37 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4d02c4b0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\efe\git\play-java\conf\application.conf,C:\Users\efe\git\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\efe\git\play-java\conf\evolutions,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\efe\git\play-java\conf\logback.xml,C:\Users\efe\git\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\efe\git\play-java\conf\routes,C:\Users\efe\git\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\efe\git\play-java\conf\evolutions\default,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\efe\git\play-java\conf\evolutions\default\1.sql,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 2 s, completed Aug 3, 2016 7:16:42 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@64d99b85, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\controllers\HomeController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\controllers\HomeController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@1c6377de directly...
+Java compilation took 0.804627585 s
+Java analysis took 0.183825006 s
+Java compile + analysis took 1.005217436 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 2 s, completed Aug 3, 2016 7:17:25 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3da8ae0d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\efe\git\play-java\conf\application.conf,C:\Users\efe\git\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\efe\git\play-java\conf\evolutions,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\efe\git\play-java\conf\logback.xml,C:\Users\efe\git\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\efe\git\play-java\conf\routes,C:\Users\efe\git\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\efe\git\play-java\conf\evolutions\default,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\efe\git\play-java\conf\evolutions\default\1.sql,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 2 s, completed Aug 3, 2016 7:17:28 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 1
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@52025326, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:17:55 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1a51d546, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\models\User.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@358fb20f directly...
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+Java compilation took 0.200316027 s
+Java analysis took 0.198533092 s
+Java compile + analysis took 0.414966146 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed Aug 3, 2016 7:19:44 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@513c23bb, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\controllers\HomeController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\controllers\HomeController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@462c193 directly...
+Java compilation took 0.486562712 s
+Java analysis took 0.101124402 s
+Java compile + analysis took 0.600984206 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed Aug 3, 2016 7:19:50 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@21c34f99, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\models\User.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@14696b78 directly...
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+Java compilation took 0.149414316 s
+Java analysis took 0.094446709 s
+Java compile + analysis took 0.254637868 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed Aug 3, 2016 7:20:33 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1df05eac, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\models\User.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@4a7c0c30 directly...
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java:42: ';' expected
+C:\Users\efe\git\play-java\app\models\User.java:42: ';' expected
+Read from stdout: (myProject/compile:compileIncremental) javac returned nonzero exit code
+(myProject/compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed Aug 3, 2016 7:21:22 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@219f37bf, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\models\User.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@36a14b56 directly...
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java:42: ';' expected
+C:\Users\efe\git\play-java\app\models\User.java:42: ';' expected
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java:43: ';' expected
+C:\Users\efe\git\play-java\app\models\User.java:43: ';' expected
+Read from stdout: (myProject/compile:compileIncremental) javac returned nonzero exit code
+(myProject/compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed Aug 3, 2016 7:21:44 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@52c7fba2, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\models\User.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@4b7a0695 directly...
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+Java compilation took 0.236726001 s
+Java analysis took 0.083134123 s
+Java compile + analysis took 0.337375009 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed Aug 3, 2016 7:21:54 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3938311a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Aug 3, 2016 7:22:18 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@2083aa3b, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:22:22 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@6f5de1b1, check cycles: false
+Total time: 1 s, completed Aug 3, 2016 7:22:26 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@2fd981e2, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:22:28 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3dcfc3eb, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\efe\git\play-java\conf\application.conf,C:\Users\efe\git\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\efe\git\play-java\conf\evolutions,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\efe\git\play-java\conf\logback.xml,C:\Users\efe\git\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\efe\git\play-java\conf\routes,C:\Users\efe\git\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\efe\git\play-java\conf\evolutions\default,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\efe\git\play-java\conf\evolutions\default\1.sql,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 2 s, completed Aug 3, 2016 7:22:46 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1d8e0702, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\efe\git\play-java\conf\application.conf,C:\Users\efe\git\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\efe\git\play-java\conf\evolutions,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\efe\git\play-java\conf\logback.xml,C:\Users\efe\git\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\efe\git\play-java\conf\routes,C:\Users\efe\git\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\efe\git\play-java\conf\evolutions\default,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\efe\git\play-java\conf\evolutions\default\1.sql,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed Aug 3, 2016 7:22:52 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 2
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@5abd2924, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:23:30 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 2
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@3a97060e, check cycles: false
+Exception in thread "sbt-bg-threads-2" java.lang.Error: java.lang.InterruptedException: sleep interrupted
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at play.sbt.forkrun.PlayForkProcess$.timedWaitFor(PlayForkProcess.scala:80)
+	at play.sbt.forkrun.PlayForkProcess$.play$sbt$forkrun$PlayForkProcess$$stop$1(PlayForkProcess.scala:54)
+	at play.sbt.forkrun.PlayForkProcess$.run(PlayForkProcess.scala:70)
+	at play.sbt.forkrun.PlayForkProcess$.apply(PlayForkProcess.scala:35)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:108)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:107)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	... 2 more
+Total time: 0 s, completed Aug 3, 2016 7:23:34 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@5e6fba6e, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:23:35 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@6ca7d2be, check cycles: false
+Total time: 1 s, completed Aug 3, 2016 7:23:39 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@65610c53, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:23:41 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@d985cc, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\efe\git\play-java\conf\application.conf,C:\Users\efe\git\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\efe\git\play-java\conf\evolutions,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\efe\git\play-java\conf\logback.xml,C:\Users\efe\git\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\efe\git\play-java\conf\routes,C:\Users\efe\git\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\efe\git\play-java\conf\evolutions\default,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\efe\git\play-java\conf\evolutions\default\1.sql,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 2 s, completed Aug 3, 2016 7:23:46 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@220fbed2, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\efe\git\play-java\conf\application.conf,C:\Users\efe\git\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\efe\git\play-java\conf\evolutions,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\efe\git\play-java\conf\logback.xml,C:\Users\efe\git\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\efe\git\play-java\conf\routes,C:\Users\efe\git\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\efe\git\play-java\conf\evolutions\default,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\efe\git\play-java\conf\evolutions\default\1.sql,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed Aug 3, 2016 7:23:52 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3675619f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\models\User.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@5a78598 directly...
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+Java compilation took 0.21358356 s
+Java analysis took 0.075939161 s
+Java compile + analysis took 0.302810371 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed Aug 3, 2016 7:25:02 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@f0474f3, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\models\User.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@37704d2d directly...
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java:37: missing return statement
+C:\Users\efe\git\play-java\app\models\User.java:37: missing return statement
+Read from stdout: {
+Read from stdout: User user= find.where().eq("email", email)
+Read from stdout: .findUnique();
+Read from stdout: }
+{
+        User user= find.where().eq("email", email)
+            .findUnique();
+    }
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+Read from stdout: (myProject/compile:compileIncremental) javac returned nonzero exit code
+(myProject/compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed Aug 3, 2016 7:25:13 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@218b861c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\models\User.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@2c7f2fa5 directly...
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java:37: ';' expected
+C:\Users\efe\git\play-java\app\models\User.java:37: ';' expected
+Read from stdout: (myProject/compile:compileIncremental) javac returned nonzero exit code
+(myProject/compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed Aug 3, 2016 7:26:17 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2ad8233d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\models\User.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7f0fc7d6 directly...
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java:38: missing return statement
+C:\Users\efe\git\play-java\app\models\User.java:38: missing return statement
+Read from stdout: {
+Read from stdout: User user= find.where().eq("email", email)
+Read from stdout: .findUnique();
+Read from stdout: Password.checkPassword(password, user.password);
+Read from stdout: }
+{
+        User user= find.where().eq("email", email)
+            .findUnique();
+        Password.checkPassword(password, user.password);
+    }
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+Read from stdout: (myProject/compile:compileIncremental) javac returned nonzero exit code
+(myProject/compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed Aug 3, 2016 7:26:19 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@23f0ea0e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\models\User.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@6375d1d0 directly...
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java:41: ';' expected
+C:\Users\efe\git\play-java\app\models\User.java:41: ';' expected
+Read from stdout: (myProject/compile:compileIncremental) javac returned nonzero exit code
+(myProject/compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed Aug 3, 2016 7:27:55 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@78f4644, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\models\User.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@251fefad directly...
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+Java compilation took 0.175295407 s
+Java analysis took 0.064837999 s
+Java compile + analysis took 0.252974398 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed Aug 3, 2016 7:27:58 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@407f651b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\models\User.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\models\User.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@5d38e39b directly...
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+C:\Users\efe\git\play-java\app\models\User.java: C:\Users\efe\git\play-java\app\models\User.java uses or overrides a deprecated API.
+Read from stdout: C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+C:\Users\efe\git\play-java\app\models\User.java: Recompile with -Xlint:deprecation for details.
+Java compilation took 0.250496845 s
+Java analysis took 0.101081297 s
+Java compile + analysis took 0.363208889 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed Aug 3, 2016 7:28:05 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@34b53b5e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Aug 3, 2016 7:28:38 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7b162daf, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed Aug 3, 2016 7:28:44 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 3
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@7134540a, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:28:46 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 3
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@51d45f14, check cycles: false
+Exception in thread "sbt-bg-threads-3" java.lang.Error: java.lang.InterruptedException: sleep interrupted
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at play.sbt.forkrun.PlayForkProcess$.timedWaitFor(PlayForkProcess.scala:80)
+	at play.sbt.forkrun.PlayForkProcess$.play$sbt$forkrun$PlayForkProcess$$stop$1(PlayForkProcess.scala:54)
+	at play.sbt.forkrun.PlayForkProcess$.run(PlayForkProcess.scala:70)
+	at play.sbt.forkrun.PlayForkProcess$.apply(PlayForkProcess.scala:35)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:108)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:107)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	... 2 more
+Total time: 0 s, completed Aug 3, 2016 7:28:47 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@6ab271ef, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:28:47 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@480a86e6, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:28:51 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@6c076581, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:28:53 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@348ab0da, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\efe\git\play-java\conf\application.conf,C:\Users\efe\git\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\efe\git\play-java\conf\evolutions,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\efe\git\play-java\conf\logback.xml,C:\Users\efe\git\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\efe\git\play-java\conf\routes,C:\Users\efe\git\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\efe\git\play-java\conf\evolutions\default,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\efe\git\play-java\conf\evolutions\default\1.sql,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 2 s, completed Aug 3, 2016 7:29:01 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@69b17e05, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\efe\git\play-java\conf\application.conf,C:\Users\efe\git\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\efe\git\play-java\conf\evolutions,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\efe\git\play-java\conf\logback.xml,C:\Users\efe\git\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\efe\git\play-java\conf\routes,C:\Users\efe\git\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\efe\git\play-java\conf\evolutions\default,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\efe\git\play-java\conf\evolutions\default\1.sql,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed Aug 3, 2016 7:29:07 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@579783c4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@995bca9 directly...
+Java compilation took 0.151338064 s
+Java analysis took 0.025755059 s
+Java compile + analysis took 0.190567153 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed Aug 3, 2016 7:30:29 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@35163c59, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\utility\Password.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@2fb2b269 directly...
+Java compilation took 0.16324633 s
+Java analysis took 0.030439215 s
+Java compile + analysis took 0.20792234 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed Aug 3, 2016 7:30:36 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@25765882, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\efe\git\play-java\conf\application.conf,C:\Users\efe\git\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\efe\git\play-java\conf\evolutions,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\efe\git\play-java\conf\logback.xml,C:\Users\efe\git\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\efe\git\play-java\conf\routes,C:\Users\efe\git\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\efe\git\play-java\conf\evolutions\default,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\efe\git\play-java\conf\evolutions\default\1.sql,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed Aug 3, 2016 7:31:02 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 4
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@611aaad0, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:31:29 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 4
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@4851e082, check cycles: false
+Exception in thread "sbt-bg-threads-4" java.lang.Error: java.lang.InterruptedException: sleep interrupted
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at play.sbt.forkrun.PlayForkProcess$.timedWaitFor(PlayForkProcess.scala:80)
+	at play.sbt.forkrun.PlayForkProcess$.play$sbt$forkrun$PlayForkProcess$$stop$1(PlayForkProcess.scala:54)
+	at play.sbt.forkrun.PlayForkProcess$.run(PlayForkProcess.scala:70)
+	at play.sbt.forkrun.PlayForkProcess$.apply(PlayForkProcess.scala:35)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:108)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:107)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	... 2 more
+Total time: 0 s, completed Aug 3, 2016 7:31:30 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@64162e5d, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:31:31 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@76eb821c, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:31:34 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@3a88c58e, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:31:36 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@360725d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\efe\git\play-java\conf\application.conf,C:\Users\efe\git\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\efe\git\play-java\conf\evolutions,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\efe\git\play-java\conf\logback.xml,C:\Users\efe\git\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\efe\git\play-java\conf\routes,C:\Users\efe\git\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\efe\git\play-java\conf\evolutions\default,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\efe\git\play-java\conf\evolutions\default\1.sql,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 2 s, completed Aug 3, 2016 7:31:39 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3648a65f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\efe\git\play-java\conf\application.conf,C:\Users\efe\git\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\efe\git\play-java\conf\evolutions,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\efe\git\play-java\conf\logback.xml,C:\Users\efe\git\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\efe\git\play-java\conf\routes,C:\Users\efe\git\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\efe\git\play-java\conf\evolutions\default,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\efe\git\play-java\conf\evolutions\default\1.sql,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed Aug 3, 2016 7:31:45 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 5
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@2ecdf1d, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:33:03 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 5
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@36b2883a, check cycles: false
+Exception in thread "sbt-bg-threads-5" java.lang.Error: java.lang.InterruptedException: sleep interrupted
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at play.sbt.forkrun.PlayForkProcess$.timedWaitFor(PlayForkProcess.scala:80)
+	at play.sbt.forkrun.PlayForkProcess$.play$sbt$forkrun$PlayForkProcess$$stop$1(PlayForkProcess.scala:54)
+	at play.sbt.forkrun.PlayForkProcess$.run(PlayForkProcess.scala:70)
+	at play.sbt.forkrun.PlayForkProcess$.apply(PlayForkProcess.scala:35)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:108)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:107)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	... 2 more
+Total time: 0 s, completed Aug 3, 2016 7:33:04 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@480aa364, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:33:05 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@7b4ff5a8, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:33:09 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@508d08d2, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:33:10 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5ae0dce6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\efe\git\play-java\conf\application.conf,C:\Users\efe\git\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\efe\git\play-java\conf\evolutions,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\efe\git\play-java\conf\logback.xml,C:\Users\efe\git\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\efe\git\play-java\conf\routes,C:\Users\efe\git\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\efe\git\play-java\conf\evolutions\default,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\efe\git\play-java\conf\evolutions\default\1.sql,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 2 s, completed Aug 3, 2016 7:33:13 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/efe/git/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4afb647c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\efe\git\play-java\conf\application.conf,C:\Users\efe\git\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\efe\git\play-java\conf\evolutions,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\efe\git\play-java\conf\logback.xml,C:\Users\efe\git\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\efe\git\play-java\conf\routes,C:\Users\efe\git\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\efe\git\play-java\conf\evolutions\default,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\efe\git\play-java\conf\evolutions\default\1.sql,C:\Users\efe\git\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed Aug 3, 2016 7:33:18 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4cac3173, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\efe\git\play-java\app\controllers\HomeController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\efe\git\play-java\app\controllers\HomeController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\efe\git\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\efe\git\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@42a1d5fb directly...
+Java compilation took 0.247779542 s
+Java analysis took 0.185443728 s
+Java compile + analysis took 0.447726912 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed Aug 3, 2016 7:36:59 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 6
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@25a9e37, check cycles: false
+Total time: 0 s, completed Aug 3, 2016 7:38:30 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 6
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@5093d4fd, check cycles: false
+Exception in thread "sbt-bg-threads-6" java.lang.Error: java.lang.InterruptedException: sleep interrupted
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at play.sbt.forkrun.PlayForkProcess$.timedWaitFor(PlayForkProcess.scala:80)
+	at play.sbt.forkrun.PlayForkProcess$.play$sbt$forkrun$PlayForkProcess$$stop$1(PlayForkProcess.scala:54)
+	at play.sbt.forkrun.PlayForkProcess$.run(PlayForkProcess.scala:70)
+	at play.sbt.forkrun.PlayForkProcess$.apply(PlayForkProcess.scala:35)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:108)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:107)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	... 2 more
+Total time: 0 s, completed Aug 3, 2016 7:38:32 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
