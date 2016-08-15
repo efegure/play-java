@@ -5,6 +5,8 @@ import java.util.List;
 import javax.inject.Inject;
 
 import validator.Validador;
+import models.Time;
+import models.TimeTable;
 import models.User;
 import play.*;
 import play.data.DynamicForm;
@@ -112,7 +114,8 @@ public class HomeController extends Controller {
 		return ok(main.render(formFactory.form(User.class)));
 	}
 
-	public Result logout() {
+	public Result logout(String id) {
+		User.logout(User.find.byId(id));
 		session().clear();
 		flash("success", "You've been logged out");
 		return redirect(routes.HomeController.login());
@@ -127,6 +130,7 @@ public class HomeController extends Controller {
 		if (loginForm.hasErrors()) {
 			return badRequest(login.render(loginForm));
 		} else {
+			User.login(User.find.byId(loginForm.get().email));
 			session().clear();
 			session("email", loginForm.get().email);
 			return redirect(routes.HomeController.home());

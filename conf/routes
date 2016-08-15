@@ -14,7 +14,7 @@ POST    /register                 			controllers.HomeController.newUser
 
 GET     /home                               controllers.HomeController.home
 
-GET     /logout                             controllers.HomeController.logout
+GET     /logout/:id                         controllers.HomeController.logout(id:String)
 
 
 POST    /home/:id/delete       				controllers.HomeController.deleteUser(id: String)

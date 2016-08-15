@@ -1,8 +1,10 @@
 package models;
 
 import javax.persistence.*;
-import play.db.ebean.*;
+
+
 import com.avaje.ebean.*;
+
 import play.data.validation.Constraints.*;
 import utility.Password;
 
@@ -18,12 +20,17 @@ public class User extends Model {
 	public String name;
 	@Required
 	public String password;
+	@OneToOne
+    public TimeTable table;
+
+	
 	private boolean isAdmin = false;
 
-	public User(String email, String name, String password) {
+	public User(String email, String name, String password,TimeTable table) {
 		this.email = email;
 		this.name = name;
 		this.password = password;
+		this.table=table;
 	}
 
 	public static Finder<String, User> find = new Finder<String, User>(
@@ -38,6 +45,20 @@ public class User extends Model {
 		}
 	}
 
+	public static void login(User user){
+		TimeTable.addTime(user);
+		TimeTable.setOnline(user);
+		user.save();
+	}
+	
+	public static void logout(User user){
+		TimeTable.setOffline(user.table,user);
+		Time lastTime = TimeTable.getLastTime(user.table);
+		lastTime.setLogoffTime();
+		lastTime.save();
+		user.save();
+	}
+
 	public static void create(User user) {
 		if (User.find.all().size() == 0) {
 			user.setAsAdmin();
@@ -45,6 +66,10 @@ public class User extends Model {
 		String hashed = Password.hashPassword(user.password);
 		user.password = hashed;
 		user.save();
+	}
+	
+	public static void createTableToUser(User user){
+		TimeTable.createTable(user);
 	}
 
 	public static void deleteUser(String id) {
