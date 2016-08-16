@@ -11,49 +11,43 @@ import com.avaje.ebean.Model.Finder;
 import play.db.ebean.*;
 
 @Entity
+@Table(name = "TIMETABLE")
 public class TimeTable extends Model {
 
 	@Id
-	public String id;
+	@GeneratedValue
+	@Column(name = "TIMETABLE_ID")
+	public Long id;
 
 	private boolean online;
 
 	@OneToOne()
 	public User user;
 
-	@OneToMany(cascade =  {CascadeType.PERSIST, CascadeType.REMOVE}, targetEntity = Time.class)
-	public List<Time> timeTable ;
+	@OneToMany(mappedBy = "table")
+	public List<Time> timeTable = new ArrayList<>();
 
 	public TimeTable(User user, String id) {
 		this.user = user;
-		this.id = id;
-		this.timeTable = new ArrayList<Time>();
 	}
 
-	public static Finder<String, TimeTable> find = new Finder<String, TimeTable>(
-			String.class, TimeTable.class);
+	public static Finder<String, TimeTable> find = new Finder<String, TimeTable>(String.class, TimeTable.class);
 
 	public static void createTable(User user) {
 		User us = User.find.byId(user.email);
 		TimeTable table = new TimeTable(us, us.email);
-		us.table = table;
-		Time time =Time.createTime(us);
-		table.timeTable.add(time);
 		table.save();
+		us.table = table;
+
 		us.save();
 	}
 
 	public static void addTime(User user) {
-		User.createTableToUser(user);
-		//User us = User.find.byId(user.email);
-		//TimeTable ustable = TimeTable.find.byId(table.id);
-		/*us.table.timeTable.add(t);
-		us.table = ustable;
-		us.table.save();
-		us.save();*/
-		/*
-		 * user.table=tt; user.table.addT(t); user.save();
-		 */
+		User us = User.find.byId(user.email);
+		Time time = new Time();
+		time.table = us.table;
+		time.save();
+		us.save();
 	}
 
 	public void addT(Time time) {
@@ -84,7 +78,8 @@ public class TimeTable extends Model {
 		return online;
 	}
 
-	public static long calculateTotalTime(TimeTable table) {
+	public long calculateTotalTime() {
+		TimeTable table = this;
 		long totalTime = 0;
 		for (int i = 0; i < table.timeTable.size() - 1; i++) {
 			Time time = table.timeTable.get(i);

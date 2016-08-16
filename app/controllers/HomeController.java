@@ -37,8 +37,7 @@ public class HomeController extends Controller {
 
 	MessagesApi msgApi = new MessagesApi(null);
 	@Inject
-	FormFactory formFactory = new FormFactory(msgApi, new Formatters(msgApi),
-			new Validador());
+	FormFactory formFactory = new FormFactory(msgApi, new Formatters(msgApi), new Validador());
 
 	public void sendEmail(String emailadress) {
 		String cid = "1234";
@@ -61,11 +60,10 @@ public class HomeController extends Controller {
 					return badRequest(views.html.main.render(userForm));
 				} else {
 					User.create(userForm.get());
-					flash("success",
-							"You've have succesfully created an account");
+					User.createTableToUser(userForm.get());
+					flash("success", "You've have succesfully created an account");
 					// sendEmail(userForm.get().email);
-					return ok(views.html.login.render(formFactory
-							.form(Login.class)));
+					return ok(views.html.login.render(formFactory.form(Login.class)));
 				}
 			} else {
 				flash("failure", "Account already exists");
@@ -73,43 +71,41 @@ public class HomeController extends Controller {
 			}
 		}
 	}
-	
 
 	public Result addUser(String id) {
 		Form<User> userForm = formFactory.form(User.class).bindFromRequest();
 		if (userForm.hasErrors()) {
-			return badRequest(views.html.home.render(User.find.all(),
-					User.find.byId(id),userForm));
+			return badRequest(views.html.home.render(User.find.all(), User.find.byId(id), userForm));
 		} else {
 			if (User.find.byId(userForm.get().email) == null) {
 				String pass = userForm.get().password;
 				if (passwordChecker(pass)) {
-					return badRequest(views.html.home.render(User.find.all(),
-							User.find.byId(id),userForm));
+					return badRequest(views.html.home.render(User.find.all(), User.find.byId(id), userForm));
 				} else {
 					User.create(userForm.get());
-					flash("success",
-							"You've have succesfully created an account");
+					User.createTableToUser(userForm.get());
+					flash("success", "You've have succesfully created an account");
 					// sendEmail(userForm.get().email);
 					return redirect(routes.HomeController.home());
 				}
 			} else {
 				flash("failure", "Account already exists");
-				return badRequest(views.html.home.render(User.find.all(),
-						User.find.byId(id),userForm));
+				return badRequest(views.html.home.render(User.find.all(), User.find.byId(id), userForm));
 			}
 		}
 	}
+
 	@Security.Authenticated(Secured.class)
 	public Result home() {
 		Form<User> userForm = formFactory.form(User.class).bindFromRequest();
-		return ok(home.render(User.find.all(),
-				User.find.byId(request().username()),userForm));
+		return ok(home.render(User.find.all(), User.find.byId(request().username()), userForm));
 	}
-	public  Result deleteUser(String id) {
-		  User.deleteUser(id);
-		  return redirect(routes.HomeController.home());
-		}
+
+	public Result deleteUser(String id) {
+		User.deleteUser(id);
+		return redirect(routes.HomeController.home());
+	}
+
 	public Result main() {
 		return ok(main.render(formFactory.form(User.class)));
 	}
@@ -155,16 +151,13 @@ public class HomeController extends Controller {
 				}
 			}
 			if (!upper) {
-				flash("failure",
-						"Your password must contain atleast one uppercase letter!");
+				flash("failure", "Your password must contain atleast one uppercase letter!");
 				return true;
 			} else if (!lower) {
-				flash("failure",
-						"Your password must contain atleast one lowercase letter!");
+				flash("failure", "Your password must contain atleast one lowercase letter!");
 				return true;
 			} else if (!number) {
-				flash("failure",
-						"Your password must contain atleast one number!");
+				flash("failure", "Your password must contain atleast one number!");
 				return true;
 			} else {
 				return false;

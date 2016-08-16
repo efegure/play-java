@@ -9,7 +9,7 @@ import play.data.validation.Constraints.*;
 import utility.Password;
 
 @Entity
-@Table(name = "cm_users")
+@Table(name = "CM_USERS")
 public class User extends Model {
 
 	@Id
@@ -57,6 +57,7 @@ public class User extends Model {
 		lastTime.setLogoffTime();
 		lastTime.save();
 		user.save();
+		
 	}
 
 	public static void create(User user) {

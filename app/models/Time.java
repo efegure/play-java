@@ -15,26 +15,27 @@ public class Time extends Model{
 	private DateTime logoffTime;
 	
 	@Id
-	public String id;
+	@GeneratedValue
+	@Column(name="TIME_ID")
+	public Long id;
 	
-	@ManyToOne()
+	@ManyToOne
+	@JoinColumn(name="TIMETABLE_ID")
 	public TimeTable table;
 	
 	public static Finder<String, Time> find = new Finder<String, Time>(
 			String.class, Time.class);
 
-	public Time(TimeTable table,String id){
+	public Time(){
 		loginTime = new DateTime();
-		this.id=id;
-		this.table=table;
 	}
-	
+	/*
 	public  static Time createTime(User user){
 		User us = User.find.byId(user.email);
 		Time time = new Time(us.table,us.table.id);
 		time.save();
 		return time;
-	}
+	}*/
 	
 	public DateTime getLoginTime() {
 		return loginTime;
