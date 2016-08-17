@@ -11,12 +11,12 @@ import com.avaje.ebean.Model.Finder;
 import play.db.ebean.*;
 
 @Entity
-@Table(name = "TIMETABLE")
+@Table(name = "timetable")
 public class TimeTable extends Model {
 
 	@Id
 	@GeneratedValue
-	@Column(name = "TIMETABLE_ID")
+	@Column(name = "timetable_id")
 	public Long id;
 
 	private boolean online;
@@ -27,7 +27,7 @@ public class TimeTable extends Model {
 	@OneToMany(mappedBy = "table")
 	public List<Time> timeTable = new ArrayList<>();
 
-	public TimeTable(User user, String id) {
+	public TimeTable(User user) {
 		this.user = user;
 	}
 
@@ -35,7 +35,7 @@ public class TimeTable extends Model {
 
 	public static void createTable(User user) {
 		User us = User.find.byId(user.email);
-		TimeTable table = new TimeTable(us, us.email);
+		TimeTable table = new TimeTable(us);
 		table.save();
 		us.table = table;
 

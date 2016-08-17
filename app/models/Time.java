@@ -16,11 +16,11 @@ public class Time extends Model{
 	
 	@Id
 	@GeneratedValue
-	@Column(name="TIME_ID")
+	@Column(name="time_id")
 	public Long id;
 	
 	@ManyToOne
-	@JoinColumn(name="TIMETABLE_ID")
+	@JoinColumn(name="timetable_id")
 	public TimeTable table;
 	
 	public static Finder<String, Time> find = new Finder<String, Time>(
