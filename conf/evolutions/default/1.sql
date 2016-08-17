@@ -26,6 +26,7 @@ create table cm_users (
   name                          varchar(255),
   password                      varchar(255),
   table_timetable_id            bigint,
+  is_registered                 boolean,
   is_admin                      boolean,
   constraint uq_cm_users_table_timetable_id unique (table_timetable_id),
   constraint pk_cm_users primary key (email)

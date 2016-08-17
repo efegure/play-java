@@ -1,5 +1,6 @@
 package controllers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -45,7 +46,8 @@ public class HomeController extends Controller {
 		email.setSubject("Account Verification");
 		email.setFrom("from@email.com");
 		email.addTo(emailadress);
-		email.setBodyText("Click to this link to verify your account:https://www.google.com.tr/");
+		String hashed=Password.hashPassword(emailadress);
+		email.setBodyText("Click to this link to verify your account: http://localhost:9000/validate/"+hashed);
 		mailerClient.send(email);
 	}
 
@@ -62,7 +64,7 @@ public class HomeController extends Controller {
 					User.create(userForm.get());
 					User.createTableToUser(userForm.get());
 					flash("success", "You've have succesfully created an account");
-					// sendEmail(userForm.get().email);
+					sendEmail(userForm.get().email);
 					return ok(views.html.login.render(formFactory.form(Login.class)));
 				}
 			} else {
@@ -104,6 +106,24 @@ public class HomeController extends Controller {
 	public Result deleteUser(String id) {
 		User.deleteUser(id);
 		return redirect(routes.HomeController.home());
+	}
+	
+	public Result validate(String id) {
+		List<User> userlist = User.find.all();
+		String name="";
+		User user;
+		boolean verification ;
+		for(int i=0;i<userlist.size();i++){
+			user = userlist.get(i);
+			verification = Password.checkPassword(user.email.toString(),id);
+			if(verification){
+			name = user.name.toString();
+			}
+			else{
+				name="";
+			}
+		}
+		return ok(views.html.validate.render(name));
 	}
 
 	public Result main() {

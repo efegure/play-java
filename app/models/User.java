@@ -22,8 +22,9 @@ public class User extends Model {
 	public String password;
 	@OneToOne
     public TimeTable table;
-
 	
+	private boolean isRegistered=false;
+
 	private boolean isAdmin = false;
 
 	public User(String email, String name, String password,TimeTable table) {
@@ -51,6 +52,9 @@ public class User extends Model {
 		user.save();
 	}
 	
+	public void register(){
+		this.isRegistered=true;
+	}
 	public static void logout(User user){
 		TimeTable.setOffline(user.table,user);
 		Time lastTime = TimeTable.getLastTime(user.table);
