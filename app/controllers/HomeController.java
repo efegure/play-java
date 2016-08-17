@@ -123,7 +123,7 @@ public class HomeController extends Controller {
 				us.save();
 			}
 		}
-		if(verification){
+		if(verification==false){
 			return ok(views.html.validate.render(name));
 		}
 		else{
