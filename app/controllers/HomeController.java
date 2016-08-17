@@ -48,7 +48,7 @@ public class HomeController extends Controller {
 		email.addTo(emailadress);
 		String hashed=Password.hashPassword(emailadress);
 		String urlsafe = hashed.replaceAll("/", "-");
-		email.setBodyText("Click to this link to verify your account: http://localhost:9000/validate/"+urlsafe);
+		email.setBodyText("Click to this link to verify your account: https://whispering-headland-22519.herokuapp.com/validate"+urlsafe);
 		mailerClient.send(email);
 	}
 

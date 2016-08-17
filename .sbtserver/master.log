@@ -18573,3 +18573,779 @@ Copy resource mappings:
 Total time: 1 s, completed 17.Ağu.2016 07:33:41
 > server-post-command-cleanup
 > server-handle-next-server-request
+> jobStop 36
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@59a47435, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:47:00
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 36
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@1d6cce35, check cycles: false
+Exception in thread "sbt-bg-threads-41" java.lang.Error: java.lang.InterruptedException: sleep interrupted
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at play.sbt.forkrun.PlayForkProcess$.timedWaitFor(PlayForkProcess.scala:80)
+	at play.sbt.forkrun.PlayForkProcess$.play$sbt$forkrun$PlayForkProcess$$stop$1(PlayForkProcess.scala:54)
+	at play.sbt.forkrun.PlayForkProcess$.run(PlayForkProcess.scala:70)
+	at play.sbt.forkrun.PlayForkProcess$.apply(PlayForkProcess.scala:35)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:108)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:107)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	... 2 more
+Total time: 0 s, completed 17.Ağu.2016 07:47:01
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@774dd8d6, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:47:02
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@14522420, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:47:04
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@21be2000, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:47:05
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@184dd54e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 17.Ağu.2016 07:47:07
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3a4e6cbf, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed 17.Ağu.2016 07:47:28
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 37
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@7fe94fec, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:47:30
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 37
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@267656e9, check cycles: false
+Exception in thread "sbt-bg-threads-42" java.lang.Error: java.lang.InterruptedException: sleep interrupted
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at play.sbt.forkrun.PlayForkProcess$.timedWaitFor(PlayForkProcess.scala:80)
+	at play.sbt.forkrun.PlayForkProcess$.play$sbt$forkrun$PlayForkProcess$$stop$1(PlayForkProcess.scala:54)
+	at play.sbt.forkrun.PlayForkProcess$.run(PlayForkProcess.scala:70)
+	at play.sbt.forkrun.PlayForkProcess$.apply(PlayForkProcess.scala:35)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:108)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:107)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	... 2 more
+Total time: 0 s, completed 17.Ağu.2016 07:47:31
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@4deddb67, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:47:32
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@52cf782a, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:47:34
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@1fa1036b, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:47:35
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4e27520, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 17.Ağu.2016 07:47:37
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@51152e9, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 17.Ağu.2016 07:47:40
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 38
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@76a9b7ae, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:48:39
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 38
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@10218c8a, check cycles: false
+Exception in thread "sbt-bg-threads-43" java.lang.Error: java.lang.InterruptedException: sleep interrupted
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at play.sbt.forkrun.PlayForkProcess$.timedWaitFor(PlayForkProcess.scala:80)
+	at play.sbt.forkrun.PlayForkProcess$.play$sbt$forkrun$PlayForkProcess$$stop$1(PlayForkProcess.scala:54)
+	at play.sbt.forkrun.PlayForkProcess$.run(PlayForkProcess.scala:70)
+	at play.sbt.forkrun.PlayForkProcess$.apply(PlayForkProcess.scala:35)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:108)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:107)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	... 2 more
+Total time: 0 s, completed 17.Ağu.2016 07:48:39
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@41480b7f, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:48:40
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@45b0490f, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:48:43
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@1eb8ae10, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:48:44
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3a7379fd, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 17.Ağu.2016 07:48:53
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5c4bfef0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 17.Ağu.2016 07:49:04
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@69ed01b4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 17.Ağu.2016 07:49:33
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 39
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@66fdd, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:49:36
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 39
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@46b929b0, check cycles: false
+Exception in thread "sbt-bg-threads-44" java.lang.Error: java.lang.InterruptedException: sleep interrupted
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at play.sbt.forkrun.PlayForkProcess$.timedWaitFor(PlayForkProcess.scala:80)
+	at play.sbt.forkrun.PlayForkProcess$.play$sbt$forkrun$PlayForkProcess$$stop$1(PlayForkProcess.scala:54)
+	at play.sbt.forkrun.PlayForkProcess$.run(PlayForkProcess.scala:70)
+	at play.sbt.forkrun.PlayForkProcess$.apply(PlayForkProcess.scala:35)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:108)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:107)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	... 2 more
+Total time: 0 s, completed 17.Ağu.2016 07:49:37
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@28804cb5, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:49:37
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@75acdd9b, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:49:40
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@27b7c559, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:49:41
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4d66837d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 17.Ağu.2016 07:49:43
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5f6ac830, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 17.Ağu.2016 07:49:46
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 40
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@79813766, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:50:32
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 40
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@428c28e6, check cycles: false
+Exception in thread "sbt-bg-threads-45" java.lang.Error: java.lang.InterruptedException: sleep interrupted
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at play.sbt.forkrun.PlayForkProcess$.timedWaitFor(PlayForkProcess.scala:80)
+	at play.sbt.forkrun.PlayForkProcess$.play$sbt$forkrun$PlayForkProcess$$stop$1(PlayForkProcess.scala:54)
+	at play.sbt.forkrun.PlayForkProcess$.run(PlayForkProcess.scala:70)
+	at play.sbt.forkrun.PlayForkProcess$.apply(PlayForkProcess.scala:35)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:108)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:107)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	... 2 more
+Total time: 0 s, completed 17.Ağu.2016 07:50:33
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@7bdd17fa, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:50:33
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@7a5b0006, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:50:36
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@2da64676, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:50:37
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4cf03bb4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 17.Ağu.2016 07:50:38
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 41
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@305d2a04, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:50:48
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 41
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@4d6baee0, check cycles: false
+Exception in thread "sbt-bg-threads-46" java.lang.Error: java.lang.InterruptedException: sleep interrupted
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at play.sbt.forkrun.PlayForkProcess$.timedWaitFor(PlayForkProcess.scala:80)
+	at play.sbt.forkrun.PlayForkProcess$.play$sbt$forkrun$PlayForkProcess$$stop$1(PlayForkProcess.scala:54)
+	at play.sbt.forkrun.PlayForkProcess$.run(PlayForkProcess.scala:70)
+	at play.sbt.forkrun.PlayForkProcess$.apply(PlayForkProcess.scala:35)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:108)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:107)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	... 2 more
+Total time: 0 s, completed 17.Ağu.2016 07:50:49
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@5c2256d5, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:50:49
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@12768692, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:50:51
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@651c0e1b, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:50:53
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1d1d717d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 17.Ağu.2016 07:50:54
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 42
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@5ab2df85, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:51:06
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 42
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@5ec44853, check cycles: false
+Exception in thread "sbt-bg-threads-47" java.lang.Error: java.lang.InterruptedException: sleep interrupted
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at play.sbt.forkrun.PlayForkProcess$.timedWaitFor(PlayForkProcess.scala:80)
+	at play.sbt.forkrun.PlayForkProcess$.play$sbt$forkrun$PlayForkProcess$$stop$1(PlayForkProcess.scala:54)
+	at play.sbt.forkrun.PlayForkProcess$.run(PlayForkProcess.scala:70)
+	at play.sbt.forkrun.PlayForkProcess$.apply(PlayForkProcess.scala:35)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:108)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:107)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	... 2 more
+Total time: 0 s, completed 17.Ağu.2016 07:51:07
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: myProject/compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@7e9c9b33, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:51:34
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkConfig
+Evaluating tasks: myProject/*:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@29214661, check cycles: false
+Total time: 1 s, completed 17.Ağu.2016 07:51:37
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: myProject/*:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@5dc26b23, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:51:39
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@393045f6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 17.Ağu.2016 07:51:40
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/*:playForkReload
+Evaluating tasks: myProject/*:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@6ebd2fb2, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\EFE\play-java\conf\application.conf,C:\Users\EFE\play-java\target\scala-2.11\classes\application.conf)
+	(C:\Users\EFE\play-java\conf\evolutions,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions)
+	(C:\Users\EFE\play-java\conf\logback.xml,C:\Users\EFE\play-java\target\scala-2.11\classes\logback.xml)
+	(C:\Users\EFE\play-java\conf\routes,C:\Users\EFE\play-java\target\scala-2.11\classes\routes)
+	(C:\Users\EFE\play-java\conf\evolutions\default,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\EFE\play-java\conf\evolutions\default\1.sql,C:\Users\EFE\play-java\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 1 s, completed 17.Ağu.2016 07:51:44
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@157284c7, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 17.Ağu.2016 07:52:49
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 43
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@6c358cc2, check cycles: false
+Total time: 0 s, completed 17.Ağu.2016 07:52:53
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 43
+Evaluating tasks: myProject/*:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@5814bd7b, check cycles: false
+Exception in thread "sbt-bg-threads-49" java.lang.Error: java.lang.InterruptedException: sleep interrupted
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at play.sbt.forkrun.PlayForkProcess$.timedWaitFor(PlayForkProcess.scala:80)
+	at play.sbt.forkrun.PlayForkProcess$.play$sbt$forkrun$PlayForkProcess$$stop$1(PlayForkProcess.scala:54)
+	at play.sbt.forkrun.PlayForkProcess$.run(PlayForkProcess.scala:70)
+	at play.sbt.forkrun.PlayForkProcess$.apply(PlayForkProcess.scala:35)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:108)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:107)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	... 2 more
+Total time: 0 s, completed 17.Ağu.2016 07:52:54
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@fdc5817, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@16c3b508 directly...
+Java compilation took 0.634112088 s
+Java analysis took 0.052829707 s
+Java compile + analysis took 0.693715119 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 17.Ağu.2016 08:05:40
+> server-post-command-cleanup
+> server-handle-next-server-request
