@@ -15,9 +15,9 @@ public class Time extends Model {
 	private DateTime logoffTime;
 
 	@Id
-	@SequenceGenerator(name="identifier", sequenceName="time_id_seq", allocationSize=1)  
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="identifier")  
 	@Column(name = "time_id")
+	@SequenceGenerator(name="id", sequenceName="time_id_seq", allocationSize=1)  
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="id")  
 	public Long id;
 
 	@ManyToOne

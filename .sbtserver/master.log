@@ -1425,3 +1425,639 @@ Total time: 1 s, completed 17.Ağu.2016 20:07:53
 > server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2fa6a381, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\Time.java)
+Removed products: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\models\TimeTable.class, C:\Users\EFE\play-java\target\scala-2.11\classes\models\Time.class, C:\Users\EFE\play-java\target\scala-2.11\classes\models\User.class)
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\Time.java)
+
+Sources indirectly invalidated by:
+	product: Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\Time.java, C:\Users\EFE\play-java\app\models\User.java)
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\User.java, C:\Users\EFE\play-java\app\models\Time.java)
+
+Read from stdout: Compiling 3 Java sources to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 3 Java sources to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@2c712443 directly...
+Read from stdout: C:\Users\EFE\play-java\app\models\Time.java: Some input files use or override a deprecated API.
+C:\Users\EFE\play-java\app\models\Time.java: Some input files use or override a deprecated API.
+Read from stdout: C:\Users\EFE\play-java\app\models\Time.java: Recompile with -Xlint:deprecation for details.
+C:\Users\EFE\play-java\app\models\Time.java: Recompile with -Xlint:deprecation for details.
+Java compilation took 0.110167379 s
+Java analysis took 0.063916581 s
+Java compile + analysis took 0.180848248 s
+Invalidating C:\Users\EFE\play-java\app\models\TimeTable.java...
+Invalidating (transitively) by inheritance from C:\Users\EFE\play-java\app\models\TimeTable.java...
+Initial set of included nodes: Set(C:\Users\EFE\play-java\app\models\TimeTable.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\EFE\play-java\app\models\TimeTable.java)
+The C:\Users\EFE\play-java\app\models\TimeTable.java source file has the following regular definitions changed:
+	id.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\User.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\Time.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\TimeTable.java
+None of the modified names appears in C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\home.template.scala. This dependency is not being considered for invalidation.
+Invalidating C:\Users\EFE\play-java\app\models\Time.java...
+Invalidating (transitively) by inheritance from C:\Users\EFE\play-java\app\models\Time.java...
+Initial set of included nodes: Set(C:\Users\EFE\play-java\app\models\Time.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\EFE\play-java\app\models\Time.java)
+The C:\Users\EFE\play-java\app\models\Time.java source file has the following regular definitions changed:
+	id.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\User.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\Time.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\TimeTable.java
+New invalidations:
+	Set(C:\Users\EFE\play-java\app\models\User.java)
+Initial set of included nodes: Set(C:\Users\EFE\play-java\app\models\User.java)
+Including C:\Users\EFE\play-java\app\models\TimeTable.java by C:\Users\EFE\play-java\app\models\User.java
+Including C:\Users\EFE\play-java\app\models\Time.java by C:\Users\EFE\play-java\app\models\TimeTable.java
+Including C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\home.template.scala by C:\Users\EFE\play-java\app\models\TimeTable.java
+Including C:\Users\EFE\play-java\app\controllers\HomeController.java by C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\home.template.scala
+Including C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\login.template.scala by C:\Users\EFE\play-java\app\controllers\HomeController.java
+Including C:\Users\EFE\play-java\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\EFE\play-java\app\controllers\HomeController.java
+Including C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\Users\EFE\play-java\app\models\User.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\Time.java)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+java.lang.RuntimeException: play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+	at play.api.Configuration$.configError(Configuration.scala:154)
+	at play.api.Configuration$.load(Configuration.scala:101)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: com.typesafe.config.ConfigException$Parse: application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:201)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:197)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:408)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:247)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.consolidateValues(ConfigDocumentParser.java:152)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:420)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:247)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:405)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parse(ConfigDocumentParser.java:595)
+	at com.typesafe.config.impl.ConfigDocumentParser.parse(ConfigDocumentParser.java:14)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:260)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:248)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:307)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:747)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:710)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parse(Parseable.java:152)
+	at com.typesafe.config.impl.SimpleIncluder.fromBasename(SimpleIncluder.java:185)
+	at com.typesafe.config.impl.ConfigImpl.parseResourcesAnySyntax(ConfigImpl.java:132)
+	at com.typesafe.config.ConfigFactory.parseResourcesAnySyntax(ConfigFactory.java:1024)
+	at com.typesafe.config.ConfigFactory.parseApplicationConfig(ConfigFactory.java:238)
+	at com.typesafe.config.ConfigFactory.defaultApplication(ConfigFactory.java:519)
+	at play.api.Configuration$$anonfun$3.apply(Configuration.scala:73)
+	at play.api.Configuration$$anonfun$3.apply(Configuration.scala:69)
+	at scala.Option.getOrElse(Option.scala:121)
+	at play.api.Configuration$.load(Configuration.scala:69)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Read from stdout: (myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+(myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+Total time: 0 s, completed 17.Ağu.2016 20:19:10
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@46b89918, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\Time.java)
+Removed products: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\models\TimeTable.class, C:\Users\EFE\play-java\target\scala-2.11\classes\models\Time.class, C:\Users\EFE\play-java\target\scala-2.11\classes\models\User.class)
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\Time.java)
+
+Sources indirectly invalidated by:
+	product: Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\Time.java, C:\Users\EFE\play-java\app\models\User.java)
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\User.java, C:\Users\EFE\play-java\app\models\Time.java)
+
+Read from stdout: Compiling 3 Java sources to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 3 Java sources to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@6bb316cf directly...
+Read from stdout: C:\Users\EFE\play-java\app\models\Time.java: Some input files use or override a deprecated API.
+C:\Users\EFE\play-java\app\models\Time.java: Some input files use or override a deprecated API.
+Read from stdout: C:\Users\EFE\play-java\app\models\Time.java: Recompile with -Xlint:deprecation for details.
+C:\Users\EFE\play-java\app\models\Time.java: Recompile with -Xlint:deprecation for details.
+Java compilation took 0.10451469 s
+Java analysis took 0.046690485 s
+Java compile + analysis took 0.157878446 s
+Invalidating C:\Users\EFE\play-java\app\models\TimeTable.java...
+Invalidating (transitively) by inheritance from C:\Users\EFE\play-java\app\models\TimeTable.java...
+Initial set of included nodes: Set(C:\Users\EFE\play-java\app\models\TimeTable.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\EFE\play-java\app\models\TimeTable.java)
+The C:\Users\EFE\play-java\app\models\TimeTable.java source file has the following regular definitions changed:
+	id.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\User.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\Time.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\TimeTable.java
+None of the modified names appears in C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\home.template.scala. This dependency is not being considered for invalidation.
+Invalidating C:\Users\EFE\play-java\app\models\Time.java...
+Invalidating (transitively) by inheritance from C:\Users\EFE\play-java\app\models\Time.java...
+Initial set of included nodes: Set(C:\Users\EFE\play-java\app\models\Time.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\EFE\play-java\app\models\Time.java)
+The C:\Users\EFE\play-java\app\models\Time.java source file has the following regular definitions changed:
+	id.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\User.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\Time.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\TimeTable.java
+New invalidations:
+	Set(C:\Users\EFE\play-java\app\models\User.java)
+Initial set of included nodes: Set(C:\Users\EFE\play-java\app\models\User.java)
+Including C:\Users\EFE\play-java\app\models\TimeTable.java by C:\Users\EFE\play-java\app\models\User.java
+Including C:\Users\EFE\play-java\app\models\Time.java by C:\Users\EFE\play-java\app\models\TimeTable.java
+Including C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\home.template.scala by C:\Users\EFE\play-java\app\models\TimeTable.java
+Including C:\Users\EFE\play-java\app\controllers\HomeController.java by C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\home.template.scala
+Including C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\login.template.scala by C:\Users\EFE\play-java\app\controllers\HomeController.java
+Including C:\Users\EFE\play-java\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\EFE\play-java\app\controllers\HomeController.java
+Including C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\Users\EFE\play-java\app\models\User.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\Time.java)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+java.lang.RuntimeException: play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+	at play.api.Configuration$.configError(Configuration.scala:154)
+	at play.api.Configuration$.load(Configuration.scala:101)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: com.typesafe.config.ConfigException$Parse: application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:201)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:197)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:408)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:247)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.consolidateValues(ConfigDocumentParser.java:152)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:420)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:247)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:405)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parse(ConfigDocumentParser.java:595)
+	at com.typesafe.config.impl.ConfigDocumentParser.parse(ConfigDocumentParser.java:14)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:260)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:248)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:307)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:747)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:710)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parse(Parseable.java:152)
+	at com.typesafe.config.impl.SimpleIncluder.fromBasename(SimpleIncluder.java:185)
+	at com.typesafe.config.impl.ConfigImpl.parseResourcesAnySyntax(ConfigImpl.java:132)
+	at com.typesafe.config.ConfigFactory.parseResourcesAnySyntax(ConfigFactory.java:1024)
+	at com.typesafe.config.ConfigFactory.parseApplicationConfig(ConfigFactory.java:238)
+	at com.typesafe.config.ConfigFactory.defaultApplication(ConfigFactory.java:519)
+	at play.api.Configuration$$anonfun$3.apply(Configuration.scala:73)
+	at play.api.Configuration$$anonfun$3.apply(Configuration.scala:69)
+	at scala.Option.getOrElse(Option.scala:121)
+	at play.api.Configuration$.load(Configuration.scala:69)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Read from stdout: (myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+(myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+Total time: 0 s, completed 17.Ağu.2016 20:19:13
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@6c1e0314, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\Time.java)
+Removed products: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\models\TimeTable.class, C:\Users\EFE\play-java\target\scala-2.11\classes\models\Time.class, C:\Users\EFE\play-java\target\scala-2.11\classes\models\User.class)
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\Time.java)
+
+Sources indirectly invalidated by:
+	product: Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\Time.java, C:\Users\EFE\play-java\app\models\User.java)
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\User.java, C:\Users\EFE\play-java\app\models\Time.java)
+
+Read from stdout: Compiling 3 Java sources to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 3 Java sources to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@1b520a0c directly...
+Read from stdout: C:\Users\EFE\play-java\app\models\Time.java: Some input files use or override a deprecated API.
+C:\Users\EFE\play-java\app\models\Time.java: Some input files use or override a deprecated API.
+Read from stdout: C:\Users\EFE\play-java\app\models\Time.java: Recompile with -Xlint:deprecation for details.
+C:\Users\EFE\play-java\app\models\Time.java: Recompile with -Xlint:deprecation for details.
+Java compilation took 0.140621565 s
+Java analysis took 0.057453783 s
+Java compile + analysis took 0.206539158 s
+Invalidating C:\Users\EFE\play-java\app\models\TimeTable.java...
+Invalidating (transitively) by inheritance from C:\Users\EFE\play-java\app\models\TimeTable.java...
+Initial set of included nodes: Set(C:\Users\EFE\play-java\app\models\TimeTable.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\EFE\play-java\app\models\TimeTable.java)
+The C:\Users\EFE\play-java\app\models\TimeTable.java source file has the following regular definitions changed:
+	id.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\User.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\Time.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\TimeTable.java
+None of the modified names appears in C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\home.template.scala. This dependency is not being considered for invalidation.
+Invalidating C:\Users\EFE\play-java\app\models\Time.java...
+Invalidating (transitively) by inheritance from C:\Users\EFE\play-java\app\models\Time.java...
+Initial set of included nodes: Set(C:\Users\EFE\play-java\app\models\Time.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\EFE\play-java\app\models\Time.java)
+The C:\Users\EFE\play-java\app\models\Time.java source file has the following regular definitions changed:
+	id.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\User.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\Time.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\TimeTable.java
+New invalidations:
+	Set(C:\Users\EFE\play-java\app\models\User.java)
+Initial set of included nodes: Set(C:\Users\EFE\play-java\app\models\User.java)
+Including C:\Users\EFE\play-java\app\models\TimeTable.java by C:\Users\EFE\play-java\app\models\User.java
+Including C:\Users\EFE\play-java\app\models\Time.java by C:\Users\EFE\play-java\app\models\TimeTable.java
+Including C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\home.template.scala by C:\Users\EFE\play-java\app\models\TimeTable.java
+Including C:\Users\EFE\play-java\app\controllers\HomeController.java by C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\home.template.scala
+Including C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\login.template.scala by C:\Users\EFE\play-java\app\controllers\HomeController.java
+Including C:\Users\EFE\play-java\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\EFE\play-java\app\controllers\HomeController.java
+Including C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\Users\EFE\play-java\app\models\User.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\Time.java)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+java.lang.RuntimeException: play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+	at play.api.Configuration$.configError(Configuration.scala:154)
+	at play.api.Configuration$.load(Configuration.scala:101)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: com.typesafe.config.ConfigException$Parse: application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:201)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:197)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:408)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:247)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.consolidateValues(ConfigDocumentParser.java:152)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:420)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:247)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:405)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parse(ConfigDocumentParser.java:595)
+	at com.typesafe.config.impl.ConfigDocumentParser.parse(ConfigDocumentParser.java:14)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:260)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:248)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:307)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:747)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:710)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parse(Parseable.java:152)
+	at com.typesafe.config.impl.SimpleIncluder.fromBasename(SimpleIncluder.java:185)
+	at com.typesafe.config.impl.ConfigImpl.parseResourcesAnySyntax(ConfigImpl.java:132)
+	at com.typesafe.config.ConfigFactory.parseResourcesAnySyntax(ConfigFactory.java:1024)
+	at com.typesafe.config.ConfigFactory.parseApplicationConfig(ConfigFactory.java:238)
+	at com.typesafe.config.ConfigFactory.defaultApplication(ConfigFactory.java:519)
+	at play.api.Configuration$$anonfun$3.apply(Configuration.scala:73)
+	at play.api.Configuration$$anonfun$3.apply(Configuration.scala:69)
+	at scala.Option.getOrElse(Option.scala:121)
+	at play.api.Configuration$.load(Configuration.scala:69)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Read from stdout: (myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+(myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+Total time: 1 s, completed 17.Ağu.2016 20:19:20
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@13ed9222, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\Time.java)
+Removed products: Set(C:\Users\EFE\play-java\target\scala-2.11\classes\models\TimeTable.class, C:\Users\EFE\play-java\target\scala-2.11\classes\models\Time.class, C:\Users\EFE\play-java\target\scala-2.11\classes\models\User.class)
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\Time.java)
+
+Sources indirectly invalidated by:
+	product: Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\Time.java, C:\Users\EFE\play-java\app\models\User.java)
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\User.java, C:\Users\EFE\play-java\app\models\Time.java)
+
+Read from stdout: Compiling 3 Java sources to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 3 Java sources to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@4a86e534 directly...
+Read from stdout: C:\Users\EFE\play-java\app\models\Time.java: Some input files use or override a deprecated API.
+C:\Users\EFE\play-java\app\models\Time.java: Some input files use or override a deprecated API.
+Read from stdout: C:\Users\EFE\play-java\app\models\Time.java: Recompile with -Xlint:deprecation for details.
+C:\Users\EFE\play-java\app\models\Time.java: Recompile with -Xlint:deprecation for details.
+Java compilation took 0.143210164 s
+Java analysis took 0.051619732 s
+Java compile + analysis took 0.201503168 s
+Invalidating C:\Users\EFE\play-java\app\models\TimeTable.java...
+Invalidating (transitively) by inheritance from C:\Users\EFE\play-java\app\models\TimeTable.java...
+Initial set of included nodes: Set(C:\Users\EFE\play-java\app\models\TimeTable.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\EFE\play-java\app\models\TimeTable.java)
+The C:\Users\EFE\play-java\app\models\TimeTable.java source file has the following regular definitions changed:
+	id.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\User.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\Time.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\TimeTable.java
+None of the modified names appears in C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\home.template.scala. This dependency is not being considered for invalidation.
+Invalidating C:\Users\EFE\play-java\app\models\Time.java...
+Invalidating (transitively) by inheritance from C:\Users\EFE\play-java\app\models\Time.java...
+Initial set of included nodes: Set(C:\Users\EFE\play-java\app\models\Time.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\EFE\play-java\app\models\Time.java)
+The C:\Users\EFE\play-java\app\models\Time.java source file has the following regular definitions changed:
+	id.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\User.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\Time.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\EFE\play-java\app\models\TimeTable.java
+New invalidations:
+	Set(C:\Users\EFE\play-java\app\models\User.java)
+Initial set of included nodes: Set(C:\Users\EFE\play-java\app\models\User.java)
+Including C:\Users\EFE\play-java\app\models\TimeTable.java by C:\Users\EFE\play-java\app\models\User.java
+Including C:\Users\EFE\play-java\app\models\Time.java by C:\Users\EFE\play-java\app\models\TimeTable.java
+Including C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\home.template.scala by C:\Users\EFE\play-java\app\models\TimeTable.java
+Including C:\Users\EFE\play-java\app\controllers\HomeController.java by C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\home.template.scala
+Including C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\login.template.scala by C:\Users\EFE\play-java\app\controllers\HomeController.java
+Including C:\Users\EFE\play-java\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\EFE\play-java\app\controllers\HomeController.java
+Including C:\Users\EFE\play-java\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\Users\EFE\play-java\app\models\User.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(C:\Users\EFE\play-java\app\models\TimeTable.java, C:\Users\EFE\play-java\app\models\Time.java)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+java.lang.RuntimeException: play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+	at play.api.Configuration$.configError(Configuration.scala:154)
+	at play.api.Configuration$.load(Configuration.scala:101)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: com.typesafe.config.ConfigException$Parse: application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:201)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:197)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:408)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:247)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.consolidateValues(ConfigDocumentParser.java:152)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:420)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:247)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:405)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parse(ConfigDocumentParser.java:595)
+	at com.typesafe.config.impl.ConfigDocumentParser.parse(ConfigDocumentParser.java:14)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:260)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:248)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:307)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:747)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:710)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parse(Parseable.java:152)
+	at com.typesafe.config.impl.SimpleIncluder.fromBasename(SimpleIncluder.java:185)
+	at com.typesafe.config.impl.ConfigImpl.parseResourcesAnySyntax(ConfigImpl.java:132)
+	at com.typesafe.config.ConfigFactory.parseResourcesAnySyntax(ConfigFactory.java:1024)
+	at com.typesafe.config.ConfigFactory.parseApplicationConfig(ConfigFactory.java:238)
+	at com.typesafe.config.ConfigFactory.defaultApplication(ConfigFactory.java:519)
+	at play.api.Configuration$$anonfun$3.apply(Configuration.scala:73)
+	at play.api.Configuration$$anonfun$3.apply(Configuration.scala:69)
+	at scala.Option.getOrElse(Option.scala:121)
+	at play.api.Configuration$.load(Configuration.scala:69)
+	at play.api.Configuration$.load(Configuration.scala:109)
+	at play.api.Configuration$.load(Configuration.scala:115)
+	at play.api.Configuration.load(Configuration.scala)
+	at play.Configuration.load(Configuration.java:45)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:23)
+	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:17)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:140)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1$$anonfun$apply$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.withClassLoader$1(PlayEbean.scala:117)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:137)
+	at play.ebean.sbt.PlayEbean$$anonfun$configuredEbeanModels$1.apply(PlayEbean.scala:107)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Read from stdout: (myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+(myProject/compile:playEbeanModels) play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/C:/Users/EFE/play-java/conf/application.conf: 367: Key 'GMAIL_SMTP_USER' may not be followed by token: '}' (if you intended '}' to be part of a key or string value, try enclosing the key or value in double quotes, or you may be able to rename the file .properties rather than .conf)]
+Total time: 0 s, completed 17.Ağu.2016 20:19:27
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
