@@ -15,7 +15,7 @@ public class Time extends Model{
 	private DateTime logoffTime;
 	
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="time_id")
 	public Long id;
 	

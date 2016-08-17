@@ -15,7 +15,7 @@ import play.db.ebean.*;
 public class TimeTable extends Model {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "timetable_id")
 	public Long id;
 
