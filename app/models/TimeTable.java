@@ -27,16 +27,17 @@ public class TimeTable extends Model {
 
 	@OneToMany(mappedBy = "table")
 	public List<Time> timeTable = new ArrayList<>();
-
+/*
 	public TimeTable(User user) {
 		this.user = user;
 	}
-
+*/
 	public static Finder<String, TimeTable> find = new Finder<String, TimeTable>(String.class, TimeTable.class);
 
 	public static void createTable(User user) {
 		User us = User.find.byId(user.email);
-		TimeTable table = new TimeTable(us);
+		TimeTable table = new TimeTable();
+		table.setUser(user);
 		table.save();
 		us.table = table;
 
@@ -46,11 +47,14 @@ public class TimeTable extends Model {
 	public static void addTime(User user) {
 		User us = User.find.byId(user.email);
 		Time time = new Time();
-		time.table = us.table;
+		time.setTable(us.table);
 		time.save();
 		us.save();
 	}
 
+	public void setUser(User user){
+		this.user=user;
+	}
 	public void addT(Time time) {
 		this.timeTable.add(time);
 	}
