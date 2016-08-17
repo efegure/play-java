@@ -19349,3 +19349,37 @@ All newly invalidated sources after taking into account (previously) recompiled 
 Total time: 1 s, completed 17.Ağu.2016 08:05:40
 > server-post-command-cleanup
 > server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@51f184e3, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\EFE\play-java\app\controllers\HomeController.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\EFE\play-java\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@494e11b directly...
+Java compilation took 0.282461136 s
+Java analysis took 0.110246683 s
+Java compile + analysis took 0.399700652 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 17.Ağu.2016 08:06:52
+> server-post-command-cleanup
+> server-handle-next-server-request
