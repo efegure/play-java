@@ -19639,3 +19639,25 @@ All newly invalidated sources after taking into account (previously) recompiled 
 Total time: 1 s, completed 17.Ağu.2016 09:02:51
 > server-post-command-cleanup
 > server-handle-next-server-request
+> compile
+Evaluating tasks: myProject/compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@205ee11f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 17.Ağu.2016 09:04:59
+> server-post-command-cleanup
+> server-handle-next-server-request
