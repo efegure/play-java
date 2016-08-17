@@ -14,14 +14,22 @@ import play.db.ebean.*;
 @Table(name = "timetable")
 public class TimeTable extends Model {
 
+	/*
 	@Id
 	@Column(name = "timetable_id")
 	@SequenceGenerator(name="identifier", sequenceName="table_id_seq", allocationSize=1)  
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="identifier")  
-	public Long id;
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="sequence")  */
+	private Long id;
 
 	private boolean online;
 
+	@Id
+    @SequenceGenerator(name = "SeqGenerator", sequenceName = "hibernate_sequence")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SeqGenerator")
+    public Long getId() {
+        return id;
+    }
+	
 	@OneToOne()
 	public User user;
 
@@ -34,6 +42,7 @@ public class TimeTable extends Model {
 */
 	public static Finder<String, TimeTable> find = new Finder<String, TimeTable>(String.class, TimeTable.class);
 
+	
 	public static void createTable(User user) {
 		User us = User.find.byId(user.email);
 		TimeTable table = new TimeTable();

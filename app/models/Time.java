@@ -16,8 +16,8 @@ public class Time extends Model {
 
 	@Id
 	@Column(name = "time_id")
-	@SequenceGenerator(name="id", sequenceName="time_id_seq", allocationSize=1)  
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="id")  
+	@SequenceGenerator(name="idd", sequenceName="time_id_seq", allocationSize=1)  
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="idd")  
 	public Long id;
 
 	@ManyToOne

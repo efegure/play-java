@@ -81,9 +81,23 @@ public class User extends Model {
 	public static void createTableToUser(User user){
 		TimeTable.createTable(user);
 	}
-//delete not working for now
+	//TODO
+	//delete works but needs better function in table and time
 	public static void deleteUser(String id) {
-		  find.ref(id).delete();
+		User user=User.find.byId(id);
+		TimeTable t =TimeTable.find.byId(user.table.getId().toString());
+		user.table=null;
+		user.save();
+		t.user=null;
+		t.save();
+		for(Time time :t.timeTable){
+			time.table=null;
+			time.save();
+			time.delete();
+		}
+		t.delete();
+		find.ref(id).delete();
+		  
 		}
 	
 	private void setAsAdmin() {
