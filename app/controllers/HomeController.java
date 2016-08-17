@@ -62,8 +62,9 @@ public class HomeController extends Controller {
 				if (passwordChecker(pass)) {
 					return badRequest(views.html.main.render(userForm));
 				} else {
+					sendEmail(userForm.get().email);
 					User.create(userForm.get());
-					//User.createTableToUser(userForm.get());
+					User.createTableToUser(userForm.get());
 					flash("success", "You've have succesfully created an account");
 					sendEmail(userForm.get().email);
 					return ok(views.html.login.render(formFactory.form(Login.class)));
