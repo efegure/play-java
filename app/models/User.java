@@ -9,7 +9,7 @@ import play.data.validation.Constraints.*;
 import utility.Password;
 
 @Entity
-@Table(name = "CM_USERS")
+@Table(name = "cm_users")
 public class User extends Model {
 
 	@Id
