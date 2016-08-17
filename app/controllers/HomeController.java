@@ -116,7 +116,7 @@ public class HomeController extends Controller {
 		for(int i=0;i<userlist.size();i++){
 			User user = userlist.get(i);
 			verification = Password.checkPassword(user.email.toString(),hashed);
-			if(verification){
+			if(verification==false){
 				name = user.name.toString();
 				User us=User.find.byId(user.email);
 				us.register();
