@@ -65,7 +65,7 @@ public class HomeController extends Controller {
 					User.create(userForm.get());
 					User.createTableToUser(userForm.get());
 					flash("success", "You've have succesfully created an account");
-					sendEmail(userForm.get().email);
+					//sendEmail(userForm.get().email);
 					return ok(views.html.login.render(formFactory.form(Login.class)));
 				}
 			} else {
