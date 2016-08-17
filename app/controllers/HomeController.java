@@ -47,7 +47,8 @@ public class HomeController extends Controller {
 		email.setFrom("from@email.com");
 		email.addTo(emailadress);
 		String hashed=Password.hashPassword(emailadress);
-		email.setBodyText("Click to this link to verify your account: http://localhost:9000/validate/"+hashed);
+		String urlsafe = hashed.replaceAll("/", "-");
+		email.setBodyText("Click to this link to verify your account: http://localhost:9000/validate/"+urlsafe);
 		mailerClient.send(email);
 	}
 
@@ -108,24 +109,38 @@ public class HomeController extends Controller {
 		return redirect(routes.HomeController.home());
 	}
 	
-	public Result validate(String id) {
+	public Result validate(String urlsafe) {
 		List<User> userlist = User.find.all();
+		String hashed = urlsafe.replaceAll("-", "/");
 		String name="";
-		User user;
-		boolean verification ;
+		boolean verification=false;
 		for(int i=0;i<userlist.size();i++){
-			user = userlist.get(i);
-			verification = Password.checkPassword(user.email.toString(),id);
+			User user = userlist.get(i);
+			verification = Password.checkPassword(user.email.toString(),hashed);
 			if(verification){
-			name = user.name.toString();
-			}
-			else{
-				name="";
+				name = user.name.toString();
+				User us=User.find.byId(user.email);
+				us.register();
+				us.save();
 			}
 		}
-		return ok(views.html.validate.render(name));
+		if(verification){
+			return ok(views.html.validate.render(name));
+		}
+		else{
+			return redirect(routes.HomeController.error());
+		}
+		
 	}
 
+	public Result error() {
+		return ok(error.render());
+	}
+	
+	public Result valComplete(String username) {
+		return ok(validate.render(username));
+	}
+	
 	public Result main() {
 		return ok(main.render(formFactory.form(User.class)));
 	}
@@ -146,10 +161,18 @@ public class HomeController extends Controller {
 		if (loginForm.hasErrors()) {
 			return badRequest(login.render(loginForm));
 		} else {
-			User.login(User.find.byId(loginForm.get().email));
-			session().clear();
-			session("email", loginForm.get().email);
-			return redirect(routes.HomeController.home());
+			User user = User.find.byId(loginForm.get().email);
+			if(user.getRegistered()==false){
+				flash("failure", "Please verify your email");
+				return badRequest(login.render(loginForm));
+			}
+			else{
+				User.login(User.find.byId(loginForm.get().email));
+				session().clear();
+				session("email", loginForm.get().email);
+				return redirect(routes.HomeController.home());
+			}
+			
 		}
 	}
 

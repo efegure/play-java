@@ -22,7 +22,5 @@ public class Password {
 
 		return(password_verified);
 	}
-
 	
-
 }

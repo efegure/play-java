@@ -55,6 +55,11 @@ public class User extends Model {
 	public void register(){
 		this.isRegistered=true;
 	}
+
+	public boolean getRegistered(){
+		return isRegistered;
+	}
+	
 	public static void logout(User user){
 		TimeTable.setOffline(user.table,user);
 		Time lastTime = TimeTable.getLastTime(user.table);
@@ -76,7 +81,7 @@ public class User extends Model {
 	public static void createTableToUser(User user){
 		TimeTable.createTable(user);
 	}
-
+//delete not working for now
 	public static void deleteUser(String id) {
 		  find.ref(id).delete();
 		}
