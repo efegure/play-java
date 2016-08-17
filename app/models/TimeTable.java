@@ -15,7 +15,8 @@ import play.db.ebean.*;
 public class TimeTable extends Model {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@SequenceGenerator(name = "webuser_idwebuser_seq", sequenceName = "webuser_idwebuser_seq", allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "webuser_idwebuser_seq")
 	@Column(name = "timetable_id")
 	public Long id;
 

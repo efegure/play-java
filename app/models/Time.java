@@ -9,34 +9,32 @@ import com.avaje.ebean.Model;
 import com.avaje.ebean.Model.Finder;
 
 @Entity
-public class Time extends Model{
+public class Time extends Model {
 
 	private DateTime loginTime;
 	private DateTime logoffTime;
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="time_id")
-	public Long id;
-	
-	@ManyToOne
-	@JoinColumn(name="timetable_id")
-	public TimeTable table;
-	
-	public static Finder<String, Time> find = new Finder<String, Time>(
-			String.class, Time.class);
 
-	public Time(){
+	@Id
+	@SequenceGenerator(name = "webuser_idwebuser_seq", sequenceName = "webuser_idwebuser_seq", allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "webuser_idwebuser_seq")
+	@Column(name = "time_id")
+	public Long id;
+
+	@ManyToOne
+	@JoinColumn(name = "timetable_id")
+	public TimeTable table;
+
+	public static Finder<String, Time> find = new Finder<String, Time>(String.class, Time.class);
+
+	public Time() {
 		loginTime = new DateTime();
 	}
 	/*
-	public  static Time createTime(User user){
-		User us = User.find.byId(user.email);
-		Time time = new Time(us.table,us.table.id);
-		time.save();
-		return time;
-	}*/
-	
+	 * public static Time createTime(User user){ User us =
+	 * User.find.byId(user.email); Time time = new Time(us.table,us.table.id);
+	 * time.save(); return time; }
+	 */
+
 	public DateTime getLoginTime() {
 		return loginTime;
 	}
