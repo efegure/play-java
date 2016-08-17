@@ -15,34 +15,36 @@ import play.db.ebean.*;
 public class TimeTable extends Model {
 
 	/*
-	@Id
-	@Column(name = "timetable_id")
-	@SequenceGenerator(name="identifier", sequenceName="table_id_seq", allocationSize=1)  
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="sequence")  */
+	 * @Id
+	 * 
+	 * @Column(name = "timetable_id")
+	 * 
+	 * @SequenceGenerator(name="identifier", sequenceName="table_id_seq",
+	 * allocationSize=1)
+	 * 
+	 * @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="sequence")
+	 */
 	private Long id;
 
 	private boolean online;
 
 	@Id
-    @SequenceGenerator(name = "SeqGenerator", sequenceName = "hibernate_sequence")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SeqGenerator")
-    public Long getId() {
-        return id;
-    }
-	
+	@SequenceGenerator(name = "SeqGenerator", sequenceName = "hibernate_sequence")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SeqGenerator")
+	public Long getId() {
+		return id;
+	}
+
 	@OneToOne()
 	public User user;
 
 	@OneToMany(mappedBy = "table")
 	public List<Time> timeTable = new ArrayList<>();
-/*
-	public TimeTable(User user) {
-		this.user = user;
-	}
-*/
+	/*
+	 * public TimeTable(User user) { this.user = user; }
+	 */
 	public static Finder<String, TimeTable> find = new Finder<String, TimeTable>(String.class, TimeTable.class);
 
-	
 	public static void createTable(User user) {
 		User us = User.find.byId(user.email);
 		TimeTable table = new TimeTable();
@@ -57,13 +59,15 @@ public class TimeTable extends Model {
 		User us = User.find.byId(user.email);
 		Time time = new Time();
 		time.setTable(us.table);
+		time.setLoginTime();
 		time.save();
 		us.save();
 	}
 
-	public void setUser(User user){
-		this.user=user;
+	public void setUser(User user) {
+		this.user = user;
 	}
+
 	public void addT(Time time) {
 		this.timeTable.add(time);
 	}

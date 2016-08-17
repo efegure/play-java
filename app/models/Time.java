@@ -16,8 +16,8 @@ public class Time extends Model {
 
 	@Id
 	@Column(name = "time_id")
-	@SequenceGenerator(name="idd", sequenceName="time_id_seq", allocationSize=1)  
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="idd")  
+	@SequenceGenerator(name = "idd", sequenceName = "time_id_seq", allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "idd")
 	public Long id;
 
 	@ManyToOne
@@ -25,11 +25,10 @@ public class Time extends Model {
 	public TimeTable table;
 
 	public static Finder<String, Time> find = new Finder<String, Time>(String.class, Time.class);
-/*
-	public Time() {
-		loginTime = new DateTime();
-	}*/
-	
+	/*
+	 * public Time() { loginTime = new DateTime(); }
+	 */
+
 	/*
 	 * public static Time createTime(User user){ User us =
 	 * User.find.byId(user.email); Time time = new Time(us.table,us.table.id);
@@ -39,9 +38,9 @@ public class Time extends Model {
 	public DateTime getLoginTime() {
 		return loginTime;
 	}
-	
-	public void setTable(TimeTable table){
-		this.table=table;
+
+	public void setTable(TimeTable table) {
+		this.table = table;
 	}
 
 	public void setLoginTime() {
