@@ -65,7 +65,7 @@ public class HomeController extends Controller {
 					sendEmail(userForm.get().email);
 					User.create(userForm.get());
 					User.createTableToUser(userForm.get());
-					flash("success", "You've have succesfully created an account");
+					flash("success", "You've have succesfully created an account.An email has been sent to your account.Please verify your email to login.");
 					return ok(views.html.login.render(formFactory.form(Login.class)));
 				}
 			} else {
@@ -85,9 +85,10 @@ public class HomeController extends Controller {
 				if (passwordChecker(pass)) {
 					return badRequest(views.html.home.render(User.find.all(), User.find.byId(id), userForm));
 				} else {
+					userForm.get().register();
 					User.create(userForm.get());
 					User.createTableToUser(userForm.get());
-					flash("success", "You've have succesfully created an account.An email has been sent to your account.Please verify your eamil to login.");
+					flash("success", "You've have succesfully created an account.");
 					return redirect(routes.HomeController.home());
 				}
 			} else {

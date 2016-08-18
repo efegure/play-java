@@ -14,16 +14,6 @@ import play.db.ebean.*;
 @Table(name = "timetable")
 public class TimeTable extends Model {
 
-	/*
-	 * @Id
-	 * 
-	 * @Column(name = "timetable_id")
-	 * 
-	 * @SequenceGenerator(name="identifier", sequenceName="table_id_seq",
-	 * allocationSize=1)
-	 * 
-	 * @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="sequence")
-	 */
 	private Long id;
 
 	private boolean online;
@@ -40,9 +30,7 @@ public class TimeTable extends Model {
 
 	@OneToMany(mappedBy = "table")
 	public List<Time> timeTable = new ArrayList<>();
-	/*
-	 * public TimeTable(User user) { this.user = user; }
-	 */
+	
 	public static Finder<String, TimeTable> find = new Finder<String, TimeTable>(String.class, TimeTable.class);
 
 	public static void createTable(User user) {

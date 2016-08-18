@@ -99,7 +99,7 @@ public class User extends Model {
 
 	}
 
-	private void setAsAdmin() {
+	public void setAsAdmin() {
 		this.isAdmin = true;
 	}
 
