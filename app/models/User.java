@@ -68,9 +68,6 @@ public class User extends Model {
 	}
 
 	public static void create(User user) {
-		if (User.find.all().size() == 0) {
-			user.setAsAdmin();
-		}
 		String hashed = Password.hashPassword(user.password);
 		user.password = hashed;
 		user.save();
