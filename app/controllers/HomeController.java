@@ -87,7 +87,7 @@ public class HomeController extends Controller {
 				} else {
 					User.create(userForm.get());
 					User.createTableToUser(userForm.get());
-					flash("success", "You've have succesfully created an account");
+					flash("success", "You've have succesfully created an account.An email has been sent to your account.Please verify your eamil to login.");
 					return redirect(routes.HomeController.home());
 				}
 			} else {
