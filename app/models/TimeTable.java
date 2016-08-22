@@ -87,7 +87,7 @@ public class TimeTable extends Model {
 	public long calculateTotalTime() {
 		TimeTable table = this;
 		long totalTime = 0;
-		for (int i = 0; i < table.timeTable.size() - 1; i++) {
+		for (int i = 0; i < table.timeTable.size(); i++) {
 			Time time = table.timeTable.get(i);
 			totalTime = totalTime + time.calculateTimeDiff();
 		}

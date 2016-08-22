@@ -11,7 +11,7 @@
  <h1>@userList.size() users(s)</h1>
 <ul>
 @for(user <- userList) {
-  <li>Email: @user.email - Name : @user.name - Status:@user.getRegistered() - Emailverification : @user.getRegistered() - Password : @user.password - OnlineStatus: @user.table.getStatus() - TableId : tableid=@user.table.getId() - TotalOnlineTime(sec): @user.table.calculateTotalTime()seconds</li>@if(mainuser.email!=user.email) {@form(routes.HomeController.deleteUser(user.email)) {
+  <li>Email: @user.email - Name : @user.name - Emailverification : @user.getRegistered() - Password : @user.password - OnlineStatus: @user.table.getStatus() - TableId : tableid=@user.table.getId() - TotalOnlineTime(sec): @user.table.calculateTotalTime()seconds</li>@if(mainuser.email!=user.email) {@form(routes.HomeController.deleteUser(user.email)) {
                     <input type="submit" value="Delete">
                 }}
                 

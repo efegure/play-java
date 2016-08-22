@@ -14,6 +14,7 @@ import play.data.DynamicForm;
 import play.data.Form;
 import play.data.FormFactory;
 import play.data.format.Formatters;
+import play.data.validation.Constraints.Required;
 import play.i18n.MessagesApi;
 import play.mvc.*;
 import views.html.*;
@@ -158,8 +159,8 @@ public class HomeController extends Controller {
 	}
 
 	public Result authenticate() {
-		Form<Login> loginForm = formFactory.form(Login.class).bindFromRequest();
-		if (loginForm.hasErrors()) {
+			Form<Login> loginForm = formFactory.form(Login.class).bindFromRequest();
+		if (loginForm.hasErrors()||loginForm==null) {
 			return badRequest(login.render(loginForm));
 		} else {
 			User user = User.find.byId(loginForm.get().email);
@@ -210,8 +211,9 @@ public class HomeController extends Controller {
 	}
 
 	public static class Login {
-
+		@Required
 		public String email;
+		@Required
 		public String password;
 
 		public String validate() {
