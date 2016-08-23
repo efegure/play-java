@@ -1,5 +1,7 @@
 package models;
 
+import java.lang.reflect.InvocationTargetException;
+
 import javax.persistence.*;
 
 import com.avaje.ebean.*;
@@ -37,8 +39,12 @@ public class User extends Model {
 
 	public static User authenticate(String email, String password) {
 		User user = find.where().eq("email", email).findUnique();
-		if (Password.checkPassword(password, user.password)) {
-			return user;
+		if (user != null) {
+			if (Password.checkPassword(password, user.password)) {
+				return user;
+			} else {
+				return null;
+			}
 		} else {
 			return null;
 		}

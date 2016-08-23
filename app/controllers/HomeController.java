@@ -13,6 +13,7 @@ import play.*;
 import play.data.DynamicForm;
 import play.data.Form;
 import play.data.FormFactory;
+import play.data.format.Formats.NonEmpty;
 import play.data.format.Formatters;
 import play.data.validation.Constraints.Required;
 import play.i18n.MessagesApi;
@@ -211,9 +212,7 @@ public class HomeController extends Controller {
 	}
 
 	public static class Login {
-		@Required
 		public String email;
-		@Required
 		public String password;
 
 		public String validate() {
