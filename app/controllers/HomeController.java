@@ -42,6 +42,8 @@ public class HomeController extends Controller {
 	@Inject
 	FormFactory formFactory = new FormFactory(msgApi, new Formatters(msgApi), new Validador());
 
+	//TODO
+	//make this a utility class
 	public void sendEmail(String emailadress) {
 		String cid = "1234";
 		Email email = new Email();
@@ -120,11 +122,17 @@ public class HomeController extends Controller {
 			User user = userlist.get(i);
 			verification = Password.checkPassword(user.email.toString(),hashed);
 			if(verification){
-				name = user.name.toString();
-				User us=User.find.byId(user.email);
-				us.register();
-				us.save();
-				break;
+				if(user.getRegistered()==true){
+					return ok(views.html.registered.render());
+				}
+				else{
+					name = user.name.toString();
+					User us=User.find.byId(user.email);
+					us.register();
+					us.save();
+					break;
+				}
+				
 			}
 		}
 		if(verification){
