@@ -2,6 +2,7 @@ package utility;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
+import models.Company;
 import models.TimeTable;
 import models.User;
 
@@ -16,8 +17,13 @@ public class OnStartup {
             String fullName = "TheAdmin";
             TimeTable table=new TimeTable();
             User user = new User(email, fullName, password,null);
+            Company company = new Company("AdminCo");
+            company.save();
             user.setAsAdmin();
             user.save();
+            company.addUser(user);
+            company.save();
+            user.company=company;
             table.setUser(user);
             table.save();
             user.table=table;

@@ -3,7 +3,6 @@
 # ~~~~
 
 
-
 GET     /                                   controllers.HomeController.login
 
 POST    /                                   controllers.HomeController.authenticate

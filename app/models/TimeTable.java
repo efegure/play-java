@@ -39,7 +39,6 @@ public class TimeTable extends Model {
 		table.setUser(user);
 		table.save();
 		us.table = table;
-
 		us.save();
 	}
 

@@ -23,6 +23,12 @@ public class User extends Model {
 	public String password;
 	@OneToOne
 	public TimeTable table;
+	
+	@ManyToOne
+	public Company company;
+	
+	@Required
+	public String comName;
 
 	private boolean isRegistered = false;
 

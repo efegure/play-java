@@ -6,6 +6,7 @@ import java.util.List;
 import javax.inject.Inject;
 
 import validator.Validador;
+import models.Company;
 import models.Time;
 import models.TimeTable;
 import models.User;
@@ -66,9 +67,24 @@ public class HomeController extends Controller {
 				if (passwordChecker(pass)) {
 					return badRequest(views.html.main.render(userForm));
 				} else {
-					sendEmail(userForm.get().email);
-					User.create(userForm.get());
-					User.createTableToUser(userForm.get());
+					User user=userForm.get();
+					sendEmail(user.email);
+					User.create(user);
+					User.createTableToUser(user);
+					String cName =user.comName;
+					Company c=Company.find.byId(cName);
+					if(c==null){
+						Company com = new Company(cName);
+						Company.createCompany(com);
+						com.addUser(userForm.get());
+						com.save();
+					}
+					else{
+						c.addUser(userForm.get());
+						c.save();
+					}
+					user.company=c;
+					user.save();
 					flash("success", "You've have succesfully created an account.An email has been sent to your account.Please verify your email to login.");
 					return ok(views.html.login.render(formFactory.form(Login.class)));
 				}
@@ -165,6 +181,10 @@ public class HomeController extends Controller {
 
 	public Result login() {
 		return ok(login.render(formFactory.form(Login.class)));
+	}
+	
+	public Result test() {
+		return ok(test.render());
 	}
 
 	public Result authenticate() {

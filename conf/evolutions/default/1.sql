@@ -3,6 +3,11 @@
 
 # --- !Ups
 
+create table company (
+  c_name                        varchar(255) not null,
+  constraint pk_company primary key (c_name)
+);
+
 create table time (
   time_id                       bigint not null,
   login_time                    timestamp,
@@ -26,6 +31,8 @@ create table cm_users (
   name                          varchar(255),
   password                      varchar(255),
   table_id                      bigint,
+  company_c_name                varchar(255),
+  com_name                      varchar(255),
   is_registered                 boolean,
   is_admin                      boolean,
   constraint uq_cm_users_table_id unique (table_id),
@@ -39,6 +46,9 @@ alter table timetable add constraint fk_timetable_user_email foreign key (user_e
 
 alter table cm_users add constraint fk_cm_users_table_id foreign key (table_id) references timetable (id) on delete restrict on update restrict;
 
+alter table cm_users add constraint fk_cm_users_company_c_name foreign key (company_c_name) references company (c_name) on delete restrict on update restrict;
+create index ix_cm_users_company_c_name on cm_users (company_c_name);
+
 
 # --- !Downs
 
@@ -48,6 +58,11 @@ drop index if exists ix_time_timetable_id;
 alter table timetable drop constraint if exists fk_timetable_user_email;
 
 alter table cm_users drop constraint if exists fk_cm_users_table_id;
+
+alter table cm_users drop constraint if exists fk_cm_users_company_c_name;
+drop index if exists ix_cm_users_company_c_name;
+
+drop table if exists company;
 
 drop table if exists time;
 drop sequence if exists time_id_seq;
