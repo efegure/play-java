@@ -15,6 +15,7 @@ public class Company extends Model {
 	@Id
 	public String cName;
 	
+	@OneToOne
 	public User representative;
 	
 	@OneToMany
@@ -23,6 +24,9 @@ public class Company extends Model {
 	public Company(String cName){
 		this.cName=cName;
 	}
+	
+	@OneToOne
+	public Payment payment;
 	
 	public static Finder<String, Company> find = new Finder<String, Company>(String.class, Company.class);
 	

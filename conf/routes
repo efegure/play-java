@@ -13,6 +13,8 @@ POST    /register               			controllers.HomeController.newUser
 
 GET     /home                               controllers.HomeController.home
 
+POST    /home/payment/:id               	controllers.HomeController.paymentMethod(id:String)
+
 GET     /logout/:id                         controllers.HomeController.logout(id:String)
 
 POST    /home/:id/delete      				controllers.HomeController.deleteUser(id: String)

@@ -21,6 +21,7 @@ public class OnStartup {
             company.save();
             user.setAsAdmin();
             user.save();
+            company.representative=user;
             company.addUser(user);
             company.save();
             user.company=company;

@@ -1,17 +1,48 @@
-@(userList: List[User],mainuser : User, userForm : Form[User])
+@(userList: List[User],mainuser : User, userForm : Form[User],methodForm : Form[Payment])
 @import helper._
 <h2>Welcome @mainuser.name!</h2>
 
 
 <dt>Email: <span>(@mainuser.email)</span></dt>
 
+<h2>Assosiated Company:@mainuser.company.cName</h2>
+<h2>Assosiated Member Count:@mainuser.company.cUsers.size()</h2>
+
+@if(mainuser.company.representative!=null){
+	<h2>Current Company representative:@mainuser.company.representative.email</h2>
+	}
+@if(mainuser.email==mainuser.company.representative.email){
+	
+	@if(mainuser.company.payment==null){
+		<h4>Please choose a payment type for the company.</h4>
+		 @form(routes.HomeController.paymentMethod(mainuser.email)) {
+		@inputRadioGroup(  
+    	  methodForm("method"),
+    	 options = Seq("P"->"Prepaid","B"->"Billing"),
+    	 '_label -> "Payment",
+    	 '_error -> methodForm("method").
+            error.map(_.withMessage("select gender")))
+             <input type="submit" value="Confirm">
+            }
+	}
+	
+	@if(mainuser.company.payment!=null){
+		@if(mainuser.company.payment.prepaid==null){
+		<h3>Paying method is billing, cost:@mainuser.company.payment.billing.bill</h3>
+		}
+		@if(mainuser.company.payment.billing==null){
+		<h3>Paying method is prepaid, time: @mainuser.company.payment.prepaid.remainingtime</h3>
+		}}
+	
+
+}
 @if(mainuser.getAdminStatus()) {
   
   
  <h1>@userList.size() users(s)</h1>
 <ul>
 @for(user <- userList) {
-  <li>Email: @user.email - Company :@user.company.cName - Name : @user.name - Emailverification : @user.getRegistered() - Password : @user.password - OnlineStatus: @user.table.getStatus() - TableId : tableid=@user.table.getId() - TotalOnlineTime(sec): @user.table.calculateTotalTime()seconds</li>@if(mainuser.email!=user.email) {@form(routes.HomeController.deleteUser(user.email)) {
+  <li>Email: @user.email - Company :@user.company.cName - Company NoOfUsers:@user.company.cUsers.size()- Name : @user.name - Emailverification : @user.getRegistered() - Password : @user.password - OnlineStatus: @user.table.getStatus() - TableId : tableid=@user.table.getId() - TotalOnlineTime(sec): @user.table.calculateTotalTime()seconds</li>@if(mainuser.email!=user.email) {@form(routes.HomeController.deleteUser(user.email)) {
                     <input type="submit" value="Delete">
                 }}
                 
@@ -24,7 +55,7 @@
         @inputText(userForm("email")) 
         @inputText(userForm("name"))
         @inputPassword(userForm("password"))  
-        
+        @inputText(userForm("comName"))
         <input type="submit" value="Create">
         
     }
