@@ -226,11 +226,11 @@ public class HomeController extends Controller {
 	public Result login() {
 		return ok(login.render(formFactory.form(Login.class)));
 	}
-
+/*
 	public Result test() {
 		return ok(test.render());
 	}
-
+*/
 	public Result authenticate() {
 		Form<Login> loginForm = formFactory.form(Login.class).bindFromRequest();
 		if (loginForm.hasErrors() || loginForm == null) {

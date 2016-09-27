@@ -3,12 +3,12 @@
 
 # --- !Ups
 
-create table billing (
+create table billedpayment (
   id                            bigint not null,
   payment_id                    bigint,
   bill                          double,
-  constraint uq_billing_payment_id unique (payment_id),
-  constraint pk_billing primary key (id)
+  constraint uq_billedpayment_payment_id unique (payment_id),
+  constraint pk_billedpayment primary key (id)
 );
 create sequence billing_id_seq;
 
@@ -34,12 +34,12 @@ create table payment (
 );
 create sequence payment_id_seq increment by 1;
 
-create table pre_paid (
+create table prepaidpayment (
   id                            bigint not null,
   payment_id                    bigint,
   remainingtime                 double,
-  constraint uq_pre_paid_payment_id unique (payment_id),
-  constraint pk_pre_paid primary key (id)
+  constraint uq_prepaidpayment_payment_id unique (payment_id),
+  constraint pk_prepaidpayment primary key (id)
 );
 create sequence prepaid_id_seq;
 
@@ -74,7 +74,7 @@ create table cm_users (
   constraint pk_cm_users primary key (email)
 );
 
-alter table billing add constraint fk_billing_payment_id foreign key (payment_id) references payment (id) on delete restrict on update restrict;
+alter table billedpayment add constraint fk_billedpayment_payment_id foreign key (payment_id) references payment (id) on delete restrict on update restrict;
 
 alter table company add constraint fk_company_representative_email foreign key (representative_email) references cm_users (email) on delete restrict on update restrict;
 
@@ -82,11 +82,11 @@ alter table company add constraint fk_company_payment_id foreign key (payment_id
 
 alter table payment add constraint fk_payment_company_c_name foreign key (company_c_name) references company (c_name) on delete restrict on update restrict;
 
-alter table payment add constraint fk_payment_billing_id foreign key (billing_id) references billing (id) on delete restrict on update restrict;
+alter table payment add constraint fk_payment_billing_id foreign key (billing_id) references billedpayment (id) on delete restrict on update restrict;
 
-alter table payment add constraint fk_payment_prepaid_id foreign key (prepaid_id) references pre_paid (id) on delete restrict on update restrict;
+alter table payment add constraint fk_payment_prepaid_id foreign key (prepaid_id) references prepaidpayment (id) on delete restrict on update restrict;
 
-alter table pre_paid add constraint fk_pre_paid_payment_id foreign key (payment_id) references payment (id) on delete restrict on update restrict;
+alter table prepaidpayment add constraint fk_prepaidpayment_payment_id foreign key (payment_id) references payment (id) on delete restrict on update restrict;
 
 alter table time add constraint fk_time_timetable_id foreign key (timetable_id) references timetable (id) on delete restrict on update restrict;
 create index ix_time_timetable_id on time (timetable_id);
@@ -101,7 +101,7 @@ create index ix_cm_users_company_c_name on cm_users (company_c_name);
 
 # --- !Downs
 
-alter table billing drop constraint if exists fk_billing_payment_id;
+alter table billedpayment drop constraint if exists fk_billedpayment_payment_id;
 
 alter table company drop constraint if exists fk_company_representative_email;
 
@@ -113,7 +113,7 @@ alter table payment drop constraint if exists fk_payment_billing_id;
 
 alter table payment drop constraint if exists fk_payment_prepaid_id;
 
-alter table pre_paid drop constraint if exists fk_pre_paid_payment_id;
+alter table prepaidpayment drop constraint if exists fk_prepaidpayment_payment_id;
 
 alter table time drop constraint if exists fk_time_timetable_id;
 drop index if exists ix_time_timetable_id;
@@ -125,7 +125,7 @@ alter table cm_users drop constraint if exists fk_cm_users_table_id;
 alter table cm_users drop constraint if exists fk_cm_users_company_c_name;
 drop index if exists ix_cm_users_company_c_name;
 
-drop table if exists billing;
+drop table if exists billedpayment;
 drop sequence if exists billing_id_seq;
 
 drop table if exists company;
@@ -133,7 +133,7 @@ drop table if exists company;
 drop table if exists payment;
 drop sequence if exists payment_id_seq;
 
-drop table if exists pre_paid;
+drop table if exists prepaidpayment;
 drop sequence if exists prepaid_id_seq;
 
 drop table if exists time;

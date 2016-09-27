@@ -5,6 +5,7 @@ import javax.persistence.*;
 import com.avaje.ebean.Model;
 
 @Entity
+@Table(name = "billedPayment")
 public class Billing extends Model {
 	
 	@OneToOne
