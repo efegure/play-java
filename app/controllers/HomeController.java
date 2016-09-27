@@ -80,13 +80,15 @@ public class HomeController extends Controller {
 					if (c == null) {
 						Company com = new Company(cName);
 						Company.createCompany(com);
-						com.addUser(userForm.get());
+						com.addUser(user);
 						com.save();
+						user.company=com;
 					} else {
-						c.addUser(userForm.get());
+						c.addUser(user);
 						c.save();
+						user.company = c;
 					}
-					user.company = c;
+					
 					user.save();
 					flash("success",
 							"You've have succesfully created an account.An email has been sent to your account.Please verify your email to login.");
@@ -166,7 +168,8 @@ public class HomeController extends Controller {
 	@Security.Authenticated(Secured.class)
 	public Result home() {
 		Form<User> userForm = formFactory.form(User.class).bindFromRequest();
-		return ok(home.render(User.find.all(), User.find.byId(request().username()), userForm,
+		User mainuser =User.find.byId(request().username());
+		return ok(home.render(User.find.all(),mainuser , userForm,
 				formFactory.form(Payment.class)));
 	}
 

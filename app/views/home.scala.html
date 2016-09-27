@@ -11,7 +11,7 @@
 @if(mainuser.company.representative!=null){
 	<h2>Current Company representative:@mainuser.company.representative.email</h2>
 	}
-@if(mainuser.email==mainuser.company.representative.email){
+@if(mainuser==mainuser.company.representative){
 	
 	@if(mainuser.company.payment==null){
 		<h4>Please choose a payment type for the company.</h4>
