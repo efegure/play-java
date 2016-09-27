@@ -16,4 +16,5 @@ public class PrePaid extends Model {
 	public long id;
 	
 	public double remainingtime;
+	//TODO make this more complicated class
 }

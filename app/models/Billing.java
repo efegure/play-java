@@ -16,4 +16,5 @@ public class Billing extends Model {
 	public long id;
 
 	public double bill;
+	//TODO make this more complicated class
 }
