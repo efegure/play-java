@@ -6,7 +6,7 @@
 create table billedpayment (
   id                            bigint not null,
   payment_id                    bigint,
-  bill                          double,
+  bill                          decimal(38),
   constraint uq_billedpayment_payment_id unique (payment_id),
   constraint pk_billedpayment primary key (id)
 );
@@ -37,7 +37,7 @@ create sequence payment_id_seq increment by 1;
 create table prepaidpayment (
   id                            bigint not null,
   payment_id                    bigint,
-  remainingtime                 double,
+  remainingtime                 decimal(38),
   constraint uq_prepaidpayment_payment_id unique (payment_id),
   constraint pk_prepaidpayment primary key (id)
 );

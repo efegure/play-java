@@ -1,5 +1,7 @@
 package models;
 
+import java.math.BigDecimal;
+
 import javax.persistence.*;
 
 import com.avaje.ebean.Model;
@@ -16,6 +18,6 @@ public class Billing extends Model {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "billing")
 	public long id;
 
-	public double bill;
+	public BigDecimal bill;
 	//TODO make this more complicated class
 }

@@ -1,5 +1,7 @@
 package models;
 
+import java.math.BigDecimal;
+
 import javax.persistence.*;
 
 import com.avaje.ebean.Model;
@@ -16,6 +18,6 @@ public class PrePaid extends Model {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "prepaid")
 	public long id;
 	
-	public double remainingtime;
+	public BigDecimal remainingtime;
 	//TODO make this more complicated class
 }
