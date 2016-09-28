@@ -52,7 +52,7 @@ public class HomeController extends Controller {
 		String cid = "1234";
 		Email email = new Email();
 		email.setSubject("Account Verification");
-		email.setFrom("from@email.com");
+		email.setFrom("playappofefe@yahoo.com");
 		email.addTo(emailadress);
 		String hashed = Password.hashPassword(emailadress);
 		String urlsafe = hashed.replaceAll("/", "-");
