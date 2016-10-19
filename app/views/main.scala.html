@@ -1,23 +1,26 @@
 @(userForm : Form[User])
 
 @import helper._
-
- <h2>Sign Up</h2>
+<head>
+<title>Sign up</title>
+</head>
+ <h2 style="text-align:center">Sign Up</h2>
     
-    @form(routes.HomeController.newUser) {
+    @form(routes.HomeController.newUser , 'style -> "text-align:center") {
         
-        @inputText(userForm("email")) 
-        @inputText(userForm("name"))
-        @inputPassword(userForm("password"))  
-        @inputText(userForm("comName"))
+        @inputText(userForm("Email")) 
+        @inputText(userForm("Name"))
+        @inputPassword(userForm("Password"))  
+        @inputText(userForm("ComName"))
         
-        <input type="submit" value="Create">
+        <input style="text-align:center" type="submit" value="Create">
         
     }
     
      @if(flash.contains("failure")) {
-    <p class="failure">
+    <p style="text-align:center" class="failure">
         @flash.get("failure")
     </p>
 }
-<a href="@routes.HomeController.login()">I already have an account.</a>
+<p style="text-align:center">[
+<a href="@routes.HomeController.login()">I already have an account.</a>]</p>

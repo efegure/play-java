@@ -1,18 +1,24 @@
 @(loginForm : Form[HomeController.Login])
 @import helper._
+ <head>
+ <title>Efe's App</title>
+ </head>
+ <body>
+ <h2 style="text-align:center">Login</h2>
  
-    @form(routes.HomeController.authenticate) {
+    @form(routes.HomeController.authenticate, 'style -> "text-align:center") {
         
-        @inputText(loginForm("email")) 
-        @inputPassword(loginForm("password"))  
-        
-        <input type="submit" value="Confirm">
-        
+        @inputText(loginForm("Email")) 
+        @inputPassword(loginForm("Password"))  
+        <p style="text-align:center">
+        <input  type="submit" value="Confirm">
+        </p>
     }
     @if(flash.contains("success")) {
-    <p class="success">
+    <p style="text-align:center" class="success">
         @flash.get("success")
     </p>
 }
-
-<a href="@routes.HomeController.main()">Sign Up</a>
+<p style="text-align:center">[<a  href="@routes.HomeController.main()">Sign Up</a>]
+</p>
+</body>
