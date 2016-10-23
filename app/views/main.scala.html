@@ -1,26 +1,40 @@
 @(userForm : Form[User])
-
+@import b4.vertical.fieldConstructor
 @import helper._
+<link rel="stylesheet" 
+  href="@routes.Assets.versioned("bootstrap-4.0.0/css/bootstrap.css")">
+<script type='text/javascript' 
+  src='@routes.Assets.versioned("bootstrap/js/bootstrap.js")'></script>
 <head>
 <title>Sign up</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<body>
+<div id="fix-for-navbar-fixed-top-spacing" style="height: 90px;">&nbsp;</div>
+<div class="container">
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+<a class="btn float-xs-right btn-outline-success" href="@routes.HomeController.login()">Login</a>
+  <h1 class="navbar-brand mb-0">AppOfEfe</h1>
+      
+</nav>
+</div>
  <h2 style="text-align:center">Sign Up</h2>
-    
-    @form(routes.HomeController.newUser , 'style -> "text-align:center") {
-        
-        @inputText(userForm("Email")) 
-        @inputText(userForm("Name"))
-        @inputPassword(userForm("Password"))  
-        @inputText(userForm("ComName"))
-        
-        <input style="text-align:center" type="submit" value="Create">
-        
-    }
-    
-     @if(flash.contains("failure")) {
-    <p style="text-align:center" class="failure">
-        @flash.get("failure")
-    </p>
+    <div class="container">
+    @b4.form(routes.HomeController.newUser) {
+  
+  @b4.email( userForm("email"), '_label -> "Email", 'placeholder -> "example@mail.com" )
+  @b4.text( userForm("name"), '_label -> "Username", 'placeholder -> "asd123" )
+  @b4.password( userForm("password"), '_label -> "Password", 'placeholder -> "Password" )
+  @b4.text( userForm("comName"), '_label -> "Company", 'placeholder -> "Name of Your Company" )
+  @b4.submit('class -> "btn btn-default"){ Sign up }
+  
 }
-<p style="text-align:center">[
-<a href="@routes.HomeController.login()">I already have an account.</a>]</p>
+ @if(flash.contains("failure")) {
+     <div class="alert alert-warning">
+  <strong>Warning!</strong> @flash.get("failure")
+</div>
+       
+}
+    </div>
+    
+</body>

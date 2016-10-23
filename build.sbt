@@ -15,7 +15,11 @@ libraryDependencies ++= Seq(
   javaWs,
   "org.postgresql" % "postgresql" % "9.3-1102-jdbc4",
   "com.typesafe.play" %% "play-mailer" % "5.0.0",
-  "org.mindrot" % "jbcrypt" % "0.3m"
+  "org.mindrot" % "jbcrypt" % "0.3m",
+  "com.adrianhurt" %% "play-bootstrap" % "1.1-P25-B4",
+  "org.webjars" % "bootstrap" % "3.3.7",
+  "org.webjars" % "jquery" % "2.2.3"
+  
 )
 
 fork in run := true

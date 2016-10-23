@@ -27,18 +27,8 @@ import play.libs.mailer.Email;
 import play.libs.mailer.MailerClient;
 import utility.Password;
 
-/**
- * This controller contains an action to handle HTTP requests to the
- * application's home page.
- */
 public class HomeController extends Controller {
 
-	/**
-	 * An action that renders an HTML page with a welcome message. The
-	 * configuration in the <code>routes</code> file means that this method will
-	 * be called when the application receives a <code>GET</code> request with a
-	 * path of <code>/</code>.
-	 */
 	@Inject
 	MailerClient mailerClient;
 
@@ -82,16 +72,16 @@ public class HomeController extends Controller {
 						Company.createCompany(com);
 						com.addUser(user);
 						com.save();
-						user.company=com;
+						user.company = com;
 					} else {
 						c.addUser(user);
 						c.save();
 						user.company = c;
 					}
-					
+
 					user.save();
 					flash("success",
-							"You've have succesfully created an account.An email has been sent to your account.Please verify your email to login.");
+							"You've have succesfully created an account.To be able to login, please verify your email.");
 					return ok(views.html.login.render(formFactory.form(Login.class)));
 				}
 			} else {
@@ -168,9 +158,8 @@ public class HomeController extends Controller {
 	@Security.Authenticated(Secured.class)
 	public Result home() {
 		Form<User> userForm = formFactory.form(User.class).bindFromRequest();
-		User mainuser =User.find.byId(request().username());
-		return ok(home.render(User.find.all(),mainuser , userForm,
-				formFactory.form(Payment.class)));
+		User mainuser = User.find.byId(request().username());
+		return ok(home.render(User.find.all(), mainuser, userForm, formFactory.form(Payment.class)));
 	}
 
 	public Result deleteUser(String id) {
@@ -229,11 +218,7 @@ public class HomeController extends Controller {
 	public Result login() {
 		return ok(login.render(formFactory.form(Login.class)));
 	}
-/*
-	public Result test() {
-		return ok(test.render());
-	}
-*/
+
 	public Result authenticate() {
 		Form<Login> loginForm = formFactory.form(Login.class).bindFromRequest();
 		if (loginForm.hasErrors() || loginForm == null) {

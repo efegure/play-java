@@ -1,24 +1,40 @@
-@(loginForm : Form[HomeController.Login])
-@import helper._
- <head>
- <title>Efe's App</title>
- </head>
- <body>
- <h2 style="text-align:center">Login</h2>
- 
-    @form(routes.HomeController.authenticate, 'style -> "text-align:center") {
-        
-        @inputText(loginForm("Email")) 
-        @inputPassword(loginForm("Password"))  
-        <p style="text-align:center">
-        <input  type="submit" value="Confirm">
-        </p>
-    }
-    @if(flash.contains("success")) {
-    <p style="text-align:center" class="success">
-        @flash.get("success")
-    </p>
-}
-<p style="text-align:center">[<a  href="@routes.HomeController.main()">Sign Up</a>]
-</p>
+@(loginForm : Form[HomeController.Login]) @import helper._
+@implicitFieldConstructor = @{ b4.vertical.fieldConstructor }
+<html>
+<link rel="stylesheet" href="@routes.Assets.versioned("bootstrap-4.0.0/css/bootstrap.css")">
+<script type='text/javascript'
+	src='@routes.Assets.versioned("bootstrap/js/bootstrap.js")'></script>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Efe's App</title>
+</head>
+<body>
+<div id="fix-for-navbar-fixed-top-spacing" style="height: 90px;">&nbsp;</div>
+
+<div class="container">
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+<a class="btn float-xs-right btn-outline-success" href="@routes.HomeController.main()">Sign Up</a>
+  <h1 class="navbar-brand mb-0">AppOfEfe</h1>
+      
+</nav>
+</div>
+	<h2 style="text-align: center">Login</h2>
+
+	<div class="container">
+		@b4.form(routes.HomeController.authenticate) { @b4.text(loginForm("email"), '_label -> "Email", 'placeholder -> "example@mail.com" ) 
+		@b4.password( loginForm("password"), '_label -> "Password", 'placeholder -> "Password" ) 
+		@b4.submit('class -> "btn btn-default"){ Sign in } } 
+		
+		@if(flash.contains("success")) {
+		<div class="alert alert-info">
+			<strong>Success!</strong> @flash.get("success")
+		</div>
+		}
+		
+		
+
+	</div>
+	
 </body>
+
+</html>

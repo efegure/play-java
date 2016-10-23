@@ -1,10 +1,29 @@
 @(userList: List[User],mainuser : User, userForm : Form[User],methodForm : Form[Payment])
 @import helper._
-<h2>Welcome @mainuser.name!</h2>
+@implicitFieldConstructor = @{ b4.horizontal.fieldConstructor("col-md-2", "col-md-10") }
+<link rel="stylesheet" 
+  href="@routes.Assets.versioned("bootstrap-4.0.0/css/bootstrap.css")">
+<script type='text/javascript' 
+  src='@routes.Assets.versioned("bootstrap/js/bootstrap.js")'></script>
+
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Home</title>
 </head>
+<body>
+<div id="fix-for-navbar-fixed-top-spacing" style="height: 90px;">&nbsp;</div>
+<div class="container">
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+<a class="btn float-xs-right btn-outline-success" href="@routes.HomeController.logout(mainuser.email)">Logout</a>
+<span class="navbar-text float-xs-right text-muted">
+   Welcome, @mainuser.name&nbsp;</span>
+  <h1 class="navbar-brand mb-0">AppOfEfe</h1>
+      
+</nav>
+</div>
+<div class="container">
+<h2>Welcome @mainuser.name!</h2>
 <dl>
 <li><b>Email :</b> <span>(@mainuser.email)</span></li>
 <li><b>Assosiated Company :</b>@mainuser.company.cName</li>
@@ -39,45 +58,53 @@
 
 }
 </dl>
-<hr/>
+
 @if(mainuser.getAdminStatus()) {
-  
-  
+  </div>
+  <hr/>
+<div class="container"> 
  <h1>User List : @userList.size() user(s)</h1>
-<ol>
-@for(user <- userList) {
-  <li><b>Email:</b> @user.email
-  <ul>
-  <li><b>Username :</b> @user.name</li> 
-  <li><b>Email Verification :</b> @user.getRegistered()</li>
-  <li><b>Online Status :</b> @user.table.getStatus()</li> 
-  <li><b>Company Name :</b> @user.company.cName</li>
-  <ul>
-  <li><b>Company Number of Users :</b> @user.company.cUsers.size()</li>
-  </ul>
-  <li><b>Total Online Time :</b> @user.table.calculateTotalTime()s</li>
-  </ul>
-  </li>
+ 
+
+<table class="table table-striped" >
+  <tr>
+    <th>Email Adress</th>
+    <th>Username</th> 
+    <th>Email Verification</th>
+    <th>Online Status</th>
+    <th>Company Name</th>
+    <th>Online Time</th>
+  </tr>
+  @for(user <- userList) {
+  <tr>
+    <td>@user.email</td>
+    <td>@user.name</td>
+    <td>@user.getRegistered()</td> 
+    <td>@user.table.getStatus()</td>
+    <td> @user.company.cName</td>
+    <td>@user.table.calculateTotalTime()</td>
   
   @if(mainuser.email!=user.email) {@form(routes.HomeController.deleteUser(user.email)) {
-                    <input type="submit" value="Delete">
+                    <td>@b4.submit('class -> "btn btn-danger"){ Delete }</td>
                 }}
-                
-} 
-</ol>
+    </tr> 
+}
+</table> 
+</div>
+
 <hr/>
+<div class="container">
 <h2>Register a User:</h2>
-
-
-    @form(routes.HomeController.addUser(mainuser.email)) {
-        
-        @inputText(userForm("Email")) 
-        @inputText(userForm("Name"))
-        @inputPassword(userForm("Password"))  
-        @inputText(userForm("ComName"))
-        <input type="submit" value="Create">
-        
-    }
+  @b4.form(routes.HomeController.addUser(mainuser.email)) {
+  
+  @b4.email( userForm("email"), '_label -> "Email", 'placeholder -> "example@mail.com" )
+  @b4.text( userForm("name"), '_label -> "Username", 'placeholder -> "asd123" )
+  @b4.password( userForm("password"), '_label -> "Password", 'placeholder -> "Password" )
+  @b4.text( userForm("comName"), '_label -> "Company", 'placeholder -> "Name of Your Company" )
+  @b4.submit('class -> "btn btn-primary"){ Add User }
+  
+}
+</div>
     
      @if(flash.contains("failure")) {
     <p class="failure">
@@ -86,4 +113,4 @@
 }
 }
 
-<a href="@routes.HomeController.logout(mainuser.email)">Logout</a>
+</body>
