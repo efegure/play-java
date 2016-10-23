@@ -25,4 +25,4 @@ GET     /validate/:id	      				controllers.HomeController.validate(id: String)
 
 GET     /error	      						controllers.HomeController.error
 
-GET     /assets/*file               		controllers.Assets.versioned(path="/public", file: Asset)
+GET     /assets/*file               		controllers.Assets.at(path="/public", file)
