@@ -1,0 +1,6 @@
+ERROR - 19:59:05: java.net.MalformedURLException: unknown protocol: pathmap
+ERROR - 19:59:24: java.net.MalformedURLException: unknown protocol: pathmap
+WARNING - 20:00:18: Convert play-java
+ERROR - 20:00:18: java.net.MalformedURLException: unknown protocol: pathmap
+WARNING - 20:08:22: Convert play-java
+ERROR - 20:08:22: java.net.MalformedURLException: unknown protocol: pathmap

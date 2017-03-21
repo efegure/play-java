@@ -54,12 +54,12 @@ public class TimeTable extends Model {
 	public void setUser(User user) {
 		this.user = user;
 	}
-
+/*
 	public void addT(Time time) {
 		this.timeTable.add(time);
 	}
-
-	public static void setOffline(TimeTable table, User user) {
+*/
+	public static void setOffline(User user) {
 		User us = User.find.byId(user.email);
 		us.table.setOff();
 		us.table.save();

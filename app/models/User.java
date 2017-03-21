@@ -71,7 +71,7 @@ public class User extends Model {
 	}
 
 	public static void logout(User user) {
-		TimeTable.setOffline(user.table, user);
+		TimeTable.setOffline(user);
 		Time lastTime = TimeTable.getLastTime(user.table);
 		lastTime.setLogoffTime();
 		lastTime.save();
