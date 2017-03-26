@@ -7,6 +7,7 @@ import org.joda.time.Period;
 
 import com.avaje.ebean.Model;
 import com.avaje.ebean.Model.Finder;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 @Entity
 public class Time extends Model {
@@ -21,7 +22,7 @@ public class Time extends Model {
 	public Long id;
 
 	@ManyToOne
-	@JoinColumn(name = "timetable_id")
+	@JoinColumn(name = "timetable_id") @JsonBackReference
 	public TimeTable table;
 
 	public static Finder<String, Time> find = new Finder<String, Time>(String.class, Time.class);

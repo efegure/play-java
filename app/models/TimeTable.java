@@ -7,6 +7,7 @@ import javax.persistence.*;
 
 import com.avaje.ebean.Model;
 import com.avaje.ebean.Model.Finder;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import play.db.ebean.*;
 
@@ -25,7 +26,7 @@ public class TimeTable extends Model {
 		return id;
 	}
 
-	@OneToOne()
+	@OneToOne()@JsonBackReference
 	public User user;
 
 	@OneToMany(mappedBy = "table")

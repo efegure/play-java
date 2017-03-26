@@ -16,7 +16,7 @@ public class OnStartup {
             String password = "aaa";
             String fullName = "TheAdmin";
             TimeTable table=new TimeTable();
-            User user = new User(email, fullName, password,null);
+            User user = new User(email, fullName, password);
             Company company = new Company("AdminCo");
             company.save();
             user.setAsAdmin();

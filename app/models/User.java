@@ -5,6 +5,7 @@ import java.lang.reflect.InvocationTargetException;
 import javax.persistence.*;
 
 import com.avaje.ebean.*;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import play.data.validation.Constraints.*;
 import utility.Password;
@@ -24,7 +25,7 @@ public class User extends Model {
 	@OneToOne
 	public TimeTable table;
 	
-	@ManyToOne
+	@ManyToOne@JsonBackReference
 	public Company company;
 	
 	@Required
@@ -34,11 +35,11 @@ public class User extends Model {
 
 	private boolean isAdmin = false;
 
-	public User(String email, String name, String password, TimeTable table) {
+	public User(String email, String name, String password) {
 		this.email = email;
 		this.name = name;
 		this.password = password;
-		this.table = table;
+		
 	}
 
 	public static Finder<String, User> find = new Finder<String, User>(String.class, User.class);

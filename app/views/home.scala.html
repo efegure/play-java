@@ -95,7 +95,7 @@
 <hr/>
 <div class="container">
 <h2>Register a User:</h2>
-  @b4.form(routes.HomeController.addUser(mainuser.email)) {
+  @b4.form(routes.HomeController.newUser()) {
   
   @b4.email( userForm("email"), '_label -> "Email", 'placeholder -> "example@mail.com" )
   @b4.text( userForm("name"), '_label -> "Username", 'placeholder -> "asd123" )

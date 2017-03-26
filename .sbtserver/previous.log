@@ -1,5 +1,5 @@
-New log file opened at Wed Nov 23 22:41:24 EET 2016 by 9064@BUMBLEBEE
-jvm 9064@BUMBLEBEE
+New log file opened at Sun Mar 26 23:27:01 EEST 2017 by 5096@BUMBLEBEE
+jvm 5096@BUMBLEBEE
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.91-b15
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\EFE\play-java\project, returning: (play-java-build)
 Loading project definition from C:\Users\EFE\play-java\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@5a246263, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@671281db, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -76,10 +76,94 @@ Set current project to play-java (in build file:/C:/Users/EFE/play-java/)
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/compile:discoveredMainClasses
+Evaluating tasks: myProject/compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@5c6b7c1, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 4 s, completed 26.Mar.2017 23:27:16
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/compile:mainClass
+Evaluating tasks: myProject/compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@767edfad, check cycles: false
+Total time: 0 s, completed 26.Mar.2017 23:27:16
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/compile:discoveredMainClasses
+Evaluating tasks: myProject/compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@5dd95d39, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed 26.Mar.2017 23:27:16
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/compile:mainClass
+Evaluating tasks: myProject/compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@769fa03, check cycles: false
+Total time: 0 s, completed 26.Mar.2017 23:27:16
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/compile:discoveredMainClasses
+Evaluating tasks: myProject/compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@4f8b35db, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed 27.Mar.2017 00:15:23
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/EFE/play-java/}myProject/compile:mainClass
+Evaluating tasks: myProject/compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@7626beb8, check cycles: false
+Total time: 0 s, completed 27.Mar.2017 00:15:23
+> server-post-command-cleanup
+> server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
 Closing listening server socket
 Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 9064@BUMBLEBEE logs at Wed Nov 23 22:41:34 EET 2016, goodbye.
+Closing the 5096@BUMBLEBEE logs at Mon Mar 27 00:15:25 EEST 2017, goodbye.

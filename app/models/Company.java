@@ -7,6 +7,7 @@ import javax.persistence.*;
 
 import com.avaje.ebean.Model;
 import com.avaje.ebean.Model.Finder;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 
 @Entity
@@ -15,10 +16,10 @@ public class Company extends Model {
 	@Id
 	public String cName;
 	
-	@OneToOne
+	@OneToOne@JsonBackReference
 	public User representative;
 	
-	@OneToMany
+	@OneToMany @JsonBackReference
 	public List<User> cUsers = new ArrayList<>();
 	
 	public Company(String cName){

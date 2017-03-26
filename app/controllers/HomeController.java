@@ -5,6 +5,9 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+
 import validator.Validador;
 import models.Billing;
 import models.Company;
@@ -22,7 +25,9 @@ import play.data.format.Formatters;
 import play.data.validation.Constraints.Required;
 import play.i18n.MessagesApi;
 import play.mvc.*;
+
 import views.html.*;
+import play.libs.Json;
 import play.libs.mailer.Email;
 import play.libs.mailer.MailerClient;
 import utility.Password;
@@ -50,7 +55,7 @@ public class HomeController extends Controller {
 				"Click to this link to verify your account: https://appofefe.herokuapp.com/validate/" + urlsafe);
 		mailerClient.send(email);
 	}
-
+/*
 	public Result newUser() {
 		Form<User> userForm = formFactory.form(User.class).bindFromRequest();
 		if (userForm.hasErrors()) {
@@ -90,7 +95,7 @@ public class HomeController extends Controller {
 			}
 		}
 	}
-
+*/
 	public Result paymentMethod(String id) {
 		User user = User.find.byId(id);
 		Form<Payment> methodForm = formFactory.form(Payment.class).bindFromRequest();
@@ -114,7 +119,7 @@ public class HomeController extends Controller {
 		user.company.save();
 		return redirect(routes.HomeController.home());
 	}
-
+/*
 	public Result addUser(String id) {
 		Form<User> userForm = formFactory.form(User.class).bindFromRequest();
 		if (userForm.hasErrors()) {
@@ -154,7 +159,7 @@ public class HomeController extends Controller {
 			}
 		}
 	}
-
+*/
 	@Security.Authenticated(Secured.class)
 	public Result home() {
 		Form<User> userForm = formFactory.form(User.class).bindFromRequest();
@@ -162,9 +167,84 @@ public class HomeController extends Controller {
 		return ok(home.render(User.find.all(), mainuser, userForm, formFactory.form(Payment.class)));
 	}
 
-	public Result deleteUser(String id) {
-		User.deleteUser(id);
-		return redirect(routes.HomeController.home());
+	public Result getAllUsers() {
+		JsonNode request = request().body().asJson();
+		List<User> list = User.find.all();
+		return ok(Json.toJson(list));
+	}
+
+	public Result newUser() {
+		JsonNode json = request().body().asJson();
+		if(json.findPath("email").textValue()==null|| json.findPath("name").textValue()==null||json.findPath("comName").textValue()==null||json.findPath("password").textValue()==null){
+			ObjectNode response =Json.newObject();
+			response.put("Error", "Missing parameters in the Json.");
+			return ok(response);
+		}
+		if (User.find.byId(json.findPath("email").textValue()) == null) {
+			User user = new User(json.findPath("email").textValue(), json.findPath("name").textValue(),
+					json.findPath("password").textValue());
+			if (json == null) {
+				ObjectNode response =Json.newObject();
+				response.put("Error", "Expecting Json data!");
+				return ok(response);
+			} else {
+
+				if (user.name == null || user.password == null || user.email == null) {
+					ObjectNode response =Json.newObject();
+					response.put("Error", "Invalid Json format!");
+					return ok(response);
+				} else {
+					// sendEmail(user.email);
+					User.create(user);
+					User.createTableToUser(user);
+					String cName = json.findPath("comName").textValue();
+					Company c = Company.find.byId(cName);
+					if (c == null) {
+						Company com = new Company(cName);
+						com.addUser(user);
+						com.save();
+						user.company = com;
+					} else {
+						c.addUser(user);
+						c.save();
+						user.company = c;
+					}
+					user.save();
+					ObjectNode response =Json.newObject();
+					response.put("Message", "User created succesfully.");
+					return ok(response);
+				}
+			}
+		} else {
+			ObjectNode response =Json.newObject();
+			response.put("Error", "User already exists.");
+			return ok(response);
+		}
+	}
+
+	public Result deleteUser() {
+		JsonNode json = request().body().asJson();
+		String email=json.findPath("email").textValue();
+		if(email==null){
+			ObjectNode response =Json.newObject();
+			response.put("Error", "Invalid Json format.");
+			return ok(response);
+		}
+		else{
+			if(User.find.byId(email)==null){
+				ObjectNode response =Json.newObject();
+				response.put("Error", "No such user exists.");
+				return ok(response);
+			}
+			else{
+				User.deleteUser(email);
+				ObjectNode response =Json.newObject();
+				response.put("Message", "User deleted succesfully.");
+				return ok(response);
+			}
+			
+		}
+		
 	}
 
 	public Result validate(String urlsafe) {
