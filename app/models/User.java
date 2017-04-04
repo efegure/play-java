@@ -6,6 +6,8 @@ import javax.persistence.*;
 
 import com.avaje.ebean.*;
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import java.util.UUID;
 
 import play.data.validation.Constraints.*;
 import utility.Password;
@@ -20,6 +22,8 @@ public class User extends Model {
 	public String email;
 	@Required
 	public String name;
+	
+	@JsonIgnore
 	@Required
 	public String password;
 	@OneToOne
@@ -30,6 +34,9 @@ public class User extends Model {
 	
 	@Required
 	public String comName;
+	
+	//**********
+	private String authToken;
 
 	private boolean isRegistered = false;
 
@@ -56,8 +63,32 @@ public class User extends Model {
 			return null;
 		}
 	}
+	//*************
+	public String createToken() {
+        authToken = UUID.randomUUID().toString();
+        save();
+        return authToken;
+    }
+	//****************
+	public void deleteAuthToken() {
+        authToken = null;
+        save();
+    }
+    //*****************
+	 public static User findByAuthToken(String authToken) {
+	        if (authToken == null) {
+	            return null;
+	        }
 
-	public static void login(User user) {
+	        try  {
+	            return find.where().eq("authToken", authToken).findUnique();
+	        }
+	        catch (Exception e) {
+	            return null;
+	        }
+	    }
+	
+	 public static void login(User user) {
 		TimeTable.addTime(user);
 		TimeTable.setOnline(user);
 		user.save();

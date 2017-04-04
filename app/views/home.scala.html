@@ -15,7 +15,7 @@
 <div id="fix-for-navbar-fixed-top-spacing" style="height: 90px;">&nbsp;</div>
 <div class="container">
 <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
-<a class="btn float-xs-right btn-outline-success" href="@routes.HomeController.logout(mainuser.email)">Logout</a>
+<a class="btn float-xs-right btn-outline-success" href="@routes.HomeController.logout()">Logout</a>
 <span class="navbar-text float-xs-right text-muted">
    Welcome, @mainuser.name&nbsp;</span>
   <h1 class="navbar-brand mb-0">AppOfEfe</h1>
@@ -84,7 +84,7 @@
     <td> @user.company.cName</td>
     <td>@user.table.calculateTotalTime()</td>
   
-  @if(mainuser.email!=user.email) {@form(routes.HomeController.deleteUser(user.email)) {
+  @if(mainuser.email!=user.email) {@form(routes.HomeController.deleteUser()) {
                     <td>@b4.submit('class -> "btn btn-danger"){ Delete }</td>
                 }}
     </tr> 

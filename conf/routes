@@ -5,7 +5,7 @@
 
 GET     /                                   controllers.HomeController.login
 
-POST    /                                   controllers.HomeController.authenticate
+POST    /login                              controllers.HomeController.authenticate
 
 GET     /register                           controllers.HomeController.main
 
@@ -15,9 +15,9 @@ GET     /home                               controllers.HomeController.home
 
 POST    /home/payment/:id               	controllers.HomeController.paymentMethod(id:String)
 
-GET     /logout/:id                         controllers.HomeController.logout(id:String)
+GET     /logout                       		controllers.HomeController.logout()
 
-POST    /home/:id/delete      				controllers.HomeController.deleteUser(id: String)
+POST    /delete      						controllers.HomeController.deleteUser()
 
 
 
@@ -27,4 +27,4 @@ GET     /error	      						controllers.HomeController.error
 
 GET     /assets/*file               		controllers.Assets.at(path="/public", file)
 
-GET    /AllUsers   						controllers.HomeController.getAllUsers
+GET    /allUsers   						controllers.HomeController.getAllUsers

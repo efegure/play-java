@@ -167,6 +167,7 @@ public class HomeController extends Controller {
 		return ok(home.render(User.find.all(), mainuser, userForm, formFactory.form(Payment.class)));
 	}
 
+	@Security.Authenticated(Secured.class)
 	public Result getAllUsers() {
 		JsonNode request = request().body().asJson();
 		List<User> list = User.find.all();
@@ -194,7 +195,7 @@ public class HomeController extends Controller {
 					response.put("Error", "Invalid Json format!");
 					return ok(response);
 				} else {
-					// sendEmail(user.email);
+					sendEmail(user.email);
 					User.create(user);
 					User.createTableToUser(user);
 					String cName = json.findPath("comName").textValue();
@@ -211,7 +212,7 @@ public class HomeController extends Controller {
 					}
 					user.save();
 					ObjectNode response =Json.newObject();
-					response.put("Message", "User created succesfully.");
+					response.put("Success", "User created succesfully, a verification link has been sent to your email.");
 					return ok(response);
 				}
 			}
@@ -221,7 +222,8 @@ public class HomeController extends Controller {
 			return ok(response);
 		}
 	}
-
+	
+	@Security.Authenticated(Secured.class)
 	public Result deleteUser() {
 		JsonNode json = request().body().asJson();
 		String email=json.findPath("email").textValue();
@@ -239,7 +241,7 @@ public class HomeController extends Controller {
 			else{
 				User.deleteUser(email);
 				ObjectNode response =Json.newObject();
-				response.put("Message", "User deleted succesfully.");
+				response.put("Success", "User deleted succesfully.");
 				return ok(response);
 			}
 			
@@ -287,12 +289,21 @@ public class HomeController extends Controller {
 	public Result main() {
 		return ok(main.render(formFactory.form(User.class)));
 	}
-
-	public Result logout(String id) {
-		User.logout(User.find.byId(id));
+	
+	@Security.Authenticated(Secured.class)
+	public Result logout() {
+		User user = User.find.byId(request().username());
+		User.logout(user);
 		session().clear();
-		flash("success", "You've been logged out");
-		return redirect(routes.HomeController.login());
+		response().discardCookie("Authorization");
+        user.deleteAuthToken();
+        ObjectNode response = Json.newObject();
+		response.put("Succes", "User successfully logged out.");
+        return ok(response);
+		
+		
+
+		
 	}
 
 	public Result login() {
@@ -300,7 +311,40 @@ public class HomeController extends Controller {
 	}
 
 	public Result authenticate() {
-		Form<Login> loginForm = formFactory.form(Login.class).bindFromRequest();
+		JsonNode json = request().body().asJson();
+		if(json.findPath("email").textValue()==null|| json.findPath("password").textValue()==null){
+			ObjectNode response =Json.newObject();
+			response.put("Error", "Missing parameters in the Json.");
+			return ok(response);
+		}
+		if (User.find.byId(json.findPath("email").textValue()) == null) {
+			ObjectNode response =Json.newObject();
+			response.put("Error", "No such user exists.");
+			return ok(response);
+		}else {
+			User user = User.find.byId(json.findPath("email").textValue());
+			if ( user.password == null || user.email == null) {
+				ObjectNode response =Json.newObject();
+				response.put("Error", "Invalid Json format!");
+				return ok(response);
+			} else {
+				if (user.getRegistered() == false) {
+					ObjectNode response =Json.newObject();
+					response.put("Error", "Please verify your email to login.");
+					return ok(response);
+				} else {
+					User.login(User.find.byId(json.findPath("email").textValue()));
+					session().clear();
+					session("email", json.findPath("email").textValue());
+					String authToken = user.createToken();
+		            ObjectNode authTokenJson = Json.newObject();
+		            authTokenJson.put("Authorization", authToken);
+		            response().setCookie(Http.Cookie.builder("Authorization", authToken).withSecure(ctx().request().secure()).build());
+		            return ok(authTokenJson);
+		        
+				}
+			}
+		/*
 		if (loginForm.hasErrors() || loginForm == null) {
 			return badRequest(login.render(loginForm));
 		} else {
@@ -309,11 +353,18 @@ public class HomeController extends Controller {
 				flash("failure", "Please verify your email");
 				return badRequest(login.render(loginForm));
 			} else {
+				
 				User.login(User.find.byId(loginForm.get().email));
 				session().clear();
 				session("email", loginForm.get().email);
 				return redirect(routes.HomeController.home());
-			}
+				String authToken = user.createToken();
+	            ObjectNode authTokenJson = Json.newObject();
+	            authTokenJson.put("Authorization", authToken);
+	            response().setCookie(Http.Cookie.builder("Authorization", authToken).withSecure(ctx().request().secure()).build());
+	            return ok(authTokenJson);
+	        
+			}*/
 
 		}
 	}
