@@ -68,6 +68,7 @@ create table cm_users (
   table_id                      bigint,
   company_c_name                varchar(255),
   com_name                      varchar(255),
+  auth_token                    varchar(255),
   is_registered                 boolean,
   is_admin                      boolean,
   constraint uq_cm_users_table_id unique (table_id),
