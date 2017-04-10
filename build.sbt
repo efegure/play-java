@@ -21,7 +21,7 @@ libraryDependencies ++= Seq(
   "org.webjars" % "jquery" % "2.2.3"
   
 )
-
+libraryDependencies += filters
 
 
 fork in run := true
