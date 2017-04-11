@@ -12,6 +12,7 @@ lazy val nonEnhancedProject = (project in file("non-enhanced"))
 libraryDependencies ++= Seq(
   javaJdbc,
   cache,
+  filters,
   javaWs,
   "org.postgresql" % "postgresql" % "9.3-1102-jdbc4",
   "com.typesafe.play" %% "play-mailer" % "5.0.0",
@@ -21,7 +22,7 @@ libraryDependencies ++= Seq(
   "org.webjars" % "jquery" % "2.2.3"
   
 )
-libraryDependencies += filters
+
 
 
 fork in run := true
