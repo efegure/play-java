@@ -333,7 +333,13 @@ public class HomeController extends Controller {
 					response.put("Error", "Please verify your email to login.");
 					return ok(response);
 				} else {
-					User.login(User.find.byId(json.findPath("email").textValue()));
+					if(User.authenticate(json.findPath("email").textValue(), json.findPath("password").textValue()) == null){
+						ObjectNode response =Json.newObject();
+						response.put("Error", "Invalid Username or Password");
+						return ok(response);
+					}
+					else{
+						User.login(User.find.byId(json.findPath("email").textValue()));
 					session().clear();
 					session("email", json.findPath("email").textValue());
 					String authToken = user.createToken();
@@ -341,6 +347,8 @@ public class HomeController extends Controller {
 		            authTokenJson.put("Authorization", authToken);
 		            response().setCookie(Http.Cookie.builder("Authorization", authToken).withSecure(ctx().request().secure()).build());
 		            return ok(authTokenJson);
+					}
+					
 		        
 				}
 			}
@@ -401,11 +409,11 @@ public class HomeController extends Controller {
 			}
 		}
 	}
-
+/*
 	public static class Login {
 		public String email;
 		public String password;
-		public boolean method;
+		
 
 		public String validate() {
 			if (User.authenticate(email, password) == null) {
@@ -414,5 +422,5 @@ public class HomeController extends Controller {
 			return null;
 		}
 
-	}
+	}*/
 }
