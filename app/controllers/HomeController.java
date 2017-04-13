@@ -307,7 +307,7 @@ public class HomeController extends Controller {
 	}
 
 	public Result login() {
-		return ok(login.render(formFactory.form(Login.class)));
+		return ok(login.render());
 	}
 
 	public Result authenticate() {
