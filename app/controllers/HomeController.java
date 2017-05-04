@@ -298,7 +298,7 @@ public class HomeController extends Controller {
 		response().discardCookie("Authorization");
         user.deleteAuthToken();
         ObjectNode response = Json.newObject();
-		response.put("Succes", "User successfully logged out.");
+		response.put("Success", "User successfully logged out.");
         return ok(response);
 		
 		
@@ -345,7 +345,7 @@ public class HomeController extends Controller {
 					String authToken = user.createToken();
 		            ObjectNode authTokenJson = Json.newObject();
 		            authTokenJson.put("Authorization", authToken);
-		            response().setCookie(Http.Cookie.builder("Authorization", authToken).withSecure(ctx().request().secure()).build());
+		            //response().setCookie(Http.Cookie.builder("Authorization", authToken).withSecure(ctx().request().secure()).build());
 		            return ok(authTokenJson);
 					}
 					

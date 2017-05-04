@@ -10,15 +10,13 @@ public class Secured extends Security.Authenticator {
 
     @Override
     public String getUsername(Context ctx) {
-        String[] authTokenHeaderValues = ctx.request().headers().get("Authorization");
-        if ((authTokenHeaderValues != null) && (authTokenHeaderValues.length == 1) && (authTokenHeaderValues[0] != null)) {
-            User user = models.User.findByAuthToken(authTokenHeaderValues[0]);
+        String token = getTokenFromHeader(ctx);
+        if (token != null) {
+            User user = User.findByAuthToken(token);
             if (user != null) {
-                ctx.args.put("user", user);
-                return ctx.session().get("email");
+                return user.email;
             }
         }
-
         return null;
     }
 
@@ -27,5 +25,12 @@ public class Secured extends Security.Authenticator {
     	ObjectNode response =Json.newObject();
 		response.put("Error", "Unauthorizated user access.");
 		return ok(response);
+    }
+    private String getTokenFromHeader(Http.Context ctx) {
+        String[] authTokenHeaderValues = ctx.request().headers().get("Authorization");
+        if ((authTokenHeaderValues != null) && (authTokenHeaderValues.length == 1) && (authTokenHeaderValues[0] != null)) {
+            return authTokenHeaderValues[0];
+        }
+        return null;
     }
 }
