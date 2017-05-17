@@ -6,7 +6,9 @@
 create table billedpayment (
   id                            bigint not null,
   payment_id                    bigint,
-  bill                          decimal(38),
+  start_date                    date,
+  recurrence                    integer,
+  constraint ck_billedpayment_recurrence check (recurrence in (0,1)),
   constraint uq_billedpayment_payment_id unique (payment_id),
   constraint pk_billedpayment primary key (id)
 );
@@ -15,18 +17,34 @@ create sequence billing_id_seq;
 create table company (
   c_name                        varchar(255) not null,
   representative_email          varchar(255),
+  api_token                     varchar(255),
   payment_id                    bigint,
   constraint uq_company_representative_email unique (representative_email),
   constraint uq_company_payment_id unique (payment_id),
   constraint pk_company primary key (c_name)
 );
 
+create table ınvoice (
+  id                            bigint not null,
+  company_c_name                varchar(255),
+  amount                        decimal(38),
+  invoice_date                  timestamp,
+  due_date                      timestamp,
+  money_type                    varchar(255),
+  constraint pk_ınvoice primary key (id)
+);
+create sequence invoice_id_seq;
+
 create table payment (
   id                            bigint not null,
   company_c_name                varchar(255),
   billing_id                    bigint,
   prepaid_id                    bigint,
-  method                        varchar(255),
+  method                        integer,
+  subscription                  integer,
+  call_limit                    integer,
+  constraint ck_payment_method check (method in (0,1,2)),
+  constraint ck_payment_subscription check (subscription in (0,1)),
   constraint uq_payment_company_c_name unique (company_c_name),
   constraint uq_payment_billing_id unique (billing_id),
   constraint uq_payment_prepaid_id unique (prepaid_id),
@@ -37,7 +55,8 @@ create sequence payment_id_seq increment by 1;
 create table prepaidpayment (
   id                            bigint not null,
   payment_id                    bigint,
-  remainingtime                 decimal(38),
+  start_date                    date,
+  end_date                      date,
   constraint uq_prepaidpayment_payment_id unique (payment_id),
   constraint pk_prepaidpayment primary key (id)
 );
@@ -81,6 +100,9 @@ alter table company add constraint fk_company_representative_email foreign key (
 
 alter table company add constraint fk_company_payment_id foreign key (payment_id) references payment (id) on delete restrict on update restrict;
 
+alter table ınvoice add constraint fk_ınvoice_company_c_name foreign key (company_c_name) references company (c_name) on delete restrict on update restrict;
+create index ix_ınvoice_company_c_name on ınvoice (company_c_name);
+
 alter table payment add constraint fk_payment_company_c_name foreign key (company_c_name) references company (c_name) on delete restrict on update restrict;
 
 alter table payment add constraint fk_payment_billing_id foreign key (billing_id) references billedpayment (id) on delete restrict on update restrict;
@@ -108,6 +130,9 @@ alter table company drop constraint if exists fk_company_representative_email;
 
 alter table company drop constraint if exists fk_company_payment_id;
 
+alter table ınvoice drop constraint if exists fk_ınvoice_company_c_name;
+drop index if exists ix_ınvoice_company_c_name;
+
 alter table payment drop constraint if exists fk_payment_company_c_name;
 
 alter table payment drop constraint if exists fk_payment_billing_id;
@@ -130,6 +155,9 @@ drop table if exists billedpayment;
 drop sequence if exists billing_id_seq;
 
 drop table if exists company;
+
+drop table if exists ınvoice;
+drop sequence if exists invoice_id_seq;
 
 drop table if exists payment;
 drop sequence if exists payment_id_seq;

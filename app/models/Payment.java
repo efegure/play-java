@@ -1,8 +1,17 @@
 package models;
 
+import java.math.BigDecimal;
+
 import javax.persistence.*;
 
+import org.joda.time.DateTime;
+
 import com.avaje.ebean.Model;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
+import enums.BillingRecurrence;
+import enums.PaymentMethods;
+import enums.Subscription;
 
 
 @Entity
@@ -13,14 +22,30 @@ public class Payment extends Model {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "payment")
 	public long id;
 	
-	@OneToOne
+	public Payment(String subs){
+		 if(subs=="old"){
+			this.subscription=Subscription.LongTimeUser;
+		}
+		else {
+			this.subscription=Subscription.NewUser;
+		}
+		
+	}
+	@OneToOne@JsonBackReference
 	public Company company;
 	
-	@OneToOne
+	@OneToOne@JsonBackReference
 	public Billing billing;
 
-	@OneToOne
+	@OneToOne@JsonBackReference
 	public PrePaid prepaid;
 	
-	public String method;
+	//payment method
+	public PaymentMethods method;
+	
+	//subscription which usage cost is decided
+	public Subscription subscription;
+	
+	//Usage Limit for freemium Users
+	public Integer callLimit;
 }

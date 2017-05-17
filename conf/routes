@@ -11,9 +11,9 @@ GET     /register                           controllers.HomeController.main
 
 POST    /register               			controllers.HomeController.newUser
 
-GET     /home                               controllers.HomeController.home
+GET     /payment                        	controllers.HomeController.getPaymentInfo()
 
-POST    /home/payment/:id               	controllers.HomeController.paymentMethod(id:String)
+POST    /payment                        	controllers.HomeController.selectPaymentMethod()
 
 GET     /logout                       		controllers.HomeController.logout()
 

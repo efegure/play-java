@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 
 
 @Entity
-public class Company extends Model {
+public class Company extends Model  {
 	
 	@Id
 	public String cName;
@@ -19,12 +19,17 @@ public class Company extends Model {
 	@OneToOne@JsonBackReference
 	public User representative;
 	
+	@OneToMany@JsonBackReference
+	public List<Invoice> InvoiceList;
+	
 	@OneToMany @JsonBackReference
 	public List<User> cUsers = new ArrayList<>();
 	
 	public Company(String cName){
 		this.cName=cName;
 	}
+	
+	private String apiToken;
 	
 	@OneToOne
 	public Payment payment;
