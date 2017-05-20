@@ -2,6 +2,7 @@ package models;
 
 import java.math.BigDecimal;
 import org.joda.time.DateTime;
+import org.joda.time.LocalDate;
 import org.joda.time.Period;
 import javax.persistence.*;
 
@@ -20,11 +21,35 @@ public class Invoice extends Model {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "invoice")
 	public long id;
 
+	private boolean isCurrent; 
+	private boolean isPaid; 
 	public BigDecimal amount;
 	
-	public DateTime InvoiceDate;
-	public DateTime dueDate;
+	public LocalDate InvoiceDate;
+	public LocalDate dueDate;
 	
-	public String moneyType; 
 	//TODO make this more complicated class
+	
+	public Invoice(){
+		isCurrent=true;
+		isPaid=false;
+		LocalDate duedate= new LocalDate();
+		InvoiceDate = duedate;
+		dueDate = duedate.plusWeeks(1);
+	}
+	public boolean isCurrent() {
+		return isCurrent;
+	}
+
+	public void setCurrent(boolean isCurrent) {
+		this.isCurrent = isCurrent;
+	}
+
+	public boolean isPaid() {
+		return isPaid;
+	}
+
+	public void setPaid(boolean isPaid) {
+		this.isPaid = isPaid;
+	}
 }

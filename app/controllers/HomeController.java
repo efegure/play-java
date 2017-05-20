@@ -15,6 +15,7 @@ import enums.PaymentMethods;
 import validator.Validador;
 import models.Billing;
 import models.Company;
+import models.Invoice;
 import models.Payment;
 import models.PrePaid;
 import models.Time;
@@ -102,9 +103,10 @@ public class HomeController extends Controller {
 
 	@Security.Authenticated(Secured.class)
 	public Result selectPaymentMethod() {
-		User user = User.find.byId(request().username());
+
 		JsonNode json = request().body().asJson();
-		if (user.company.payment ==null) {
+		User user = User.find.byId(request().username());
+		if (user.company.payment == null) {
 			if (json.findPath("method").textValue() == null) {
 				ObjectNode response = Json.newObject();
 				response.put("Error", "Invalid Json format.");
@@ -142,7 +144,6 @@ public class HomeController extends Controller {
 				} else if (method.equalsIgnoreCase("free")) {
 					payment.method = PaymentMethods.Free;
 					payment.callLimit = 1000;
-					payment.save();
 
 				} else {
 					ObjectNode response = Json.newObject();
@@ -292,6 +293,89 @@ public class HomeController extends Controller {
 		}
 	}
 
+	public Result chargerCloud(String apikey) {
+		if (apikey != null) {
+			Company comp = Company.findByApiKey(apikey);
+			if (comp != null) {
+				Payment payment=comp.payment;
+				JsonNode json = request().body().asJson();
+				ObjectNode response = Json.newObject();
+				if (payment.method == PaymentMethods.Free) {
+					LocalDate today = new LocalDate();
+					LocalDate limitDate=payment.startDate.plusMonths(1);
+					if(limitDate.isBefore(today)){
+					if(comp.getCallAmount()<comp.payment.callLimit){
+						comp.apiCall();
+						comp.save();
+						response.put("Success", "Request complete");
+						return ok(response);
+					}
+					else{
+						response.put("Failure", "You have reached your usage limit");
+						return ok(response);
+					}
+					}
+					else{
+						comp.resetCall();
+						comp.apiCall();
+						comp.save();
+						response.put("Success", "Request complete");
+						return ok(response);
+					}
+				}
+				else if (payment.method == PaymentMethods.Billing) {
+					Billing bill =payment.billing;
+					LocalDate today = new LocalDate();
+					if(today.isAfter(bill.endDate)){
+						Invoice inv= comp.getCurrentInvoice();
+						if(inv!=null){
+							if(inv.isPaid() || inv.dueDate.isAfter(today)){
+								response.put("Success", "Request complete");
+								return ok(response);
+							}
+							else{
+								response.put("Error", "You have unpaid invoices.");
+								return ok(response);	
+							}
+						}
+						else{
+							Invoice newInv = new Invoice();
+							newInv.save();
+							comp.InvoiceList.add(newInv);
+							comp.save();
+							response.put("Success", "Request complete");
+							return ok(response);
+						}
+					}
+					else{
+						response.put("Success", "Request complete");
+						return ok(response);
+					}
+				}
+				else  {
+					PrePaid prep= payment.prepaid;
+					LocalDate today = new LocalDate();
+					if(today.isAfter(prep.endDate)){
+						response.put("Error", "Your subscription has ended.");
+						return ok(response);
+					}
+					else{
+						response.put("Success", "Request complete");
+						return ok(response);
+					}
+				}
+			} else {
+				ObjectNode response = Json.newObject();
+				response.put("Error", "Invalid api key.");
+				return ok(response);
+			}
+		} else {
+			ObjectNode response = Json.newObject();
+			response.put("Error", "No provided api key.");
+			return ok(response);
+		}
+	}
+
 	public Result validate(String urlsafe) {
 		List<User> userlist = User.find.all();
 		String hashed = urlsafe.replaceAll("-", "/");
@@ -314,7 +398,7 @@ public class HomeController extends Controller {
 			}
 		}
 		if (verification) {
-			return ok(views.html.validate.render(name));
+			return redirect("https://chargercloud.herokuapps.com");
 		} else {
 			return redirect(routes.HomeController.error());
 		}

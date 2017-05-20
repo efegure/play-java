@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import javax.persistence.*;
 
 import org.joda.time.DateTime;
+import org.joda.time.LocalDate;
 
 import com.avaje.ebean.Model;
 import com.fasterxml.jackson.annotation.JsonBackReference;
@@ -46,6 +47,7 @@ public class Payment extends Model {
 	//subscription which usage cost is decided
 	public Subscription subscription;
 	
+	public LocalDate startDate;
 	//Usage Limit for freemium Users
 	public Integer callLimit;
 }

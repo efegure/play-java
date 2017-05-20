@@ -28,13 +28,16 @@ public class Billing extends Model {
 		this.startDate=start;
 		if(recurrence=="weekly"){
 			this.recurrence=BillingRecurrence.Weekly;
+			endDate=startDate.plusMonths(1);
 		}
 		else{
 			this.recurrence=BillingRecurrence.Monthly;
+			endDate=startDate.plusWeeks(1);
 		}
-		
 	}
 	public LocalDate startDate;
+	
+	public LocalDate endDate;
 	
 	public BillingRecurrence recurrence;
 	
