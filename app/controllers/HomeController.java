@@ -57,7 +57,7 @@ public class HomeController extends Controller {
 		String hashed = Password.hashPassword(emailadress);
 		String urlsafe = hashed.replaceAll("/", "-");
 		email.setBodyText(
-				"Click to this link to verify your account: https://appofefe.herokuapp.com/validate/" + urlsafe);
+				"Click to this link to verify your account: https://chargercloudapi.herokuapp.com/validate/" + urlsafe);
 		mailerClient.send(email);
 	}
 
@@ -422,7 +422,7 @@ public class HomeController extends Controller {
 			}
 		}
 		if (verification) {
-			return redirect("https://chargercloud.herokuapps.com");
+			return redirect("https://chargercloud.herokuapp.com");
 		} else {
 			return redirect(routes.HomeController.error());
 		}
