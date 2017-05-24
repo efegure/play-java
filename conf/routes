@@ -17,9 +17,11 @@ POST    /payment                        	controllers.HomeController.selectPaymen
 
 GET     /logout                       		controllers.HomeController.logout()
 
+GET     /generateApiKey                       		controllers.HomeController.getKey()
+
 POST    /delete      						controllers.HomeController.deleteUser()
 
-
+POST    /charger/:id      						controllers.HomeController.charger(id: String)
 
 GET     /validate/:id	      				controllers.HomeController.validate(id: String)
 

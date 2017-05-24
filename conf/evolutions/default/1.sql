@@ -7,6 +7,7 @@ create table billedpayment (
   id                            bigint not null,
   payment_id                    bigint,
   start_date                    date,
+  end_date                      date,
   recurrence                    integer,
   constraint ck_billedpayment_recurrence check (recurrence in (0,1)),
   constraint uq_billedpayment_payment_id unique (payment_id),
@@ -16,8 +17,9 @@ create sequence billing_id_seq;
 
 create table company (
   c_name                        varchar(255) not null,
+  call_amount                   integer,
   representative_email          varchar(255),
-  api_token                     varchar(255),
+  api_key                       varchar(255),
   payment_id                    bigint,
   constraint uq_company_representative_email unique (representative_email),
   constraint uq_company_payment_id unique (payment_id),
@@ -27,10 +29,11 @@ create table company (
 create table ınvoice (
   id                            bigint not null,
   company_c_name                varchar(255),
+  is_current                    boolean,
+  is_paid                       boolean,
   amount                        decimal(38),
-  invoice_date                  timestamp,
-  due_date                      timestamp,
-  money_type                    varchar(255),
+  invoice_date                  date,
+  due_date                      date,
   constraint pk_ınvoice primary key (id)
 );
 create sequence invoice_id_seq;
@@ -42,6 +45,7 @@ create table payment (
   prepaid_id                    bigint,
   method                        integer,
   subscription                  integer,
+  start_date                    date,
   call_limit                    integer,
   constraint ck_payment_method check (method in (0,1,2)),
   constraint ck_payment_subscription check (subscription in (0,1)),

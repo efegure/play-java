@@ -58,17 +58,10 @@ public class Company extends Model {
     }
 }
 
-	// *************
 	public String createToken() {
 		apiKey = UUID.randomUUID().toString();
 		save();
 		return apiKey;
-	}
-
-	// ****************
-	public void deleteAuthToken() {
-		apiKey = null;
-		save();
 	}
 	public Invoice getCurrentInvoice(){
 		for(Invoice invoice : InvoiceList){

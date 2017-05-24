@@ -96,7 +96,7 @@ public class HomeController extends Controller {
 			}
 		} else {
 			ObjectNode response = Json.newObject();
-			response.put("Error", "No payment method selected.");
+			response.put("Failure", "No payment method selected.");
 			return ok(response);
 		}
 	}
@@ -109,7 +109,7 @@ public class HomeController extends Controller {
 		if (user.company.payment == null) {
 			if (json.findPath("method").textValue() == null) {
 				ObjectNode response = Json.newObject();
-				response.put("Error", "Invalid Json format.");
+				response.put("Failure", "Invalid Json format.");
 				return ok(response);
 			} else {
 				String method = json.findPath("method").textValue();
@@ -143,11 +143,12 @@ public class HomeController extends Controller {
 
 				} else if (method.equalsIgnoreCase("free")) {
 					payment.method = PaymentMethods.Free;
+					payment.startDate=new LocalDate();
 					payment.callLimit = 1000;
 
 				} else {
 					ObjectNode response = Json.newObject();
-					response.put("Error", "Not a valid method option.");
+					response.put("Failure", "Not a valid method option.");
 					return ok(response);
 				}
 				payment.save();
@@ -163,7 +164,7 @@ public class HomeController extends Controller {
 
 		} else {
 			ObjectNode response = Json.newObject();
-			response.put("Error", "A payment method is already set to this company.");
+			response.put("Failure", "A payment method is already set to this company.");
 			return ok(response);
 		}
 		/*
@@ -219,7 +220,7 @@ public class HomeController extends Controller {
 		if (json.findPath("email").textValue() == null || json.findPath("name").textValue() == null
 				|| json.findPath("comName").textValue() == null || json.findPath("password").textValue() == null) {
 			ObjectNode response = Json.newObject();
-			response.put("Error", "Missing parameters in the Json.");
+			response.put("Failure", "Missing parameters in the Json.");
 			return ok(response);
 		}
 		if (User.find.byId(json.findPath("email").textValue()) == null) {
@@ -227,13 +228,13 @@ public class HomeController extends Controller {
 					json.findPath("password").textValue());
 			if (json == null) {
 				ObjectNode response = Json.newObject();
-				response.put("Error", "Expecting Json data!");
+				response.put("Failure", "Expecting Json data!");
 				return ok(response);
 			} else {
 
 				if (user.name == null || user.password == null || user.email == null) {
 					ObjectNode response = Json.newObject();
-					response.put("Error", "Invalid Json format!");
+					response.put("Failure", "Invalid Json format!");
 					return ok(response);
 				} else {
 					sendEmail(user.email);
@@ -260,7 +261,7 @@ public class HomeController extends Controller {
 			}
 		} else {
 			ObjectNode response = Json.newObject();
-			response.put("Error", "User already exists.");
+			response.put("Failure", "User already exists.");
 			return ok(response);
 		}
 	}
@@ -271,12 +272,12 @@ public class HomeController extends Controller {
 		String email = json.findPath("email").textValue();
 		if (email == null) {
 			ObjectNode response = Json.newObject();
-			response.put("Error", "Invalid Json format.");
+			response.put("Failure", "Invalid Json format.");
 			return ok(response);
 		} else {
 			if (User.find.byId(email) == null) {
 				ObjectNode response = Json.newObject();
-				response.put("Error", "No such user exists.");
+				response.put("Failure", "No such user exists.");
 				return ok(response);
 			} else {
 				if (User.find.byId(email).getAdminStatus()) {
@@ -286,32 +287,45 @@ public class HomeController extends Controller {
 					return ok(response);
 				} else {
 					ObjectNode response = Json.newObject();
-					response.put("Error", "Unauthorized action.");
+					response.put("Failure", "Unauthorized action.");
 					return ok(response);
 				}
 			}
 		}
 	}
+	@Security.Authenticated(Secured.class)
+	public Result getKey() {
+		User user = User.find.byId(request().username());
+		String apiKey=user.company.createToken();
+		ObjectNode response = Json.newObject();
+		response.put("Success", apiKey);
+		return ok(response);
+		
+	}
 
-	public Result chargerCloud(String apikey) {
+	public Result charger(String apikey) {
 		if (apikey != null) {
 			Company comp = Company.findByApiKey(apikey);
 			if (comp != null) {
-				Payment payment=comp.payment;
 				JsonNode json = request().body().asJson();
 				ObjectNode response = Json.newObject();
-				if (payment.method == PaymentMethods.Free) {
+				if(comp.payment==null){
+					response.put("Failure", "No subscription is selected for this company.");
+					return ok(response);
+				}
+				else{
+				if (comp.payment.method == PaymentMethods.Free) {
 					LocalDate today = new LocalDate();
-					LocalDate limitDate=payment.startDate.plusMonths(1);
+					LocalDate limitDate=comp.payment.startDate.plusMonths(1);
 					if(limitDate.isBefore(today)){
 					if(comp.getCallAmount()<comp.payment.callLimit){
 						comp.apiCall();
 						comp.save();
-						response.put("Success", "Request complete");
+						response.put("Success", "Request complete.");
 						return ok(response);
 					}
 					else{
-						response.put("Failure", "You have reached your usage limit");
+						response.put("Failure", "You have reached your usage limit.");
 						return ok(response);
 					}
 					}
@@ -319,22 +333,22 @@ public class HomeController extends Controller {
 						comp.resetCall();
 						comp.apiCall();
 						comp.save();
-						response.put("Success", "Request complete");
+						response.put("Success", "Request complete.");
 						return ok(response);
 					}
 				}
-				else if (payment.method == PaymentMethods.Billing) {
-					Billing bill =payment.billing;
+				else if (comp.payment.method == PaymentMethods.Billing) {
+					Billing bill =comp.payment.billing;
 					LocalDate today = new LocalDate();
 					if(today.isAfter(bill.endDate)){
 						Invoice inv= comp.getCurrentInvoice();
 						if(inv!=null){
 							if(inv.isPaid() || inv.dueDate.isAfter(today)){
-								response.put("Success", "Request complete");
+								response.put("Success", "Request complete.");
 								return ok(response);
 							}
 							else{
-								response.put("Error", "You have unpaid invoices.");
+								response.put("Failure", "You have unpaid invoices.");
 								return ok(response);	
 							}
 						}
@@ -343,35 +357,37 @@ public class HomeController extends Controller {
 							newInv.save();
 							comp.InvoiceList.add(newInv);
 							comp.save();
-							response.put("Success", "Request complete");
+							response.put("Success", "Request complete.");
 							return ok(response);
 						}
 					}
 					else{
-						response.put("Success", "Request complete");
+						response.put("Success", "Request complete.");
 						return ok(response);
 					}
 				}
 				else  {
-					PrePaid prep= payment.prepaid;
+					PrePaid prep= comp.payment.prepaid;
 					LocalDate today = new LocalDate();
 					if(today.isAfter(prep.endDate)){
-						response.put("Error", "Your subscription has ended.");
+						response.put("Failure", "Your subscription has ended.");
 						return ok(response);
 					}
 					else{
-						response.put("Success", "Request complete");
+						response.put("Success", "Request complete.");
 						return ok(response);
 					}
 				}
+				}
 			} else {
 				ObjectNode response = Json.newObject();
-				response.put("Error", "Invalid api key.");
+				response.put("Failure", "Invalid api key.");
 				return ok(response);
 			}
+			
 		} else {
 			ObjectNode response = Json.newObject();
-			response.put("Error", "No provided api key.");
+			response.put("Failure", "No provided api key.");
 			return ok(response);
 		}
 	}
@@ -438,29 +454,29 @@ public class HomeController extends Controller {
 		JsonNode json = request().body().asJson();
 		if (json.findPath("email").textValue() == null || json.findPath("password").textValue() == null) {
 			ObjectNode response = Json.newObject();
-			response.put("Error", "Missing parameters in the Json.");
+			response.put("Failure", "Missing parameters in the Json.");
 			return ok(response);
 		}
 		if (User.find.byId(json.findPath("email").textValue()) == null) {
 			ObjectNode response = Json.newObject();
-			response.put("Error", "No such user exists.");
+			response.put("Failure", "No such user exists.");
 			return ok(response);
 		} else {
 			User user = User.find.byId(json.findPath("email").textValue());
 			if (user.password == null || user.email == null) {
 				ObjectNode response = Json.newObject();
-				response.put("Error", "Invalid Json format!");
+				response.put("Failure", "Invalid Json format!");
 				return ok(response);
 			} else {
 				if (user.getRegistered() == false) {
 					ObjectNode response = Json.newObject();
-					response.put("Error", "Please verify your email to login.");
+					response.put("Failure", "Please verify your email to login.");
 					return ok(response);
 				} else {
 					if (User.authenticate(json.findPath("email").textValue(),
 							json.findPath("password").textValue()) == null) {
 						ObjectNode response = Json.newObject();
-						response.put("Error", "Invalid Username or Password");
+						response.put("Failure", "Invalid Username or Password");
 						return ok(response);
 					} else {
 						User.login(User.find.byId(json.findPath("email").textValue()));
@@ -477,7 +493,7 @@ public class HomeController extends Controller {
 				}
 			}
 			/*
-			 * if (loginForm.hasErrors() || loginForm == null) { return
+			 * if (loginForm.hasFailures() || loginForm == null) { return
 			 * badRequest(login.render(loginForm)); } else { User user =
 			 * User.find.byId(loginForm.get().email); if (user.getRegistered()
 			 * == false) { flash("failure", "Please verify your email"); return
