@@ -122,10 +122,10 @@ public class HomeController extends Controller {
 					int periodAmount = Integer.parseInt(json.findPath("periodAmount").textValue());
 					LocalDate start = new LocalDate();
 					LocalDate end = new LocalDate();
-					if (periodType == "monthly") {
-						end.plusMonths(periodAmount);
+					if (periodType == "Monthly") {
+						end = end.plusMonths(periodAmount);
 					} else {
-						end.plusWeeks(periodAmount);
+						end = end.plusWeeks(periodAmount);
 					}
 					PrePaid prepaid = new PrePaid(start, end);
 					prepaid.payment = payment;
@@ -296,10 +296,18 @@ public class HomeController extends Controller {
 	@Security.Authenticated(Secured.class)
 	public Result getKey() {
 		User user = User.find.byId(request().username());
-		String apiKey=user.company.createToken();
-		ObjectNode response = Json.newObject();
-		response.put("Success", apiKey);
-		return ok(response);
+		if(user.company.payment!=null){
+			String apiKey=user.company.createToken();
+			ObjectNode response = Json.newObject();
+			response.put("Success", apiKey);
+			return ok(response);
+		}
+		else{
+			ObjectNode response = Json.newObject();
+			response.put("Failure","No subscription method is selected");
+			return ok(response);
+		}
+		
 		
 	}
 
